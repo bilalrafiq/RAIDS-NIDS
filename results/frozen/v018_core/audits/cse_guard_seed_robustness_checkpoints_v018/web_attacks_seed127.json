@@ -1,0 +1,129 @@
+{
+  "episode": "Web Attacks",
+  "seed": 127,
+  "analysis_source": "secondary_new_seed_run",
+  "guard_status": "failed",
+  "static_detector_deployed": false,
+  "primary_metrics_defined": false,
+  "adaptive_runs_authorized": false,
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed127_v018.yaml",
+  "config_sha256": "891885122c2044f95d3f68ea87ba4c649c4cff00002f8cefa981ca65f7198272",
+  "run_name": "R18_CSE_Web_guard_seed_robustness_s127",
+  "summary_path": null,
+  "calibration": {
+    "median": 0.11083704051442739,
+    "raw_mad": 0.01589922372359328,
+    "scaled_mad": 0.023572189092599394
+  },
+  "candidate_audit": [
+    {
+      "mad_multiplier": 3.0,
+      "mean_shift_threshold": 0.18155360779222557,
+      "guard_mean_shift_windows_above": 7,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 7,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        34
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 4.0,
+      "mean_shift_threshold": 0.20512579688482496,
+      "guard_mean_shift_windows_above": 7,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 7,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        34
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 5.0,
+      "mean_shift_threshold": 0.22869798597742436,
+      "guard_mean_shift_windows_above": 6,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 6,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        34
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 6.0,
+      "mean_shift_threshold": 0.25227017507002375,
+      "guard_mean_shift_windows_above": 5,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 5,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        35
+      ],
+      "guard_safe": false
+    }
+  ],
+  "safe_candidate_count": 0,
+  "selected_mad_multiplier": null,
+  "selected_threshold": null,
+  "guard_trace": [
+    {
+      "window": 30,
+      "mean_shift_score": 0.102097466955186,
+      "predicted_unknown_rate": 0.052
+    },
+    {
+      "window": 31,
+      "mean_shift_score": 0.14872659427591356,
+      "predicted_unknown_rate": 0.046
+    },
+    {
+      "window": 32,
+      "mean_shift_score": 0.15003235343360993,
+      "predicted_unknown_rate": 0.054
+    },
+    {
+      "window": 33,
+      "mean_shift_score": 0.2517680404323689,
+      "predicted_unknown_rate": 0.04
+    },
+    {
+      "window": 34,
+      "mean_shift_score": 0.29186090186204017,
+      "predicted_unknown_rate": 0.036
+    },
+    {
+      "window": 35,
+      "mean_shift_score": 0.29260094976002077,
+      "predicted_unknown_rate": 0.028
+    },
+    {
+      "window": 36,
+      "mean_shift_score": 0.2980604150565771,
+      "predicted_unknown_rate": 0.03
+    },
+    {
+      "window": 37,
+      "mean_shift_score": 0.2836116792573334,
+      "predicted_unknown_rate": 0.066
+    },
+    {
+      "window": 38,
+      "mean_shift_score": 0.3849624026352102,
+      "predicted_unknown_rate": 0.066
+    },
+    {
+      "window": 39,
+      "mean_shift_score": 0.2177740892426564,
+      "predicted_unknown_rate": 0.072
+    }
+  ],
+  "guard_shift_score_max": 0.3849624026352102,
+  "guard_unknown_rate_max": 0.072,
+  "failure_message": "No prespecified mad_multiplier_candidates produced zero persistent guard triggers; candidate audit: [{'mad_multiplier': 3.0, 'mean_shift_threshold': 0.18155360779222557, 'guard_mean_shift_windows_above': 7, 'guard_unknown_rate_windows_above': 0, 'guard_flagged_windows': 7, 'guard_persistent_trigger_count': 1, 'guard_trigger_windows': [34], 'guard_safe': False}, {'mad_multiplier': 4.0, 'mean_shift_threshold': 0.20512579688482496, 'guard_mean_shift_windows_above': 7, 'guard_unknown_rate_windows_above': 0, 'guard_flagged_windows': 7, 'guard_persistent_trigger_count': 1, 'guard_trigger_windows': [34], 'guard_safe': False}, {'mad_multiplier': 5.0, 'mean_shift_threshold': 0.22869798597742436, 'guard_mean_shift_windows_above': 6, 'guard_unknown_rate_windows_above': 0, 'guard_flagged_windows': 6, 'guard_persistent_trigger_count': 1, 'guard_trigger_windows': [34], 'guard_safe': False}, {'mad_multiplier': 6.0, 'mean_shift_threshold': 0.25227017507002375, 'guard_mean_shift_windows_above': 5, 'guard_unknown_rate_windows_above': 0, 'guard_flagged_windows': 5, 'guard_persistent_trigger_count': 1, 'guard_trigger_windows': [35], 'guard_safe': False}]",
+  "integrity_checks": null,
+  "performance": null
+}

@@ -1,0 +1,9 @@
+numpy>=2.0,<3
+pandas>=2.2,<3
+scikit-learn>=1.6,<2
+scipy>=1.13,<2
+PyYAML>=6,<7
+joblib>=1.4,<2
+psutil>=5.9,<8
+river==0.25.0
+pytest>=8,<10

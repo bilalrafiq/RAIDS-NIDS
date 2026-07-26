@@ -1,0 +1,47 @@
+{
+  "centroid_bias_diagnostic": {
+    "UD_B050_normalized_centroid_gap": 3.354356,
+    "UD_B050_novel_centroid_nearest_rate": 0.040276,
+    "UD_B050_observed_global_exact_recall": 0.018811,
+    "UD_B050_static_geometry_proxy_exact_rate": 0.019266,
+    "UD_B050_within_threshold_rate": 0.945768,
+    "random_B050_normalized_centroid_gap": 0.784522,
+    "random_B050_novel_centroid_nearest_rate": 0.901092,
+    "random_B050_within_threshold_rate": 0.956007
+  },
+  "diagnostic_status": "post_hoc_explanatory_analysis_not_used_for_tuning",
+  "event": "DoS_GoldenEye",
+  "interpretation": {
+    "centroid_representativeness_is_required": true,
+    "label_budget_effect_is_monotonic": false,
+    "rejection_threshold_is_primary_failure_cause": false,
+    "selection_update_incompatibility_confirmed": true,
+    "source_anchoring_supported_in_this_episode": false,
+    "support_count_alone_is_sufficient": false
+  },
+  "principal_result": {
+    "UD_B050_novel_exact_recall": 0.018811,
+    "UD_B050_recovery_area": 0.359154,
+    "best_observed_configuration": "random_nested_naive_replay_B050",
+    "best_observed_configuration_is_not_used_to_tune_future_events": true,
+    "random_B050_novel_exact_recall": 0.84356,
+    "random_B050_recovery_area": 0.877908,
+    "static_recovery_area": 0.367376
+  },
+  "protocol_changed_after_observing_results": false,
+  "protocol_changes": [],
+  "static_detector": {
+    "frozen_shift_threshold": 0.21619025311730708,
+    "guard_persistent_trigger_count": 0,
+    "selected_mad_multiplier": 3.0,
+    "trigger_delay_windows": 1,
+    "trigger_window": 41
+  },
+  "status": "prospective_episode_completed",
+  "supporting_files": {
+    "comparison": "C:\\Users\\ASUS\\raids-nids\\results\\aggregate\\cse_dos_seed11_comparison_v018.csv",
+    "representativeness": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_query_representativeness_v018.csv",
+    "selection_bias": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_query_selection_bias_v018.csv",
+    "trajectory": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_acquisition_trajectory_v018.csv"
+  }
+}

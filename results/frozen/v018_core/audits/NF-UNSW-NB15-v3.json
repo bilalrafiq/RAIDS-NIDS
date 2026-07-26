@@ -1,0 +1,36 @@
+{
+  "categorical_features": 0,
+  "caveat": "Counts describe the configured sample when sampling.max_rows is set.",
+  "class_counts": {
+    "Analysis": 260,
+    "Backdoor": 986,
+    "Benign": 472975,
+    "DoS": 1266,
+    "Exploits": 9046,
+    "Fuzzers": 7156,
+    "Generic": 4161,
+    "Reconnaissance": 3614,
+    "Shellcode": 503,
+    "Worms": 33
+  },
+  "columns_with_infinity": {
+    "DST_TO_SRC_SECOND_BYTES": 25339,
+    "SRC_TO_DST_SECOND_BYTES": 12376
+  },
+  "columns_with_missing": {
+    "SRC_TO_DST_SECOND_BYTES": 12963
+  },
+  "configured_path": "data/raw/NF-UNSW-NB15-v3.csv",
+  "constant_features": [],
+  "dataset": "NF-UNSW-NB15-v3",
+  "duplicate_feature_rows": 34184,
+  "exact_duplicate_rows": 2,
+  "label_column": "Attack",
+  "near_unique_features": [],
+  "numeric_features": 48,
+  "raw_columns": 55,
+  "rows_audited": 500000,
+  "suspicious_retained_features": [],
+  "time_column_available": true,
+  "usable_features": 48
+}

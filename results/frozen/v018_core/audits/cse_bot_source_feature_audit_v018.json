@@ -1,0 +1,27 @@
+{
+  "categorical_features": 0,
+  "caveat": "Counts describe the configured sample when sampling.max_rows is set.",
+  "class_counts": {
+    "Benign": 433708,
+    "BruteForce": 15835,
+    "DDoS": 35825,
+    "DoS": 8571,
+    "Infiltration": 5507,
+    "Web Attacks": 554
+  },
+  "columns_with_infinity": {},
+  "columns_with_missing": {},
+  "configured_path": "C:\\Users\\ASUS\\raids-nids\\data\\processed\\cse_events_v018\\NF-CICIDS2018-v3-bot-historical-source.csv",
+  "constant_features": [],
+  "dataset": "NF-CICIDS2018-v3-Bot-Historical-Pilot",
+  "duplicate_feature_rows": 27263,
+  "exact_duplicate_rows": 843,
+  "label_column": "Attack_Family",
+  "near_unique_features": [],
+  "numeric_features": 47,
+  "raw_columns": 56,
+  "rows_audited": 500000,
+  "suspicious_retained_features": [],
+  "time_column_available": true,
+  "usable_features": 47
+}

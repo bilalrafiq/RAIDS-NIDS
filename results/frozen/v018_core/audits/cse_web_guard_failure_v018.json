@@ -1,0 +1,98 @@
+{
+  "adaptive_runs_authorized": false,
+  "calibration": {
+    "calibration_median": 0.11201844885680998,
+    "calibration_raw_mad": 0.018676338672735375,
+    "calibration_scaled_mad": 0.027689539716197465,
+    "calibration_windows": [
+      10,
+      29
+    ],
+    "candidate_audit": [
+      {
+        "guard_flagged_windows": 7,
+        "guard_mean_shift_windows_above": 7,
+        "guard_persistent_trigger_count": 1,
+        "guard_safe": false,
+        "guard_trigger_windows": [
+          34
+        ],
+        "guard_unknown_rate_windows_above": 0,
+        "mad_multiplier": 3.0,
+        "mean_shift_threshold": 0.19508706800540238
+      },
+      {
+        "guard_flagged_windows": 6,
+        "guard_mean_shift_windows_above": 6,
+        "guard_persistent_trigger_count": 1,
+        "guard_safe": false,
+        "guard_trigger_windows": [
+          34
+        ],
+        "guard_unknown_rate_windows_above": 0,
+        "mad_multiplier": 4.0,
+        "mean_shift_threshold": 0.22277660772159985
+      },
+      {
+        "guard_flagged_windows": 6,
+        "guard_mean_shift_windows_above": 6,
+        "guard_persistent_trigger_count": 1,
+        "guard_safe": false,
+        "guard_trigger_windows": [
+          34
+        ],
+        "guard_unknown_rate_windows_above": 0,
+        "mad_multiplier": 5.0,
+        "mean_shift_threshold": 0.25046614743779727
+      },
+      {
+        "guard_flagged_windows": 5,
+        "guard_mean_shift_windows_above": 5,
+        "guard_persistent_trigger_count": 1,
+        "guard_safe": false,
+        "guard_trigger_windows": [
+          35
+        ],
+        "guard_unknown_rate_windows_above": 0,
+        "mad_multiplier": 6.0,
+        "mean_shift_threshold": 0.27815568715399475
+      }
+    ],
+    "guard_windows": [
+      30,
+      39
+    ],
+    "reference_windows": [
+      0,
+      9
+    ]
+  },
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+  "event": "Web Attacks",
+  "failure_reason": "No prespecified MAD multiplier in [3, 4, 5, 6] produced zero persistent triggers on the benign guard set.",
+  "failure_stage": "guard_safe_candidate_selection",
+  "guard_labels_verified_after_failure": {
+    "Benign": 5000,
+    "Web Attacks": 0
+  },
+  "known_context": {
+    "combined_feature_ambiguous_novel_rows": 39,
+    "novel_rows": 102,
+    "warmup_gap_hours": 11.751550277777778,
+    "warmup_gap_phase": "reference",
+    "warmup_gap_row": 1279,
+    "warmup_gap_window": 2
+  },
+  "post_failure_threshold_tuning_performed": false,
+  "primary_static_metrics_defined": false,
+  "protocol_changed_after_failure": false,
+  "static_detector_deployed": false,
+  "status": "prospective_guard_calibration_failure",
+  "supporting_files": {
+    "ambiguity_manifest": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_ambiguity_manifest_v018.json",
+    "gap_audit": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_warmup_gap_audit_v018.json",
+    "trace": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_guard_failure_trace_v018.csv"
+  },
+  "target_labels_used_for_calibration": false,
+  "target_labels_used_for_guard_selection": false
+}

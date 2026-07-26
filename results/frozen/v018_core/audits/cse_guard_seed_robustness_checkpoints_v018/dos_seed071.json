@@ -1,0 +1,143 @@
+{
+  "episode": "DoS",
+  "seed": 71,
+  "analysis_source": "secondary_new_seed_run",
+  "guard_status": "passed",
+  "static_detector_deployed": true,
+  "primary_metrics_defined": true,
+  "adaptive_runs_authorized": false,
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed071_v018.yaml",
+  "config_sha256": "fb8728cf0dc1455767469a6ade898129c113c4057d3a60aacd0e6176f6a78cda",
+  "run_name": "R18_CSE_DoS_guard_seed_robustness_s071",
+  "summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\R18_CSE_DoS_guard_seed_robustness_s071__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed71\\summary.json",
+  "calibration": {
+    "median": 0.11896394818750551,
+    "raw_mad": 0.02179397369100062,
+    "scaled_mad": 0.032311745394277516
+  },
+  "candidate_audit": [
+    {
+      "mad_multiplier": 3.0,
+      "mean_shift_threshold": 0.21589918437033806,
+      "guard_mean_shift_windows_above": 1,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_trigger_windows": [],
+      "guard_safe": true
+    },
+    {
+      "mad_multiplier": 4.0,
+      "mean_shift_threshold": 0.24821092976461556,
+      "guard_mean_shift_windows_above": 1,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_trigger_windows": [],
+      "guard_safe": true
+    },
+    {
+      "mad_multiplier": 5.0,
+      "mean_shift_threshold": 0.28052267515889306,
+      "guard_mean_shift_windows_above": 1,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_trigger_windows": [],
+      "guard_safe": true
+    },
+    {
+      "mad_multiplier": 6.0,
+      "mean_shift_threshold": 0.3128344205531706,
+      "guard_mean_shift_windows_above": 1,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_trigger_windows": [],
+      "guard_safe": true
+    }
+  ],
+  "safe_candidate_count": 4,
+  "selected_mad_multiplier": 3.0,
+  "selected_threshold": 0.21589918437033806,
+  "guard_trace": [
+    {
+      "window": 30,
+      "mean_shift_score": 0.1957555407689485,
+      "predicted_unknown_rate": 0.154
+    },
+    {
+      "window": 31,
+      "mean_shift_score": 0.33394347309041916,
+      "predicted_unknown_rate": 0.29
+    },
+    {
+      "window": 32,
+      "mean_shift_score": 0.10139691711494753,
+      "predicted_unknown_rate": 0.078
+    },
+    {
+      "window": 33,
+      "mean_shift_score": 0.09102220411133455,
+      "predicted_unknown_rate": 0.086
+    },
+    {
+      "window": 34,
+      "mean_shift_score": 0.09108577290978721,
+      "predicted_unknown_rate": 0.054
+    },
+    {
+      "window": 35,
+      "mean_shift_score": 0.108614345814897,
+      "predicted_unknown_rate": 0.056
+    },
+    {
+      "window": 36,
+      "mean_shift_score": 0.1083173297177709,
+      "predicted_unknown_rate": 0.07
+    },
+    {
+      "window": 37,
+      "mean_shift_score": 0.08033415143800443,
+      "predicted_unknown_rate": 0.054
+    },
+    {
+      "window": 38,
+      "mean_shift_score": 0.07709210470290427,
+      "predicted_unknown_rate": 0.032
+    },
+    {
+      "window": 39,
+      "mean_shift_score": 0.1182904207658746,
+      "predicted_unknown_rate": 0.058
+    }
+  ],
+  "guard_shift_score_max": 0.33394347309041916,
+  "guard_unknown_rate_max": 0.29,
+  "failure_message": null,
+  "integrity_checks": {
+    "initial_model_saw_novel_target_class_names": false,
+    "label_budget_respected": true,
+    "query_row_count_matches_labels_queried": true,
+    "queried_target_rows_are_unique": true,
+    "predictions_scored_before_updates": true,
+    "preprocessing_fit_on_source_only": true,
+    "evaluation_uses_pre_update_predictions": true,
+    "drift_calibration_excludes_target_labels": true,
+    "drift_guard_selection_excludes_target_labels": true,
+    "change_boundary_aligned_to_evaluation_blocks": true
+  },
+  "performance": {
+    "global_known_macro_f1": 0.8940166195170064,
+    "global_novel_auprc": 0.15684091889382548,
+    "global_novel_auroc": 0.27152516420408923,
+    "global_novel_exact_recall": 0.0,
+    "global_novel_rejection_rate": 0.038000606796116505,
+    "global_novel_harmful_acceptance_rate": 0.9619993932038835,
+    "global_acquisition_macro_f1": 0.40072959078322473,
+    "primary_normalized_recovery_area": 0.3788411665693369,
+    "safety_normalized_recovery_area": 0.536416008578236,
+    "recovery_time_evaluation_blocks": null
+  }
+}

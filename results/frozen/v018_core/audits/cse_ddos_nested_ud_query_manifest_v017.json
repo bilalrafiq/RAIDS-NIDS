@@ -1,0 +1,50 @@
+{
+  "b50_is_subset_of_b200": true,
+  "budgets": [
+    50,
+    200
+  ],
+  "candidate_multiplier": 10,
+  "candidate_pool_rows": 500,
+  "effective_selection_seed": 110041,
+  "event": "DDoS",
+  "labels_opened_only_after_selection": true,
+  "nested_query_sets": true,
+  "package_version": "0.1.7",
+  "query_seed": 11,
+  "query_summaries": [
+    {
+      "Benign": 50,
+      "DDoS": 0,
+      "DDoS_percent": 0.0,
+      "budget": 50,
+      "candidate_pool_rows": 500,
+      "selected_target_rows_sha256": "214f4305b0b3c65ce6a9c3bb0daddae6f6f2895f5bd1c4ae6cb5692162d57d7b",
+      "strategy": "uncertainty_diversity",
+      "unknown_score_max": 0.9873748290630915,
+      "unknown_score_mean": 0.8002204781339729,
+      "unknown_score_median": 0.7958927303856185,
+      "unknown_score_min": 0.5120451901286489
+    },
+    {
+      "Benign": 193,
+      "DDoS": 7,
+      "DDoS_percent": 3.5000000000000004,
+      "budget": 200,
+      "candidate_pool_rows": 500,
+      "selected_target_rows_sha256": "467400b831ee8cb004ead893d49d0308994a7f72238132f6d3f0193b8d549821",
+      "strategy": "uncertainty_diversity",
+      "unknown_score_max": 0.9873748290630915,
+      "unknown_score_mean": 0.7081731919301325,
+      "unknown_score_median": 0.662333085678728,
+      "unknown_score_min": 0.47950439966738123
+    }
+  ],
+  "selection_strategy": "uncertainty_diversity",
+  "selection_used_target_labels": false,
+  "static_model": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E09_CSE_DDoS_guard_safe_static_v017__NF-CICIDS2018-v3-DDoS-Historical-Pilot-to-NF-CICIDS2018-v3-DDoS-Emergence-Pilot__ddos_first_family_emergence__cse_ddos_prototype_static_open_guard_safe__seed11\\model.joblib",
+  "target_configuration": "C:\\Users\\ASUS\\raids-nids\\configs\\datasets\\cse_ddos_target_v016.yaml",
+  "trigger_window": 41,
+  "trigger_window_start_row": 20500,
+  "trigger_window_stop_row": 21000
+}

@@ -1,0 +1,33 @@
+name: E02_E05_UNSW_session_aligned_eval5000_v012
+seed: 11
+source_dataset: configs/datasets/nf_unsw_nb15_v3_source_pilot.yaml
+target_dataset: configs/datasets/nf_unsw_nb15_v3_target_session_aligned_pilot.yaml
+output_root: results/runs
+scenario:
+  name: supported_6class_capture_session_and_prevalence_shift
+  holdout_labels: []
+stream:
+  mode: chronological
+  window_size: 5000
+  true_change_window: 4
+method:
+  name: random_forest_closed
+  type: random_forest
+  open_set: false
+  rejection_quantile: 0.95
+  parameters:
+    n_estimators: 300
+    min_samples_leaf: 2
+    class_weight: balanced_subsample
+    n_jobs: -1
+adaptation:
+  enabled: false
+  label_budget_fraction: 0.0
+  trigger_mode: drift
+  drift:
+    mean_shift_threshold: 1.25
+    unknown_rate_threshold: 0.2
+    min_windows_between: 2
+metrics:
+  recovery_fraction: 0.95
+  recovery_patience_windows: 3

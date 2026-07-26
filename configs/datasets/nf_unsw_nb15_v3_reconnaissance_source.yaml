@@ -1,0 +1,9 @@
+name: NF-UNSW-NB15-v3-Reconnaissance-Historical-Source
+path: data/derived/v019_unsw_events/NF-UNSW-NB15-v3-reconnaissance-historical-source.csv
+label_column: Attack_Family
+extra_label_columns: [Attack, Label]
+time_column: FLOW_START_MILLISECONDS
+drop_columns: [FLOW_END_MILLISECONDS]
+auto_drop_identifiers: true
+sampling:
+  max_rows: null

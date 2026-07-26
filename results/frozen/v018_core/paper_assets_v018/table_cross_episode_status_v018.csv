@@ -1,0 +1,6 @@
+episode,protocol_role,post_change_novel_percent,temporal_event_feasible,guard_seed_robustness,primary_guard_outcome,static_detector_deployed,primary_metrics_defined,adaptive_runs_executed,interpretation
+DDoS,protocol_development,63.215,True,Not assessed across seeds (protocol development),passed,True,True,True,Protocol-development episode; not included in prospective denominator.
+DoS,prospective_evaluation,26.368,True,10/10 passed,passed,True,True,True,Prospective deployment feasible; adaptation evaluated.
+Web Attacks,prospective_evaluation,0.102,True,8/10 passed,failed,False,False,False,Primary seed failed closed despite conditional passes at 8 secondary seeds.
+Bot,prospective_evaluation,3.536,True,0/10 passed,failed,False,False,False,Guard calibration infeasible at all ten model seeds.
+Infiltration,secondary_prospective_extension,1.765,False,Not attempted,temporal feasibility failure,False,False,False,Frozen 20k warm-up crossed an 85.498-hour gap exceeding the 24-hour maximum.

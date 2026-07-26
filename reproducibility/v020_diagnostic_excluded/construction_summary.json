@@ -1,0 +1,61 @@
+{
+  "record_type": "derived_provenance_summary_not_original_event_manifest",
+  "derived_on": "2026-07-25",
+  "sources": [
+    "notebooks/v020/RAIDS_NIDS_v020_Diagnostic_Executed.ipynb",
+    "results/frozen/v021_external_validation/development/runs/*/summary.json",
+    "results/frozen/v021_external_validation/evaluation/runs/*/summary.json"
+  ],
+  "protocol_id": "RAIDS-NIDS-v0.20-external-guard-amendment",
+  "amends_protocol": "RAIDS-NIDS-v0.19-external-guard-comparison",
+  "raw_dataset": "NF-UNSW-NB15-v3",
+  "raw_dataset_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "constructed_count": 2,
+  "failed_count": 1,
+  "outcomes": [
+    {
+      "family": "DoS",
+      "status": "failed_event_construction",
+      "reason": "No eligible occurrence satisfied the frozen v0.20 construction rules."
+    },
+    {
+      "family": "Exploits",
+      "status": "constructed",
+      "event_time": "2015-02-18 01:04:57.146000",
+      "source_rows": 500000,
+      "target_rows": 120000,
+      "warmup_family_counts": {
+        "Benign": 17704,
+        "Backdoor": 2296
+      },
+      "observed_onset_counts": {
+        "500": 6,
+        "5000": 139
+      },
+      "event_manifest_sha256": "455df1295b4a9fba9812a39357b1c563b3403975fb1b9f53db6c0be8e3f21627",
+      "source_sha256": "07fc806e1224df6491e24dc72618a64abb1742a0ba6ae639914758653f118861",
+      "target_sha256": "f0804b7dccb88b6cb774065b7b14e8b30e6f54cbf217041c7230499e95708d91"
+    },
+    {
+      "family": "Reconnaissance",
+      "status": "constructed",
+      "event_time": "2015-02-18 01:06:32.190000",
+      "source_rows": 500000,
+      "target_rows": 120000,
+      "warmup_family_counts": {
+        "Benign": 17724,
+        "Backdoor": 2270,
+        "Exploits": 6
+      },
+      "observed_onset_counts": {
+        "500": 6,
+        "5000": 55
+      },
+      "event_manifest_sha256": "856f165fd8cb34a0db91dfa574bda106bd55c5d7d0820a0445cb56c1a8a9ae13",
+      "source_sha256": "23a046f34ceb9e43b434f8b633d29d7d9f63c34944387fb6e62467f8ec3acedf",
+      "target_sha256": "d4157b6246db7cb254df1406c0f59c81f7b6e605ed62105b0ec196e09b70940e"
+    }
+  ],
+  "scoring_status": "invalid_diagnostic_excluded",
+  "replacement_after_outcome": "prohibited"
+}

@@ -1,0 +1,22 @@
+base_experiment: configs/experiments/pilot_cross_environment.yaml
+axes:
+  seeds:
+    - {seed: 11}
+    - {seed: 22}
+    - {seed: 33}
+    - {seed: 44}
+    - {seed: 55}
+  variants:
+    - method: {name: full_adaptive_prototype, open_set: true, replay_enabled: true, pca_components: 32}
+      adaptation: {enabled: true, trigger_mode: drift, selection: uncertainty_diversity}
+    - method: {name: ablate_unknown_gate, open_set: false, replay_enabled: true, pca_components: 32}
+      adaptation: {enabled: true, trigger_mode: drift, selection: uncertainty_diversity}
+    - method: {name: ablate_shift_gate, open_set: true, replay_enabled: true, pca_components: 32}
+      adaptation: {enabled: true, trigger_mode: periodic, periodic_interval_windows: 3, selection: uncertainty_diversity}
+    - method: {name: ablate_diversity, open_set: true, replay_enabled: true, pca_components: 32}
+      adaptation: {enabled: true, trigger_mode: drift, selection: random}
+    - method: {name: ablate_replay, open_set: true, replay_enabled: false, pca_components: 32}
+      adaptation: {enabled: true, trigger_mode: drift, selection: uncertainty_diversity}
+    - method: {name: ablate_pca, open_set: true, replay_enabled: true, pca_components: null}
+      adaptation: {enabled: true, trigger_mode: drift, selection: uncertainty_diversity}
+

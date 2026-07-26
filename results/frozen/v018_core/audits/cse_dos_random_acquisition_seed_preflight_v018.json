@@ -1,0 +1,260 @@
+{
+  "status": "completed_before_protocol_freeze",
+  "purpose": "Identify the independent random-query seed control without running or modifying any model.",
+  "model_seed_to_hold_fixed": 11,
+  "existing_query_seed": 11,
+  "new_query_seeds_proposed": [
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "budgets": [
+    50,
+    200
+  ],
+  "update_rule": "naive_replay",
+  "planned_new_runs": 18,
+  "resolved_config_paths": {
+    "50": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+    "200": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml"
+  },
+  "resolved_config_sha256": {
+    "50": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+    "200": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5"
+  },
+  "relevant_configuration_values": [
+    {
+      "configuration_path": "adaptation.candidate_multiplier",
+      "B50_value": 10,
+      "B200_value": 10,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.calibration_end_window",
+      "B50_value": 30,
+      "B200_value": 30,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.calibration_start_window",
+      "B50_value": 10,
+      "B200_value": 10,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.consecutive_windows",
+      "B50_value": 2,
+      "B200_value": 2,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.guard_end_window",
+      "B50_value": 40,
+      "B200_value": 40,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.guard_start_window",
+      "B50_value": 30,
+      "B200_value": 30,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.mad_multiplier_candidates",
+      "B50_value": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "B200_value": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.min_windows_between",
+      "B50_value": 3,
+      "B200_value": 3,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.monitoring_start_window",
+      "B50_value": 40,
+      "B200_value": 40,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.one_shot",
+      "B50_value": true,
+      "B200_value": true,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.reference_end_window",
+      "B50_value": 10,
+      "B200_value": 10,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.reference_mode",
+      "B50_value": "target_warmup",
+      "B200_value": "target_warmup",
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.reference_start_window",
+      "B50_value": 0,
+      "B200_value": 0,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.drift.unknown_rate_threshold",
+      "B50_value": 1.1,
+      "B200_value": 1.1,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.enabled",
+      "B50_value": true,
+      "B200_value": true,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.label_budget_fraction",
+      "B50_value": 0.0,
+      "B200_value": 0.0,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.label_budget_mode",
+      "B50_value": "absolute",
+      "B200_value": "absolute",
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.label_budget_total",
+      "B50_value": 50,
+      "B200_value": 200,
+      "same_value": false
+    },
+    {
+      "configuration_path": "adaptation.max_queries_per_event",
+      "B50_value": 50,
+      "B200_value": 200,
+      "same_value": false
+    },
+    {
+      "configuration_path": "adaptation.query_seed",
+      "B50_value": 11,
+      "B200_value": 11,
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.selection",
+      "B50_value": "random_nested",
+      "B200_value": "random_nested",
+      "same_value": true
+    },
+    {
+      "configuration_path": "adaptation.trigger_mode",
+      "B50_value": "drift",
+      "B200_value": "drift",
+      "same_value": true
+    },
+    {
+      "configuration_path": "metrics.normal_labels",
+      "B50_value": [
+        "Benign"
+      ],
+      "B200_value": [
+        "Benign"
+      ],
+      "same_value": true
+    },
+    {
+      "configuration_path": "scenario.holdout_labels",
+      "B50_value": [],
+      "B200_value": [],
+      "same_value": true
+    },
+    {
+      "configuration_path": "seed",
+      "B50_value": 11,
+      "B200_value": 11,
+      "same_value": true
+    }
+  ],
+  "source_code_matches": [
+    {
+      "file": "src\\raids_nids\\adaptation.py",
+      "line": 32,
+      "text": "rng = np.random.default_rng(seed)"
+    },
+    {
+      "file": "src\\raids_nids\\adaptation.py",
+      "line": 35,
+      "text": "if strategy == \"random_nested\":"
+    },
+    {
+      "file": "src\\raids_nids\\adaptation.py",
+      "line": 39,
+      "text": "if strategy != \"uncertainty_diversity\":"
+    },
+    {
+      "file": "src\\raids_nids\\aggregate.py",
+      "line": 36,
+      "text": "rng = np.random.default_rng(seed)"
+    },
+    {
+      "file": "src\\raids_nids\\cse_events.py",
+      "line": 218,
+      "text": "family: np.random.default_rng(seed + (family_to_code[family] + 1) * 100_003)"
+    },
+    {
+      "file": "src\\raids_nids\\models.py",
+      "line": 104,
+      "text": "self.rng = np.random.default_rng(seed)"
+    },
+    {
+      "file": "src\\raids_nids\\runner.py",
+      "line": 534,
+      "text": "query_seed = int(adaptation_cfg.get(\"query_seed\", seed))"
+    },
+    {
+      "file": "src\\raids_nids\\runner.py",
+      "line": 671,
+      "text": "strategy=adaptation_cfg.get(\"selection\", \"uncertainty_diversity\"),"
+    },
+    {
+      "file": "src\\raids_nids\\runner.py",
+      "line": 672,
+      "text": "seed=query_seed * 10_000 + window_index,"
+    },
+    {
+      "file": "src\\raids_nids\\runner.py",
+      "line": 865,
+      "text": "\"query_seed\": query_seed,"
+    },
+    {
+      "file": "src\\raids_nids\\runner.py",
+      "line": 867,
+      "text": "\"selection\", \"uncertainty_diversity\""
+    },
+    {
+      "file": "src\\raids_nids\\synthetic.py",
+      "line": 29,
+      "text": "rng = np.random.default_rng(seed)"
+    }
+  ],
+  "existing_outputs_before_freeze": 0
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "input_panel_sha256": "e579dcc9aa841d373e321c4a4e6e5eb371d6be4fa4cd1d7bd9c3fc6399251223",
+  "input_statistics_sha256": "dba693b0dd3f3d316c023270ddae33b628be72187aedcdce410616340aa39489",
+  "update_rule_query_pairing_verified": true,
+  "query_sets": 40,
+  "marginal_seed_conditions": 40,
+  "assets": {
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_performance_all10_v018.csv": "99eb1c690f2ec3fef7c239853f921ff14a1d2229db4394cdb6c442d584690c00",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_query_sets_all10_v018.csv": "0f2063a29f0f743db6a07aed6f44df0062edcb226b8ca5b0b976d6c3aa80bf16",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_query_summary_all10_v018.csv": "12dc1ca029d7b5e3c299c2f353163fb92420fb7943b34bba9c7d80e64bf7cc63",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_key_contrasts_all10_v018.csv": "4dffead0ee168d8e44f603e9f0cf89632411aaf4832f5f041be7aa2b9191dd57",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_selection_budget_interaction_v018.png": "e961a731428ba06f9c94ab67c9b116ed4592dd311c0f2a621eb562bc5486a7da",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_selection_budget_interaction_v018.pdf": "45368d4d24e34cdfbf8854b1bdd23be2ed2bb7b614ef9b70b1d0dd5023f31c4f",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_selection_budget_interaction_v018.svg": "2a51b89ed2317e841e92212d7c657efd5e5d988030fafcf5778f37d404bbc33b",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_query_yield_v018.png": "106e13153bb324f70ee14c6dbf00f23a8a01197ab7686c7804aa1f531c6aa96a",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_query_yield_v018.pdf": "25bf7d227d0624fbbda4aadb8ed1f6cbd3927dbe8b1ff9282573db61eee9312b",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_query_yield_v018.svg": "350de5e0a1d48f2b5b2e0f6922356c352382a6ed02b6e1e4c994ce5627c746fa"
+  }
+}

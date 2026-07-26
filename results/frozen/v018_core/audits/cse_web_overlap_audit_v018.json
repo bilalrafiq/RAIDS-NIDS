@@ -1,0 +1,181 @@
+{
+  "cross_dataset_overlap": {
+    "cross_label_conflicting_vectors": 10,
+    "shared_unique_feature_vectors": 1823,
+    "source_rows_in_cross_conflicts": 81,
+    "source_rows_with_target_match": 5424,
+    "target_cross_conflict_percent": 0.03333333333333333,
+    "target_match_percent": 3.2783333333333333,
+    "target_rows_in_cross_conflicts": 40,
+    "target_rows_with_source_match": 3934
+  },
+  "duplicate_summary": [
+    {
+      "conflicting_feature_groups": 3470,
+      "dataset": "source",
+      "duplicate_excess_percent": 4.7956,
+      "duplicate_excess_rows": 23978,
+      "rows": 500000,
+      "rows_in_conflicting_groups": 10390,
+      "unique_feature_vectors": 476022
+    },
+    {
+      "conflicting_feature_groups": 2,
+      "dataset": "target",
+      "duplicate_excess_percent": 4.765833333333333,
+      "duplicate_excess_rows": 5719,
+      "rows": 120000,
+      "rows_in_conflicting_groups": 9,
+      "unique_feature_vectors": 114281
+    }
+  ],
+  "event": "Web Attacks",
+  "feature_count": 47,
+  "fingerprint_note": "Feature-vector grouping uses deterministic 64-bit pandas fingerprints.",
+  "frozen_features": [
+    "L4_SRC_PORT",
+    "L4_DST_PORT",
+    "PROTOCOL",
+    "L7_PROTO",
+    "IN_BYTES",
+    "IN_PKTS",
+    "OUT_BYTES",
+    "OUT_PKTS",
+    "TCP_FLAGS",
+    "CLIENT_TCP_FLAGS",
+    "SERVER_TCP_FLAGS",
+    "FLOW_DURATION_MILLISECONDS",
+    "DURATION_IN",
+    "DURATION_OUT",
+    "MIN_TTL",
+    "MAX_TTL",
+    "LONGEST_FLOW_PKT",
+    "SHORTEST_FLOW_PKT",
+    "MIN_IP_PKT_LEN",
+    "MAX_IP_PKT_LEN",
+    "SRC_TO_DST_SECOND_BYTES",
+    "DST_TO_SRC_SECOND_BYTES",
+    "RETRANSMITTED_IN_BYTES",
+    "RETRANSMITTED_IN_PKTS",
+    "RETRANSMITTED_OUT_BYTES",
+    "RETRANSMITTED_OUT_PKTS",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "NUM_PKTS_UP_TO_128_BYTES",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "ICMP_TYPE",
+    "ICMP_IPV4_TYPE",
+    "DNS_QUERY_TYPE",
+    "DNS_TTL_ANSWER",
+    "SRC_TO_DST_IAT_MIN",
+    "SRC_TO_DST_IAT_MAX",
+    "SRC_TO_DST_IAT_AVG",
+    "SRC_TO_DST_IAT_STDDEV",
+    "DST_TO_SRC_IAT_MIN",
+    "DST_TO_SRC_IAT_MAX",
+    "DST_TO_SRC_IAT_AVG",
+    "DST_TO_SRC_IAT_STDDEV"
+  ],
+  "post_change_raw_distribution": [
+    {
+      "Attack": "Benign",
+      "Attack_Family": "Benign",
+      "Count": 99898
+    },
+    {
+      "Attack": "Brute_Force_-Web",
+      "Attack_Family": "Web Attacks",
+      "Count": 81
+    },
+    {
+      "Attack": "Brute_Force_-XSS",
+      "Attack_Family": "Web Attacks",
+      "Count": 21
+    }
+  ],
+  "source_cross_conflicts_by_class": {
+    "Benign": 81
+  },
+  "source_raw_distribution": [
+    {
+      "Attack": "Benign",
+      "Attack_Family": "Benign",
+      "Count": 390275
+    },
+    {
+      "Attack": "DDOS_attack-HOIC",
+      "Attack_Family": "DDoS",
+      "Count": 51236
+    },
+    {
+      "Attack": "FTP-BruteForce",
+      "Attack_Family": "BruteForce",
+      "Count": 19374
+    },
+    {
+      "Attack": "DDoS_attacks-LOIC-HTTP",
+      "Attack_Family": "DDoS",
+      "Count": 14189
+    },
+    {
+      "Attack": "SSH-Bruteforce",
+      "Attack_Family": "BruteForce",
+      "Count": 9384
+    },
+    {
+      "Attack": "DoS_attacks-SlowHTTPTest",
+      "Attack_Family": "DoS",
+      "Count": 5285
+    },
+    {
+      "Attack": "DoS_attacks-Hulk",
+      "Attack_Family": "DoS",
+      "Count": 5125
+    },
+    {
+      "Attack": "DoS_attacks-GoldenEye",
+      "Attack_Family": "DoS",
+      "Count": 3184
+    },
+    {
+      "Attack": "DoS_attacks-Slowloris",
+      "Attack_Family": "DoS",
+      "Count": 1778
+    },
+    {
+      "Attack": "DDOS_attack-LOIC-UDP",
+      "Attack_Family": "DDoS",
+      "Count": 170
+    }
+  ],
+  "target_cross_conflicts_by_class": {
+    "Benign": 2,
+    "Web Attacks": 38
+  },
+  "target_matched_rows_by_class": {
+    "Benign": 3896,
+    "Web Attacks": 38
+  },
+  "target_raw_distribution": [
+    {
+      "Attack": "Benign",
+      "Attack_Family": "Benign",
+      "Count": 119898
+    },
+    {
+      "Attack": "Brute_Force_-Web",
+      "Attack_Family": "Web Attacks",
+      "Count": 81
+    },
+    {
+      "Attack": "Brute_Force_-XSS",
+      "Attack_Family": "Web Attacks",
+      "Count": 21
+    }
+  ]
+}

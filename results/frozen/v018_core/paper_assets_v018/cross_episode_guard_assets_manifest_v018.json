@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "primary_seed": 11,
+  "guard_seed_count": 10,
+  "prospective_episodes": [
+    "DoS",
+    "Web Attacks",
+    "Bot"
+  ],
+  "pass_counts": {
+    "Bot": 0,
+    "DoS": 10,
+    "Web Attacks": 8
+  },
+  "primary_prospective_deployment_rate": "1/3",
+  "detailed_assets": {
+    "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_guard_seed_robustness_all10_v018.csv": "7b8576e6880efb57763fa2f7ac85ef3cf50faa196c0500060392b6063e4e113f",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_guard_feasibility_all10_v018.csv": "8f66e0afa2f8067dc58d58fbf4152327793933f48b72c5a25faa22165f64aabb",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_cross_episode_status_v018.csv": "676f889161f1e02df93ad09e2ce9ef3f3f88a5e82b7eb2b20e549549778605c6",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_cross_episode_guard_feasibility_v018.png": "4d8d5d72f4181cb0409909bf7269d1b30311ba9ab4eb468f44c10b251323f9b0",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_cross_episode_guard_feasibility_v018.pdf": "76f24238e0b74efc18af366b8782c78067afca5b4848c458f8309e1b7a333fb2",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_cross_episode_guard_feasibility_v018.svg": "b646388ee02a54b52f23fdc6c88d9e2e372948b689d8cc3af44e047a2b593db7"
+  },
+  "interpretation_scope": "Model-seed guard robustness. Seeds are computational replicates, not independent deployment episodes."
+}

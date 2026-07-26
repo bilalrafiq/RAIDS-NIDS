@@ -1,0 +1,26 @@
+{
+  "cache_sha256": "215b2ea90aa5183c3cd99a20ba5d24c25d1dbe35ebe0f1775ab2889b245f240a",
+  "dataset": "NF-UNSW-NB15-v3",
+  "family_counts": {
+    "Analysis": 1226,
+    "Backdoor": 4659,
+    "Benign": 2237731,
+    "DoS": 5980,
+    "Exploits": 42748,
+    "Fuzzers": 33816,
+    "Generic": 19651,
+    "Reconnaissance": 17074,
+    "Shellcode": 2381,
+    "Worms": 158
+  },
+  "first_timestamp": "2015-01-22 11:49:36.907000",
+  "label_column": "Attack",
+  "last_timestamp": "2015-02-18 12:29:24.927000",
+  "ordering": "FLOW_START_MILLISECONDS then original zero-based row index",
+  "output_cache": "data\\derived\\v019_unsw_temporal.npz",
+  "rows": 2365424,
+  "source_csv": "data\\raw\\NF-UNSW-NB15-v3.csv",
+  "source_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "time_order_violations_in_raw_order": 335443,
+  "timestamp_column": "FLOW_START_MILLISECONDS"
+}

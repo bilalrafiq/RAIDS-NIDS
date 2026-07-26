@@ -1,0 +1,223 @@
+{
+  "freeze_timestamp_utc": "2026-07-20T04:07:21.118737+00:00",
+  "protocol_sha256": "77f26a7f2196993e5f866e7f8cf497e6d9d99df577b6a795a645d95bdddb62f9",
+  "protocol": {
+    "episode": "Infiltration",
+    "dataset": "NF-CICIDS2018-v3",
+    "protocol_role": "secondary_prospective_extension",
+    "included_in_primary_prospective_denominator": false,
+    "primary_prospective_result_remains": {
+      "deployment_passes": 1,
+      "episode_count": 3,
+      "descriptive_percent": 33.333333333333336
+    },
+    "selection_timing": "specified after the primary prospective cohort and before any Infiltration model outcome",
+    "dataset_feasibility_metadata_accessed_before_freeze": true,
+    "model_outcomes_accessed_before_freeze": false,
+    "package_version": "0.1.8",
+    "frozen_reference": {
+      "path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b"
+    },
+    "event_definition": {
+      "emerging_family": "Infiltration",
+      "first_sorted_position": 14113912,
+      "first_seen": "2018-02-28T12:22:05.767000",
+      "source_excludes_emerging_family": true,
+      "change_row_is_first_emerging_occurrence": true,
+      "known_attack_families_before_event": [
+        "BruteForce",
+        "DoS",
+        "DDoS",
+        "Web Attacks"
+      ],
+      "post_change_attack_families": [
+        "Infiltration"
+      ],
+      "feasibility_novel_rows_first_100k": 1765,
+      "feasibility_novel_percent_first_100k": 1.765
+    },
+    "episode_geometry": {
+      "source_rows": 500000,
+      "target_rows": 120000,
+      "benign_warmup_rows": 20000,
+      "post_change_rows": 100000,
+      "stream_window_size": 500,
+      "true_change_window": 40,
+      "evaluation_window_size": 5000,
+      "true_change_evaluation_window": 4
+    },
+    "source_sampling": {
+      "method": "historical_class_aware_reservoir",
+      "seed": 11,
+      "minimum_rows_per_available_class": 500,
+      "source_must_precede_event": true,
+      "remove_exact_duplicates_before_model_split": true
+    },
+    "feature_contract": {
+      "expected_common_features": 47,
+      "identifiers_excluded": [
+        "IPV4_SRC_ADDR",
+        "IPV4_DST_ADDR"
+      ],
+      "timestamps_excluded_from_model": true,
+      "labels_excluded_from_model": true,
+      "preprocessing_fit_on_source_only": true
+    },
+    "guard_contract": {
+      "reference_windows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "calibration_windows": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "guard_windows": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "monitoring_start_window": 40,
+      "mad_multiplier_candidates": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "candidate_selection": "smallest multiplier producing zero persistent guard triggers",
+      "consecutive_windows": 2,
+      "one_shot": true,
+      "labels_used_for_calibration": false,
+      "labels_used_for_guard_selection": false,
+      "failure_policy": "fail closed with undefined primary metrics and no adaptive experiments",
+      "post_failure_threshold_modification_allowed": false
+    },
+    "conditional_adaptation_contract": {
+      "authorized_only_if_guard_passes": true,
+      "event_label_budgets": [
+        50,
+        200
+      ],
+      "selection_strategies": [
+        "uncertainty_diversity",
+        "random_nested"
+      ],
+      "update_rules": [
+        "naive_replay",
+        "source_anchored"
+      ],
+      "nested_query_sets": true,
+      "predictions_scored_before_updates": true
+    },
+    "metric_contract": {
+      "primary_trajectory": "acquisition_macro_f1",
+      "primary_summary": "primary_normalized_recovery_area",
+      "novel_detection": [
+        "novel_exact_recall",
+        "novel_rejection_rate",
+        "novel_harmful_acceptance_rate"
+      ],
+      "known_class_metric": "known_macro_f1",
+      "failed_guard_metrics": null
+    },
+    "seed_contract": {
+      "primary_seed": 11,
+      "planned_robustness_seeds": [
+        11,
+        23,
+        37,
+        53,
+        71,
+        83,
+        97,
+        109,
+        127,
+        149
+      ],
+      "robustness_analysis_is_secondary": true
+    },
+    "inherited_frozen_sections": {
+      "stream": {
+        "mode": "chronological",
+        "window_size": 500,
+        "true_change_window": 40
+      },
+      "adaptation": {
+        "enabled": false,
+        "trigger_mode": "drift",
+        "label_budget_mode": "absolute",
+        "label_budget_total": 0,
+        "max_queries_per_event": 0,
+        "query_seed": 11,
+        "drift": {
+          "reference_mode": "target_warmup",
+          "reference_start_window": 0,
+          "reference_end_window": 10,
+          "calibration_start_window": 10,
+          "calibration_end_window": 30,
+          "monitoring_start_window": 40,
+          "consecutive_windows": 2,
+          "min_windows_between": 3,
+          "one_shot": true,
+          "unknown_rate_threshold": 1.1,
+          "guard_start_window": 30,
+          "guard_end_window": 40,
+          "mad_multiplier_candidates": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "metrics": {
+        "primary_trajectory_metric": "acquisition_macro_f1",
+        "evaluation_window_size": 5000,
+        "recovery_fraction": 0.95,
+        "recovery_patience_windows": 2,
+        "recovery_patience_evaluation_blocks": 3,
+        "normal_labels": [
+          "Benign"
+        ],
+        "minimum_evaluation_known_classes": 1,
+        "minimum_evaluation_rows_per_known_class": 0,
+        "minimum_evaluation_non_normal_rows": 1,
+        "global_metric_max_rows": 2000000
+      }
+    }
+  }
+}

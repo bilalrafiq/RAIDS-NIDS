@@ -1,0 +1,80 @@
+{
+  "ambiguity_summary": {
+    "Bot_rows": 3536,
+    "combined_Bot_ambiguity_percent": 0.0,
+    "combined_unambiguous_Bot_rows": 3536,
+    "combined_unique_ambiguous_Bot_rows": 0,
+    "conditional_feature_consistent_recall_ceiling": 1.0,
+    "source_cross_ambiguous_Bot_rows": 0,
+    "target_internal_ambiguous_Bot_rows": 0
+  },
+  "audit_performed_before_static_run": true,
+  "cross_overlap": {
+    "cross_label_conflicting_vectors": 26,
+    "shared_unique_feature_vectors": 2843,
+    "source_rows_in_cross_conflicts": 1193,
+    "source_rows_with_target_match": 7150,
+    "target_cross_conflict_percent": 0.21916666666666668,
+    "target_match_percent": 3.5866666666666664,
+    "target_rows_in_cross_conflicts": 263,
+    "target_rows_with_source_match": 4304
+  },
+  "duplicate_summary": [
+    {
+      "conflicting_feature_groups": 1515,
+      "dataset": "source",
+      "duplicate_excess_percent": 3.4066,
+      "duplicate_excess_rows": 17033,
+      "rows": 500000,
+      "rows_in_conflicting_groups": 5118,
+      "unique_feature_vectors": 482967
+    },
+    {
+      "conflicting_feature_groups": 0,
+      "dataset": "target",
+      "duplicate_excess_percent": 4.273333333333333,
+      "duplicate_excess_rows": 5128,
+      "rows": 120000,
+      "rows_in_conflicting_groups": 0,
+      "unique_feature_vectors": 114872
+    }
+  ],
+  "event": "Bot",
+  "exact_cross_conflicts_verified": true,
+  "feature_count": 47,
+  "protocol_changed_due_to_audit": false,
+  "raw_post_change_distribution": [
+    {
+      "Attack": "Benign",
+      "Attack_Family": "Benign",
+      "Count": 96464
+    },
+    {
+      "Attack": "Bot",
+      "Attack_Family": "Bot",
+      "Count": 3536
+    }
+  ],
+  "raw_target_distribution": [
+    {
+      "Attack": "Benign",
+      "Attack_Family": "Benign",
+      "Count": 116464
+    },
+    {
+      "Attack": "Bot",
+      "Attack_Family": "Bot",
+      "Count": 3536
+    }
+  ],
+  "supporting_files": {
+    "exact_conflicts": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_bot_exact_conflict_groups_v018.csv",
+    "temporal_gap_audit": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_bot_temporal_gap_audit_v018.json"
+  },
+  "target_cross_conflict_rows_by_class": {
+    "Benign": 263
+  },
+  "target_matched_rows_by_class": {
+    "Benign": 4304
+  }
+}

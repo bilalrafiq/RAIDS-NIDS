@@ -1,0 +1,117 @@
+{
+  "event": "Bot",
+  "largest_gaps": [
+    {
+      "current_row": 43554,
+      "current_time": "2018-03-02 14:22:28.328000",
+      "evaluation_block": 8,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 9.472222222222222e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:22:27.987000",
+      "stream_window": 87
+    },
+    {
+      "current_row": 54069,
+      "current_time": "2018-03-02 14:25:23.710000",
+      "evaluation_block": 10,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 8.444444444444444e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:25:23.406000",
+      "stream_window": 108
+    },
+    {
+      "current_row": 76232,
+      "current_time": "2018-03-02 14:30:46.050000",
+      "evaluation_block": 15,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 8.166666666666667e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:30:45.756000",
+      "stream_window": 152
+    },
+    {
+      "current_row": 33547,
+      "current_time": "2018-03-02 14:20:19.939000",
+      "evaluation_block": 6,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.888888888888888e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:20:19.655000",
+      "stream_window": 67
+    },
+    {
+      "current_row": 721,
+      "current_time": "2018-03-02 14:11:30.471000",
+      "evaluation_block": 0,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.777777777777778e-05,
+      "phase": "reference",
+      "previous_time": "2018-03-02 14:11:30.191000",
+      "stream_window": 1
+    },
+    {
+      "current_row": 5458,
+      "current_time": "2018-03-02 14:12:56.607000",
+      "evaluation_block": 1,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.63888888888889e-05,
+      "phase": "calibration",
+      "previous_time": "2018-03-02 14:12:56.332000",
+      "stream_window": 10
+    },
+    {
+      "current_row": 5488,
+      "current_time": "2018-03-02 14:12:57.585000",
+      "evaluation_block": 1,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.527777777777779e-05,
+      "phase": "calibration",
+      "previous_time": "2018-03-02 14:12:57.314000",
+      "stream_window": 10
+    },
+    {
+      "current_row": 33953,
+      "current_time": "2018-03-02 14:20:27.945000",
+      "evaluation_block": 6,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.472222222222223e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:20:27.676000",
+      "stream_window": 67
+    },
+    {
+      "current_row": 34871,
+      "current_time": "2018-03-02 14:20:49.487000",
+      "evaluation_block": 6,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.38888888888889e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:20:49.221000",
+      "stream_window": 69
+    },
+    {
+      "current_row": 42923,
+      "current_time": "2018-03-02 14:22:18.254000",
+      "evaluation_block": 8,
+      "family_after": "Benign",
+      "family_before": "Benign",
+      "gap_hours": 7.361111111111111e-05,
+      "phase": "post_change",
+      "previous_time": "2018-03-02 14:22:17.989000",
+      "stream_window": 85
+    }
+  ],
+  "maximum_gap_hours": 9.472222222222222e-05,
+  "protocol_changed_due_to_gap": false
+}

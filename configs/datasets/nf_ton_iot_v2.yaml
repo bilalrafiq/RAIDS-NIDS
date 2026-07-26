@@ -1,0 +1,13 @@
+# Verify the release filename and schema before use; this starter never downloads data implicitly.
+name: NF-ToN-IoT-v2
+path: data/raw/NF-ToN-IoT-v2.csv
+label_column: Attack
+extra_label_columns: [Label]
+time_column: null
+drop_columns: []
+auto_drop_identifiers: true
+sampling:
+  max_rows: 500000
+  mode: stratified
+  seed: 11
+

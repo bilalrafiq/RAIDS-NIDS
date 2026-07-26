@@ -1,0 +1,60 @@
+{
+  "condition": "ud_naive_B200",
+  "condition_code": "UN200",
+  "seed": 149,
+  "run_name": "R19_DoS_s149_UN200",
+  "method": "cse_dos_ud_naive_replay_B200",
+  "selection_strategy": "uncertainty_diversity",
+  "update_rule": "naive_replay",
+  "budget": 200,
+  "protocol_sha256": "b5a3239fc1be785d663100e282c97ef720aed4d8a0582a41cc1f9aa2241b23ed",
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed149_v018.yaml",
+  "config_sha256": "318f14d11b024a2252b8a6dae3581fd879d4bf94c12fae6e22d343914291149e",
+  "summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\R19_DoS_s149_UN200__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed149\\summary.json",
+  "summary_sha256": "6a17f06f65d167d4445729deda6ebac31b7e9b28fdd5181ac56b982819643cb7",
+  "run_source": "new_execution",
+  "labels_queried": 200,
+  "queried_label_totals": {
+    "DoS": 172,
+    "Benign": 28
+  },
+  "query_hash": "ce67f256d43da994704021809bd2fcdc4ccaeb4a0879aba5fd448b6ae915c6e8",
+  "query_hash_candidates": {
+    "query_selection_sha256": "ce67f256d43da994704021809bd2fcdc4ccaeb4a0879aba5fd448b6ae915c6e8"
+  },
+  "selected_mad_multiplier": 3.0,
+  "drift_trigger_windows": [
+    41
+  ],
+  "trigger_delay_windows": 1,
+  "update_windows": [
+    41
+  ],
+  "global_known_macro_f1": 0.8441564052711169,
+  "global_novel_auprc": 0.14489184822179652,
+  "global_novel_auroc": 0.13459996543805144,
+  "global_novel_exact_recall": 0.840526395631068,
+  "global_novel_rejection_rate": 0.04080703883495146,
+  "global_novel_harmful_acceptance_rate": 0.11866656553398058,
+  "global_acquisition_macro_f1": 0.7999367326320312,
+  "evaluation_mean_acquisition_macro_f1": 0.8106929400176129,
+  "primary_normalized_recovery_area": 0.8712924864290753,
+  "safety_normalized_recovery_area": 0.9020182320647897,
+  "recovery_time_evaluation_blocks": 1,
+  "mean_source_forgetting": 0.02200109657236178,
+  "fit_seconds": 2.270962899958249,
+  "prediction_seconds": 1.0319065996445715,
+  "update_seconds": 0.005151100049261004,
+  "integrity_checks": {
+    "initial_model_saw_novel_target_class_names": false,
+    "label_budget_respected": true,
+    "query_row_count_matches_labels_queried": true,
+    "queried_target_rows_are_unique": true,
+    "predictions_scored_before_updates": true,
+    "preprocessing_fit_on_source_only": true,
+    "evaluation_uses_pre_update_predictions": true,
+    "drift_calibration_excludes_target_labels": true,
+    "drift_guard_selection_excludes_target_labels": true,
+    "change_boundary_aligned_to_evaluation_blocks": true
+  }
+}

@@ -1,0 +1,5 @@
+selection_strategy,budget,seeds,DoS_queried_mean,DoS_queried_SD,DoS_queried_min,DoS_queried_max,DoS_percent_mean,DoS_percent_SD,DoS_percent_min,DoS_percent_max
+random_nested,50,10,49.0,0.0,49,49,98.0,0.0,98.0,98.0
+random_nested,200,10,188.0,0.0,188,188,94.0,0.0,94.0,94.0
+uncertainty_diversity,50,10,23.0,0.0,23,23,46.0,0.0,46.0,46.0
+uncertainty_diversity,200,10,172.0,0.0,172,172,86.0,0.0,86.0,86.0

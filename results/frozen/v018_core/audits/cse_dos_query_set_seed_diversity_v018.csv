@@ -1,0 +1,5 @@
+selection_strategy,budget,seeds,distinct_runner_hashes,distinct_ordered_vectors,distinct_unordered_sets,all_query_sets_identical,pairwise_overlap_mean,pairwise_overlap_min,pairwise_overlap_max,pairwise_Jaccard_mean,pairwise_Jaccard_min,pairwise_Jaccard_max,DoS_count_distinct_values,interpretation
+random_nested,50,10,1,1,1,True,50.0,50,50,1.0,1.0,1.0,1,fixed_query_set_across_model_seeds
+random_nested,200,10,1,1,1,True,200.0,200,200,1.0,1.0,1.0,1,fixed_query_set_across_model_seeds
+uncertainty_diversity,50,10,10,10,10,False,40.644444444444446,35,49,0.6902635362188787,0.5384615384615384,0.9607843137254902,1,query_set_varied_for_every_seed
+uncertainty_diversity,200,10,10,10,10,False,126.37777777777778,94,171,0.4699924378737646,0.30718954248366015,0.7467248908296943,1,query_set_varied_for_every_seed

@@ -1,0 +1,164 @@
+{
+  "freeze_timestamp_utc": "2026-07-20T06:49:32.889403+00:00",
+  "protocol_sha256": "b5a3239fc1be785d663100e282c97ef720aed4d8a0582a41cc1f9aa2241b23ed",
+  "protocol": {
+    "analysis_name": "CSE DoS adaptive seed robustness",
+    "analysis_role": "secondary_complete_factorial_sensitivity",
+    "specified_after_primary_seed_results": true,
+    "new_seed_adaptive_outcomes_accessed_before_freeze": false,
+    "complete_factorial_used_instead_of_selecting_winners": true,
+    "package_version": "0.1.8",
+    "episode": "DoS",
+    "episode_role": "primary-seed deployment-feasible episode",
+    "authoritative_primary_seed": 11,
+    "new_seeds": [
+      23,
+      37,
+      53,
+      71,
+      83,
+      97,
+      109,
+      127,
+      149
+    ],
+    "conditions": {
+      "random_naive_B050": {
+        "method": "cse_dos_random_naive_replay_B050",
+        "selection_strategy": "random_nested",
+        "update_rule": "naive_replay",
+        "budget": 50,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\summary.json",
+        "seed11_summary_sha256": "3ca666742c862daa1f7113a3cd1e255ae7c145646b37fdb68130872bb995adb8"
+      },
+      "random_anchored_B050": {
+        "method": "cse_dos_random_source_anchored_B050",
+        "selection_strategy": "random_nested",
+        "update_rule": "source_anchored",
+        "budget": 50,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\summary.json",
+        "seed11_summary_sha256": "00d203766b025ce58741b9c6d5d44ffc59fa0be31d035ddccf67438f001fad0b"
+      },
+      "ud_naive_B050": {
+        "method": "cse_dos_ud_naive_replay_B050",
+        "selection_strategy": "uncertainty_diversity",
+        "update_rule": "naive_replay",
+        "budget": 50,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\summary.json",
+        "seed11_summary_sha256": "91a647ce643bd4c1561d62c3bc431ce8499ece2084d6e9e383a7453a58df69af"
+      },
+      "ud_anchored_B050": {
+        "method": "cse_dos_ud_source_anchored_B050",
+        "selection_strategy": "uncertainty_diversity",
+        "update_rule": "source_anchored",
+        "budget": 50,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\summary.json",
+        "seed11_summary_sha256": "585a5e22c131fd0c3a1ff815bdbbe80936b62f39df4f3b255acd07171ffd5da4"
+      },
+      "random_naive_B200": {
+        "method": "cse_dos_random_naive_replay_B200",
+        "selection_strategy": "random_nested",
+        "update_rule": "naive_replay",
+        "budget": 200,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\summary.json",
+        "seed11_summary_sha256": "d4d09126e6b53dbbcf2240263336500651b2a2ecfc935841171f9769faf87c48"
+      },
+      "random_anchored_B200": {
+        "method": "cse_dos_random_source_anchored_B200",
+        "selection_strategy": "random_nested",
+        "update_rule": "source_anchored",
+        "budget": 200,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\summary.json",
+        "seed11_summary_sha256": "30a3c254bdf1135e1d880260d48cf3b916a434587a6d8268dddec14237db5619"
+      },
+      "ud_naive_B200": {
+        "method": "cse_dos_ud_naive_replay_B200",
+        "selection_strategy": "uncertainty_diversity",
+        "update_rule": "naive_replay",
+        "budget": 200,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\summary.json",
+        "seed11_summary_sha256": "bbca1ece4ec362c313074fedb6e2546b5928b19b733176c501adce88b220dd5b"
+      },
+      "ud_anchored_B200": {
+        "method": "cse_dos_ud_source_anchored_B200",
+        "selection_strategy": "uncertainty_diversity",
+        "update_rule": "source_anchored",
+        "budget": 200,
+        "resolved_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+        "resolved_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+        "seed11_summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\summary.json",
+        "seed11_summary_sha256": "fc61e32902ab55aaadd3685e4717e7423a01045dc72f30e0039cf459177f339e"
+      }
+    },
+    "factorial_design": {
+      "selection_strategies": [
+        "random_nested",
+        "uncertainty_diversity"
+      ],
+      "update_rules": [
+        "naive_replay",
+        "source_anchored"
+      ],
+      "budgets": [
+        50,
+        200
+      ],
+      "conditions_per_seed": 8,
+      "new_seed_count": 9,
+      "total_new_runs": 72
+    },
+    "execution_contract": {
+      "only_seed_and_run_name_may_change": true,
+      "guard_protocol_may_change": false,
+      "query_strategy_may_change": false,
+      "update_rule_may_change": false,
+      "budget_may_change": false,
+      "predictions_scored_before_updates": true,
+      "adaptive_runs_for_web_or_bot": false
+    },
+    "query_integrity_contract": {
+      "B50_subset_of_B200": true,
+      "same_query_set_across_update_rules": true,
+      "query_rows_unique": true,
+      "query_hashes_audited": true,
+      "labels_queried_equal_budget": true
+    },
+    "planned_metrics": [
+      "global_acquisition_macro_f1",
+      "primary_normalized_recovery_area",
+      "global_novel_exact_recall",
+      "global_novel_harmful_acceptance_rate",
+      "global_known_macro_f1",
+      "mean_source_forgetting"
+    ],
+    "planned_paired_comparisons": {
+      "selection_strategy": "random minus uncertainty_diversity, within update rule and budget",
+      "update_rule": "source_anchored minus naive_replay, within selection strategy and budget",
+      "budget": "B200 minus B50, within selection strategy and update rule"
+    },
+    "statistical_contract": {
+      "unit": "paired algorithmic seed",
+      "report_mean_and_median_difference": true,
+      "bootstrap_confidence_interval": true,
+      "wilcoxon_signed_rank": true,
+      "holm_correction_within_metric_family": true,
+      "empirical_harm_probability": true,
+      "seeds_not_interpreted_as_independent_datasets": true
+    },
+    "stopping_rule": "These 72 runs are the final substantive model experiments."
+  }
+}

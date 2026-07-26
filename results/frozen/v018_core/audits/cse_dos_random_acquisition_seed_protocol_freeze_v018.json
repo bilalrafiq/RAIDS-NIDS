@@ -1,0 +1,80 @@
+{
+  "protocol_version": "1.0-secondary-random-acquisition-seed-sensitivity",
+  "analysis_role": "secondary_sensitivity_analysis",
+  "motivation": "The primary model-seed robustness audit showed that random_nested used one fixed prespecified query set. This secondary analysis isolates variability from random acquisition seeds.",
+  "existing_model_outcomes_before_freeze": 0,
+  "model_seed_fixed": 11,
+  "query_seeds_all": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "query_seed_existing": 11,
+  "query_seeds_new": [
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "selection_strategy": "random_nested",
+  "update_rule": "naive_replay",
+  "budgets": [
+    50,
+    200
+  ],
+  "new_run_count": 18,
+  "total_query_seed_replicates_after_run": 10,
+  "base_config_paths": {
+    "50": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+    "200": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml"
+  },
+  "base_config_sha256": {
+    "50": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+    "200": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5"
+  },
+  "permitted_configuration_changes": [
+    "name",
+    "adaptation.query_seed"
+  ],
+  "fixed_components": [
+    "dataset and event geometry",
+    "source and target rows",
+    "feature set and preprocessing",
+    "model seed",
+    "drift calibration protocol",
+    "trigger and update rule",
+    "candidate pool",
+    "metric contract",
+    "evaluation trajectory"
+  ],
+  "nested_budget_requirement": "For each query seed, the B50 query set must be a subset of B200.",
+  "primary_endpoint": "primary_normalized_recovery_area",
+  "secondary_endpoints": [
+    "global_acquisition_macro_f1",
+    "global_novel_exact_recall",
+    "mean_source_forgetting",
+    "queried_novel_count",
+    "queried_novel_percent"
+  ],
+  "planned_analysis": [
+    "Report mean, SD, range, and 95% bootstrap interval across 10 query seeds.",
+    "Compare every adaptive result with the fixed seed-11 static baseline.",
+    "Report empirical frequency of recovery area less than or equal to static.",
+    "Estimate paired B200-minus-B50 effects within acquisition seed.",
+    "Audit query hashes, class yields, uniqueness, and B50 subset B200."
+  ],
+  "interpretation_scope": "Conditional acquisition-seed sensitivity for model seed 11; not independent dataset or deployment replication.",
+  "stopping_rule": "Run every frozen configuration exactly once; do not add or remove query seeds based on observed outcomes."
+}

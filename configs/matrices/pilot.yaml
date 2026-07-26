@@ -1,0 +1,73 @@
+base_experiment: configs/experiments/smoke_adaptive.yaml
+runs:
+  - set:
+      name: E00_matrix
+      seed: 11
+      method:
+        name: logistic_open_set
+        type: logistic
+        open_set: true
+        rejection_quantile: 0.95
+      adaptation:
+        enabled: false
+        label_budget_fraction: 0.0
+  - set:
+      name: E00_matrix
+      seed: 11
+      method:
+        name: prototype_static
+        type: prototype
+        pca_components: 12
+        rejection_quantile: 0.95
+        memory_per_class: 300
+      adaptation:
+        enabled: false
+        label_budget_fraction: 0.0
+  - set:
+      name: E00_matrix
+      seed: 11
+      method:
+        name: adaptive_prototype_1pct
+        type: prototype
+        pca_components: 12
+        rejection_quantile: 0.95
+        memory_per_class: 300
+      adaptation:
+        enabled: true
+        label_budget_fraction: 0.01
+  - set:
+      name: E00_matrix
+      seed: 22
+      method:
+        name: logistic_open_set
+        type: logistic
+        open_set: true
+        rejection_quantile: 0.95
+      adaptation:
+        enabled: false
+        label_budget_fraction: 0.0
+  - set:
+      name: E00_matrix
+      seed: 22
+      method:
+        name: prototype_static
+        type: prototype
+        pca_components: 12
+        rejection_quantile: 0.95
+        memory_per_class: 300
+      adaptation:
+        enabled: false
+        label_budget_fraction: 0.0
+  - set:
+      name: E00_matrix
+      seed: 22
+      method:
+        name: adaptive_prototype_1pct
+        type: prototype
+        pca_components: 12
+        rejection_quantile: 0.95
+        memory_per_class: 300
+      adaptation:
+        enabled: true
+        label_budget_fraction: 0.01
+

@@ -1,0 +1,146 @@
+{
+  "adaptation_enabled": true,
+  "common_feature_count": 48,
+  "drift_calibration": {
+    "calibration_end_window": 30,
+    "calibration_median": 0.06658449237060762,
+    "calibration_raw_mad": 0.010700847751783142,
+    "calibration_scaled_mad": 0.015865076876793685,
+    "calibration_start_window": 10,
+    "calibration_window_count": 20,
+    "consecutive_windows": 2,
+    "mad_multiplier": 3.0,
+    "mean_shift_threshold": 0.11417972300098868,
+    "monitoring_start_window": 30,
+    "one_shot": true,
+    "reference_end_window": 10,
+    "reference_mode": "target_warmup",
+    "reference_start_window": 0,
+    "target_labels_used": false,
+    "threshold_method": "median_plus_scaled_mad"
+  },
+  "drift_trigger_windows": [
+    41
+  ],
+  "eligible_post_evaluation_blocks": 20,
+  "evaluation_initial_degradation": 0.6703018356172975,
+  "evaluation_mean_known_macro_f1": 0.4271732636402455,
+  "evaluation_mean_novel_auprc": null,
+  "evaluation_mean_resilience_score": 0.4271732636402455,
+  "evaluation_normalized_recovery_area": 0.3181905645595437,
+  "evaluation_pre_change_reference": 0.989226650245949,
+  "evaluation_recovery_time_blocks": null,
+  "evaluation_window_count": 24,
+  "evaluation_window_size": 5000,
+  "false_trigger_count": 0,
+  "false_trigger_rate": 0.0,
+  "fit_seconds": 1.1636805000016466,
+  "global_known_balanced_accuracy": 0.358872770020273,
+  "global_known_macro_f1": 0.31122100096099103,
+  "global_known_mcc": 0.46533940895141324,
+  "global_novel_auprc": null,
+  "global_novel_auroc": null,
+  "global_resilience_score": 0.31122100096099103,
+  "initial_degradation": 0.6703018356172975,
+  "initial_known_classes": [
+    "Benign",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance"
+  ],
+  "integrity_checks": {
+    "change_boundary_aligned_to_evaluation_blocks": true,
+    "drift_calibration_excludes_target_labels": true,
+    "evaluation_uses_pre_update_predictions": true,
+    "initial_model_saw_novel_target_class_names": false,
+    "label_budget_respected": true,
+    "predictions_scored_before_updates": true,
+    "preprocessing_fit_on_source_only": true
+  },
+  "label_budget_ceiling": 25,
+  "label_budget_fraction": 0.0,
+  "label_budget_mode": "absolute",
+  "label_budget_utilization": 1.0,
+  "labels_queried": 25,
+  "mean_known_macro_f1": 0.4549756106073094,
+  "mean_novel_auprc": null,
+  "mean_resilience_score": 0.4549756106073094,
+  "mean_source_forgetting": 0.0008737664034363886,
+  "method": "nested_naive_replay_event_025",
+  "method_type": "prototype",
+  "metric_contract_version": "1.2-decoupled-support-aware-evaluation",
+  "model_size_mb": 0.27036476135253906,
+  "model_update_history": [
+    {
+      "classes": {
+        "Benign": {
+          "final_memory_count": 500,
+          "incoming_count": 20
+        },
+        "DoS": {
+          "final_memory_count": 400,
+          "incoming_count": 1
+        },
+        "Exploits": {
+          "final_memory_count": 500,
+          "incoming_count": 2
+        },
+        "Generic": {
+          "final_memory_count": 386,
+          "incoming_count": 1
+        },
+        "Reconnaissance": {
+          "final_memory_count": 500,
+          "incoming_count": 1
+        }
+      },
+      "update_rule": "replay"
+    }
+  ],
+  "normalized_recovery_area": 0.3181905645595437,
+  "novel_target_classes": [],
+  "peak_process_memory_mb": 336.296875,
+  "pre_change_monitoring_windows": 10,
+  "pre_change_reference": 0.989226650245949,
+  "prediction_seconds": 3.2735807000426576,
+  "primary_normalized_recovery_area": 0.3181905645595437,
+  "queried_label_totals": {
+    "Benign": 20,
+    "DoS": 1,
+    "Exploits": 2,
+    "Generic": 1,
+    "Reconnaissance": 1
+  },
+  "query_seed": 11,
+  "realized_label_fraction_target": 0.00020833333333333335,
+  "recovery_time_evaluation_blocks": null,
+  "recovery_time_observations": null,
+  "recovery_time_windows": null,
+  "resilience_definition": "mean(known-class macro-F1, novel safe-or-correct rate when novel rows occur), summarized over support-eligible evaluation blocks",
+  "run_name": "E05_UNSW_nested_naive_replay_budget_025_v015",
+  "scenario": "supported_6class_capture_session_and_prevalence_shift",
+  "seconds_per_target_observation": 2.7279839167022147e-05,
+  "seed": 11,
+  "source_dataset": "NF-UNSW-NB15-v3-Historical-Pilot",
+  "source_exact_duplicates_removed_before_split": 3030,
+  "source_reference_macro_f1": 0.3402745331018427,
+  "stream_first_passage_recovery_time_windows": 4,
+  "stream_initial_degradation": 0.5255602344975323,
+  "stream_mode": "chronological",
+  "stream_normalized_recovery_area": 0.35190147348920503,
+  "stream_pre_change_reference": 0.9891924583756577,
+  "stream_window_size": 500,
+  "target_dataset": "NF-UNSW-NB15-v3-Future-Session-Aligned-Pilot",
+  "target_rows": 120000,
+  "trigger_delay_windows": 1,
+  "true_change_evaluation_window": 4,
+  "true_change_window": 40,
+  "update_seconds": 0.015393699984997511,
+  "update_windows": [
+    41
+  ],
+  "updates": 1,
+  "window_count": 240
+}

@@ -1,0 +1,52 @@
+name: E05_UNSW_paired_5seed_v015
+seed: 97
+source_dataset: configs/datasets/nf_unsw_nb15_v3_source_pilot.yaml
+target_dataset: configs/datasets/nf_unsw_nb15_v3_target_session_aligned_pilot.yaml
+output_root: results/runs
+scenario:
+  name: supported_6class_capture_session_and_prevalence_shift
+  holdout_labels: []
+stream:
+  mode: chronological
+  window_size: 500
+  true_change_window: 40
+method:
+  name: paired_naive_replay_B050
+  type: prototype
+  open_set: false
+  pca_components: 12
+  rejection_quantile: 0.95
+  memory_per_class: 500
+  update_rule: replay
+  replay_enabled: true
+adaptation:
+  enabled: true
+  label_budget_mode: absolute
+  label_budget_total: 50
+  max_queries_per_event: 50
+  query_seed: 97
+  selection: uncertainty_diversity
+  candidate_multiplier: 20
+  trigger_mode: drift
+  drift:
+    reference_mode: target_warmup
+    reference_start_window: 0
+    reference_end_window: 10
+    calibration_start_window: 10
+    calibration_end_window: 30
+    monitoring_start_window: 30
+    mad_multiplier: 3
+    consecutive_windows: 2
+    min_windows_between: 3
+    one_shot: true
+    unknown_rate_threshold: 1.1
+metrics:
+  recovery_fraction: 0.95
+  recovery_patience_windows: 2
+  evaluation_window_size: 5000
+  recovery_patience_evaluation_blocks: 3
+  normal_labels:
+  - Benign
+  minimum_evaluation_known_classes: 6
+  minimum_evaluation_rows_per_known_class: 5
+  minimum_evaluation_non_normal_rows: 100

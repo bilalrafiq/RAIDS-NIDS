@@ -1,0 +1,15 @@
+name: NF-UNSW-NB15-v3
+path: data/raw/NF-UNSW-NB15-v3.csv
+label_column: Attack
+extra_label_columns:
+- Label
+time_column: FLOW_START_MILLISECONDS
+drop_columns:
+- FLOW_END_MILLISECONDS
+- IPV4_SRC_ADDR
+- IPV4_DST_ADDR
+auto_drop_identifiers: true
+sampling:
+  max_rows: 500000
+  mode: stratified
+  seed: 11

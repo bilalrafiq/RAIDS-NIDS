@@ -1,0 +1,97 @@
+{
+  "calibration_end_window": 30,
+  "calibration_median": 0.11986357055709324,
+  "calibration_raw_mad": 0.021795242870274525,
+  "calibration_scaled_mad": 0.03231362707946901,
+  "calibration_start_window": 10,
+  "calibration_window_count": 20,
+  "consecutive_windows": 2,
+  "contract_version": "1.1-guard-safe-candidate-selection",
+  "guard_candidate_audit": [
+    {
+      "guard_flagged_windows": 1,
+      "guard_mean_shift_windows_above": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_safe": true,
+      "guard_trigger_windows": [],
+      "guard_unknown_rate_windows_above": 0,
+      "mad_multiplier": 3.0,
+      "mean_shift_threshold": 0.21680445179550029
+    },
+    {
+      "guard_flagged_windows": 1,
+      "guard_mean_shift_windows_above": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_safe": true,
+      "guard_trigger_windows": [],
+      "guard_unknown_rate_windows_above": 0,
+      "mad_multiplier": 4.0,
+      "mean_shift_threshold": 0.24911807887496928
+    },
+    {
+      "guard_flagged_windows": 1,
+      "guard_mean_shift_windows_above": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_safe": true,
+      "guard_trigger_windows": [],
+      "guard_unknown_rate_windows_above": 0,
+      "mad_multiplier": 5.0,
+      "mean_shift_threshold": 0.2814317059544383
+    },
+    {
+      "guard_flagged_windows": 1,
+      "guard_mean_shift_windows_above": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_safe": true,
+      "guard_trigger_windows": [],
+      "guard_unknown_rate_windows_above": 0,
+      "mad_multiplier": 6.0,
+      "mean_shift_threshold": 0.3137453330339073
+    }
+  ],
+  "guard_end_window": 40,
+  "guard_selection_rule": "smallest_prespecified_multiplier_with_zero_persistent_guard_triggers",
+  "guard_shift_scores": [
+    0.206826201098115,
+    0.3552366617740945,
+    0.09958881398158456,
+    0.09070970709977237,
+    0.0931965037716329,
+    0.11211307511470658,
+    0.10946449894534586,
+    0.07572523840024578,
+    0.07711803083724664,
+    0.12502564772510733
+  ],
+  "guard_start_window": 30,
+  "guard_target_labels_used": false,
+  "guard_unknown_rates": [
+    0.154,
+    0.29,
+    0.078,
+    0.088,
+    0.054,
+    0.056,
+    0.07,
+    0.054,
+    0.032,
+    0.058
+  ],
+  "guard_window_count": 10,
+  "mad_multiplier": 3.0,
+  "mad_multiplier_candidates": [
+    3.0,
+    4.0,
+    5.0,
+    6.0
+  ],
+  "mean_shift_threshold": 0.21680445179550029,
+  "monitoring_start_window": 40,
+  "one_shot": true,
+  "reference_end_window": 10,
+  "reference_mode": "target_warmup",
+  "reference_start_window": 0,
+  "selected_mad_multiplier": 3.0,
+  "target_labels_used": false,
+  "threshold_method": "guard_safe_minimum_median_plus_scaled_mad"
+}

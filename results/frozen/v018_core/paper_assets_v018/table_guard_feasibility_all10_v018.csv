@@ -1,0 +1,4 @@
+episode,model_seeds,guard_passes,guard_failures,descriptive_pass_percent,primary_seed_11_status,median_safe_candidates,selected_MAD_distribution
+DoS,10,10,0,100.0,passed,4.0,MAD 3: 9; MAD 4: 1
+Web Attacks,10,8,2,80.0,failed,1.0,MAD 5: 3; MAD 6: 5
+Bot,10,0,10,0.0,failed,0.0,None

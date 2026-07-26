@@ -1,0 +1,467 @@
+{
+  "protocol_freeze_path": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_guard_seed_robustness_protocol_freeze_v018.json",
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "configuration_count": 27,
+  "only_seed_and_run_name_changed": true,
+  "configurations": [
+    {
+      "episode": "DoS",
+      "seed": 23,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed023_v018.yaml",
+      "generated_config_sha256": "26b2dc399a9bc343765b84b11c4d290b481db3dd8156edf800221874fad68a83",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 37,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed037_v018.yaml",
+      "generated_config_sha256": "3900b7080b1a41e9c78229d1d8bd808baffa352b20616950b14a8a0509f05a73",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 53,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed053_v018.yaml",
+      "generated_config_sha256": "59dd5f72377d2d37172c59ba44cd128ed200c430d3895aa0efb677f02326b431",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 71,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed071_v018.yaml",
+      "generated_config_sha256": "fb8728cf0dc1455767469a6ade898129c113c4057d3a60aacd0e6176f6a78cda",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 83,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed083_v018.yaml",
+      "generated_config_sha256": "5f2c9217b6d9ed414e350607a19e74184f7696beb06aeb355986f5598ac9a699",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 97,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed097_v018.yaml",
+      "generated_config_sha256": "e803d324516370a96dc4fac7f03470f23b48ab0720bf9e5a1b318fcb20ec4150",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 109,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed109_v018.yaml",
+      "generated_config_sha256": "b95d5d32504135f8adcb0336d9c830643da3675f12a9c48a1a49bef50c41ee4a",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 127,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed127_v018.yaml",
+      "generated_config_sha256": "de57eb403f1ce9d4ce91059fc71bb615d5d184876e12034b2a7096748ab6647a",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "DoS",
+      "seed": 149,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+      "base_config_sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_dos_guard_seed_robustness_seed149_v018.yaml",
+      "generated_config_sha256": "115e63a5eaa33b9b6d5638a9fb12b4e9f6be443e9e2df6b939f022efa74d4cbc",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 23,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed023_v018.yaml",
+      "generated_config_sha256": "11566af48b6197916ad138a6986c5ac62ad285c15822f579633e1e22e32cb004",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 37,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed037_v018.yaml",
+      "generated_config_sha256": "5ed276e8565d9834110fbe7319144f10eb8b4a7da14339925cdc9f8f1b26b4eb",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 53,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed053_v018.yaml",
+      "generated_config_sha256": "120825dfc49e98fa9263aa484a8d92a7d43798c09d670189423d3de5b04b3c81",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 71,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed071_v018.yaml",
+      "generated_config_sha256": "412ea4a55077564a1c8f12c0e6e32037ea98b378915976186356ed68b91a36a0",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 83,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed083_v018.yaml",
+      "generated_config_sha256": "a3a00be45e62679d2d92dc8161d6b1e8089424864cce5d61aa392160dbc2104d",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 97,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed097_v018.yaml",
+      "generated_config_sha256": "57d863ac42842845e4ab96af210e26703dd314c5768dd5f599fe396710b96beb",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 109,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed109_v018.yaml",
+      "generated_config_sha256": "3042f78308b1c9ccbbfa87d5c6e12967951f5c85add705dbffa70574c8e4c8d7",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 127,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed127_v018.yaml",
+      "generated_config_sha256": "891885122c2044f95d3f68ea87ba4c649c4cff00002f8cefa981ca65f7198272",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Web Attacks",
+      "seed": 149,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+      "base_config_sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed149_v018.yaml",
+      "generated_config_sha256": "17f8dcb4c0455f1acada94739a3e93347df4fe5f9dc7f810b9423afc6a54b5ae",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 23,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed023_v018.yaml",
+      "generated_config_sha256": "8104f5b50ca7b2344cc2be3ea2d81597518fe8df487f2d35113242c2696ad81c",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 37,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed037_v018.yaml",
+      "generated_config_sha256": "e93b2d553f29f2a8c93dcad872c931cccfc36bed0f6669eed563489c05304ef1",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 53,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed053_v018.yaml",
+      "generated_config_sha256": "c343b574cd661984fcc5e8aac56160c5b4571e825fa59a54e19a54b5a02df0c2",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 71,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed071_v018.yaml",
+      "generated_config_sha256": "2dac3021dc5200054fad6f8961e6f069e801161177290d531ce4fc1f46e2b547",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 83,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed083_v018.yaml",
+      "generated_config_sha256": "bfc4a4cd5d969fb2ef18e1d129642bbbc6cf729e85e5b3564605cc99e3eeafff",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 97,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed097_v018.yaml",
+      "generated_config_sha256": "a16862a3b5a9ce8b4bf003ab9cda26154e588fdd9962ada172e6423cbd212d02",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 109,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed109_v018.yaml",
+      "generated_config_sha256": "b933ac9c913c6ef56823bea3ecd2488a6040f91d206a76c1b450b2fe2ae1e85c",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 127,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed127_v018.yaml",
+      "generated_config_sha256": "0b67b77e3bff10106914b20ae873b50956c9271d81aededcad04ac9475274138",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    },
+    {
+      "episode": "Bot",
+      "seed": 149,
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+      "base_config_sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_bot_guard_seed_robustness_seed149_v018.yaml",
+      "generated_config_sha256": "2b1b6aa9e07d60cd7b5d3add1768bf82f692b0191f32da0cfa261eda7bab9e2f",
+      "changed_seed_paths": [
+        [
+          "seed"
+        ]
+      ],
+      "changed_run_name_path": [
+        "name"
+      ],
+      "semantic_difference_contract": "seed fields and run name only"
+    }
+  ]
+}

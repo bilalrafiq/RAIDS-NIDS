@@ -1,0 +1,149 @@
+{
+  "episode": "Web Attacks",
+  "seed": 97,
+  "analysis_source": "secondary_new_seed_run",
+  "guard_status": "passed",
+  "static_detector_deployed": true,
+  "primary_metrics_defined": true,
+  "adaptive_runs_authorized": false,
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_guard_seed_robustness_v018\\cse_web_guard_seed_robustness_seed097_v018.yaml",
+  "config_sha256": "57d863ac42842845e4ab96af210e26703dd314c5768dd5f599fe396710b96beb",
+  "run_name": "R18_CSE_Web_guard_seed_robustness_s097",
+  "summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\R18_CSE_Web_guard_seed_robustness_s097__NF-CICIDS2018-v3-Web-Attacks-Historical-Pilot-to-NF-CICIDS2018-v3-Web-Attacks-Emergence-Pilot__web_attacks_sparse_first_family_emergence__cse_web_prototype_static_open_guard_safe__seed97\\summary.json",
+  "calibration": {
+    "median": 0.11060146893750965,
+    "raw_mad": 0.02083634666809049,
+    "scaled_mad": 0.03089196757011096
+  },
+  "candidate_audit": [
+    {
+      "mad_multiplier": 3.0,
+      "mean_shift_threshold": 0.20327737164784254,
+      "guard_mean_shift_windows_above": 7,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 7,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        34
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 4.0,
+      "mean_shift_threshold": 0.2341693392179535,
+      "guard_mean_shift_windows_above": 6,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 6,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        34
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 5.0,
+      "mean_shift_threshold": 0.26506130678806444,
+      "guard_mean_shift_windows_above": 4,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 4,
+      "guard_persistent_trigger_count": 1,
+      "guard_trigger_windows": [
+        36
+      ],
+      "guard_safe": false
+    },
+    {
+      "mad_multiplier": 6.0,
+      "mean_shift_threshold": 0.2959532743581754,
+      "guard_mean_shift_windows_above": 1,
+      "guard_unknown_rate_windows_above": 0,
+      "guard_flagged_windows": 1,
+      "guard_persistent_trigger_count": 0,
+      "guard_trigger_windows": [],
+      "guard_safe": true
+    }
+  ],
+  "safe_candidate_count": 1,
+  "selected_mad_multiplier": 6.0,
+  "selected_threshold": 0.2959532743581754,
+  "guard_trace": [
+    {
+      "window": 30,
+      "mean_shift_score": 0.11224746074298718,
+      "predicted_unknown_rate": 0.052
+    },
+    {
+      "window": 31,
+      "mean_shift_score": 0.15827788445427363,
+      "predicted_unknown_rate": 0.046
+    },
+    {
+      "window": 32,
+      "mean_shift_score": 0.15724519902319095,
+      "predicted_unknown_rate": 0.054
+    },
+    {
+      "window": 33,
+      "mean_shift_score": 0.23930070330538974,
+      "predicted_unknown_rate": 0.042
+    },
+    {
+      "window": 34,
+      "mean_shift_score": 0.2595090573684056,
+      "predicted_unknown_rate": 0.036
+    },
+    {
+      "window": 35,
+      "mean_shift_score": 0.2718362756308383,
+      "predicted_unknown_rate": 0.028
+    },
+    {
+      "window": 36,
+      "mean_shift_score": 0.28072258890096985,
+      "predicted_unknown_rate": 0.028
+    },
+    {
+      "window": 37,
+      "mean_shift_score": 0.2742965663199996,
+      "predicted_unknown_rate": 0.066
+    },
+    {
+      "window": 38,
+      "mean_shift_score": 0.36379201508562464,
+      "predicted_unknown_rate": 0.066
+    },
+    {
+      "window": 39,
+      "mean_shift_score": 0.20986480016082912,
+      "predicted_unknown_rate": 0.072
+    }
+  ],
+  "guard_shift_score_max": 0.36379201508562464,
+  "guard_unknown_rate_max": 0.072,
+  "failure_message": null,
+  "integrity_checks": {
+    "initial_model_saw_novel_target_class_names": false,
+    "label_budget_respected": true,
+    "query_row_count_matches_labels_queried": true,
+    "queried_target_rows_are_unique": true,
+    "predictions_scored_before_updates": true,
+    "preprocessing_fit_on_source_only": true,
+    "evaluation_uses_pre_update_predictions": true,
+    "drift_calibration_excludes_target_labels": true,
+    "drift_guard_selection_excludes_target_labels": true,
+    "change_boundary_aligned_to_evaluation_blocks": true
+  },
+  "performance": {
+    "global_known_macro_f1": 0.7135476741004608,
+    "global_novel_auprc": 0.030300611148204634,
+    "global_novel_auroc": 0.7123630249110438,
+    "global_novel_exact_recall": 0.0,
+    "global_novel_rejection_rate": 0.5098039215686274,
+    "global_novel_harmful_acceptance_rate": 0.49019607843137253,
+    "global_acquisition_macro_f1": 0.35671833932307034,
+    "primary_normalized_recovery_area": 0.4482448720281094,
+    "safety_normalized_recovery_area": 0.8008751494885077,
+    "recovery_time_evaluation_blocks": null
+  }
+}

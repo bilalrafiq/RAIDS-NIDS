@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "protocol_sha256": "d27aea53df8a669ff84fb28644d29b271e4c1c44656ed22c208a663cb4603f9d",
+  "model_seed_fixed": 11,
+  "query_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "combined_rows": 20,
+  "distinct_query_hashes": {
+    "50": 10,
+    "200": 10
+  },
+  "all_nested_checks_passed": true,
+  "failures_vs_static": [
+    {
+      "budget": 50,
+      "query_seeds": 10,
+      "failures": 0,
+      "empirical_failure_percent": 0.0
+    },
+    {
+      "budget": 200,
+      "query_seeds": 10,
+      "failures": 0,
+      "empirical_failure_percent": 0.0
+    }
+  ],
+  "outputs": {
+    "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_random_acquisition_seed_all10_v018.csv": "b00ab6e2a6881a427bdc6f510975ea0304e7a5016440a0718b55eb24a60fb1ae",
+    "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_random_acquisition_seed_nesting_v018.csv": "ee74a0e647e7e64d8d3831a7ace2222119d1de48348d9d3f86a6585e070cc676",
+    "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_random_acquisition_seed_diversity_v018.csv": "be117a7ddbf9ac341e916c2a389bb036b3ad84ebdb1bed1a5acb5e0a3124b9dc",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_random_acquisition_seed_summary_v018.csv": "ca48c9b8e8459aea82ea1c8b467b0818b934e6e33c42524e6c198acf90140c01",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\table_dos_random_acquisition_seed_statistics_v018.csv": "aa9da4c684c9ba0c2bd84400d1f76d6daad35f3d4e2c69598552bc018deef1ff",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_random_acquisition_seed_sensitivity_v018.png": "ab8ce9a836d927dd6800eee3bac26f34c398e3b68f525bfea42f59f23e49e5a8",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_random_acquisition_seed_sensitivity_v018.pdf": "0c78c744277c57118247836c9072f01f49f741e2709a158be9eef99a21bf76ae",
+    "C:\\Users\\ASUS\\raids-nids\\results\\paper_assets_v018\\figure_dos_random_acquisition_seed_sensitivity_v018.svg": "f5be6898cfb96f864139a6495df491646b15087bea1b232596737572b09a0712"
+  },
+  "runtime_note": "Recovered execution time is not used as experimental runtime.",
+  "interpretation_scope": "Acquisition-seed sensitivity with model seed fixed at 11."
+}

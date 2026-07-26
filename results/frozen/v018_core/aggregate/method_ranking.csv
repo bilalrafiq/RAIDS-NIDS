@@ -1,0 +1,3 @@
+method,n_runs,mean,std,median,bootstrap_95_low,bootstrap_95_high
+logistic_open_set,1,1.0,0.0,1.0,1.0,1.0
+adaptive_prototype_1pct,1,0.9862056333989958,0.0,0.9862056333989958,0.9862056333989958,0.9862056333989958

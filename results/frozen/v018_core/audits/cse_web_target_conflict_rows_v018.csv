@@ -1,0 +1,41 @@
+target_row_index,fingerprint,FLOW_START_MILLISECONDS,Attack,Attack_Family,phase
+20661,b685fbd660f15a74,1519302310148,Brute_Force_-Web,Web Attacks,post_change
+20662,b685fbd660f15a74,1519302310148,Brute_Force_-XSS,Web Attacks,post_change
+22238,d7b43cd9f023d6fd,1519302334213,Brute_Force_-Web,Web Attacks,post_change
+33150,6abe3d73bb82a6dc,1519302464740,Brute_Force_-Web,Web Attacks,post_change
+35378,b86c61c236726894,1519302485794,Brute_Force_-Web,Web Attacks,post_change
+51255,b24211532158dea9,1519302715859,Brute_Force_-Web,Web Attacks,post_change
+51256,b24211532158dea9,1519302715859,Brute_Force_-XSS,Web Attacks,post_change
+58563,10feb4104ba04a1d,1519302832391,Brute_Force_-Web,Web Attacks,post_change
+58566,10feb4104ba04a1d,1519302832391,Brute_Force_-XSS,Web Attacks,post_change
+60955,c2c8f104b016e2d3,1519302880920,Brute_Force_-Web,Web Attacks,post_change
+60957,c2c8f104b016e2d3,1519302880920,Brute_Force_-XSS,Web Attacks,post_change
+65103,6abe3d73bb82a6dc,1519302959927,Brute_Force_-Web,Web Attacks,post_change
+68753,10feb4104ba04a1d,1519302997454,Brute_Force_-Web,Web Attacks,post_change
+68754,10feb4104ba04a1d,1519302997454,Brute_Force_-XSS,Web Attacks,post_change
+71828,348e74cfbfc767d6,1519303042335,Brute_Force_-Web,Web Attacks,post_change
+72208,c2c8f104b016e2d3,1519303045983,Brute_Force_-Web,Web Attacks,post_change
+72209,c2c8f104b016e2d3,1519303045983,Brute_Force_-XSS,Web Attacks,post_change
+77211,65eff1d7c07584ec,1519303124990,Brute_Force_-Web,Web Attacks,post_change
+79113,10feb4104ba04a1d,1519303162517,Brute_Force_-Web,Web Attacks,post_change
+79114,10feb4104ba04a1d,1519303162517,Brute_Force_-XSS,Web Attacks,post_change
+81516,c2c8f104b016e2d3,1519303211046,Brute_Force_-Web,Web Attacks,post_change
+81518,c2c8f104b016e2d3,1519303211046,Brute_Force_-XSS,Web Attacks,post_change
+85918,6abe3d73bb82a6dc,1519303290054,Brute_Force_-Web,Web Attacks,post_change
+87441,b86c61c236726894,1519303323303,Brute_Force_-Web,Web Attacks,post_change
+87618,10feb4104ba04a1d,1519303327580,Brute_Force_-Web,Web Attacks,post_change
+87619,10feb4104ba04a1d,1519303327580,Brute_Force_-XSS,Web Attacks,post_change
+89468,b86c61c236726894,1519303354711,Brute_Force_-Web,Web Attacks,post_change
+95154,65eff1d7c07584ec,1519303455117,Brute_Force_-Web,Web Attacks,post_change
+97225,10feb4104ba04a1d,1519303492643,Brute_Force_-Web,Web Attacks,post_change
+97227,10feb4104ba04a1d,1519303492643,Brute_Force_-XSS,Web Attacks,post_change
+104844,aea58aee390ed67e,1519303620648,Benign,Benign,post_change
+104845,aea58aee390ed67e,1519303620648,Benign,Benign,post_change
+107128,10feb4104ba04a1d,1519303657707,Brute_Force_-Web,Web Attacks,post_change
+107129,10feb4104ba04a1d,1519303657707,Brute_Force_-XSS,Web Attacks,post_change
+109557,c2c8f104b016e2d3,1519303706236,Brute_Force_-Web,Web Attacks,post_change
+109559,c2c8f104b016e2d3,1519303706236,Brute_Force_-XSS,Web Attacks,post_change
+111514,b86c61c236726894,1519303749492,Brute_Force_-Web,Web Attacks,post_change
+112185,aea58aee390ed67e,1519303762796,Brute_Force_-XSS,Web Attacks,post_change
+112186,aea58aee390ed67e,1519303762796,Brute_Force_-XSS,Web Attacks,post_change
+114931,65eff1d7c07584ec,1519303785246,Brute_Force_-Web,Web Attacks,post_change

@@ -1,0 +1,121 @@
+{
+  "ddos_descriptive_findings": {
+    "UD_B200_DDoS_labels": 7,
+    "UD_B50_DDoS_labels": 0,
+    "acquired_model_global_novel_exact_recall": 0.935205,
+    "acquired_recovery_area_range": [
+      0.953067,
+      0.955948
+    ],
+    "interpretation": "Novel-family coverage determines acquisition; performance saturates once minimum support is met.",
+    "random_B200_DDoS_labels": 104,
+    "random_B50_DDoS_labels": 23,
+    "static_global_novel_exact_recall": 0.0,
+    "static_recovery_area": 0.247483
+  },
+  "development_episode": "DDoS",
+  "development_episode_is_confirmatory": false,
+  "drift_calibration": {
+    "calibration_windows": [
+      10,
+      30
+    ],
+    "consecutive_windows": 2,
+    "guard_windows": [
+      30,
+      40
+    ],
+    "mad_multiplier_candidates": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "min_windows_between": 3,
+    "monitoring_start_window": 40,
+    "one_shot": true,
+    "reference_windows": [
+      0,
+      10
+    ],
+    "selection_rule": "smallest multiplier with zero persistent guard triggers",
+    "unknown_rate_threshold": 1.1
+  },
+  "event_geometry": {
+    "evaluation_window_size": 5000,
+    "post_change_rows": 100000,
+    "stream_window_size": 500,
+    "true_change_evaluation_block": 4,
+    "true_change_window": 40,
+    "warmup_rows": 20000
+  },
+  "frozen_decisions": [
+    "Do not change budgets after viewing validation labels.",
+    "Do not change minimum support after viewing validation labels.",
+    "Do not change query seeds based on selected class composition.",
+    "Do not expand the MAD candidate set using post-change outcomes.",
+    "Retain all negative and mixed update-rule results.",
+    "Use identical queried rows for both update rules at each strategy and budget."
+  ],
+  "label_acquisition": {
+    "budgets": [
+      50,
+      200
+    ],
+    "candidate_multiplier": 10,
+    "minimum_novel_support": 5,
+    "query_seed": 11,
+    "selection_strategies": [
+      "uncertainty_diversity",
+      "random_nested"
+    ]
+  },
+  "metric_interpretation": {
+    "false_trigger_count": "guard-constrained calibration result, not an out-of-sample false-alarm estimate",
+    "novel_auprc": "pre-acquisition detector diagnostic only; not used to compare adapted models"
+  },
+  "model": {
+    "memory_per_class": 1000,
+    "open_set": true,
+    "pca_components": 32,
+    "rejection_quantile": 0.95,
+    "type": "prototype"
+  },
+  "package_version": "0.1.8",
+  "primary_outcome": {
+    "metric": "acquisition_macro_f1",
+    "minimum_non_normal_rows": 1,
+    "recovery_fraction": 0.95,
+    "recovery_patience_evaluation_blocks": 3,
+    "summary": "support-aware normalized recovery area"
+  },
+  "prospective_validation_order": [
+    "DoS",
+    "Web Attacks",
+    "Bot"
+  ],
+  "protocol_id": "CSE-emergence-v018-frozen-after-DDoS-development",
+  "secondary_outcomes": [
+    "novel_exact_recall",
+    "novel_harmful_acceptance_rate",
+    "target_known_macro_f1",
+    "safety_normalized_recovery_area",
+    "source_forgetting",
+    "recovery_time_evaluation_blocks",
+    "queried_novel_class_count"
+  ],
+  "supplementary_episodes": {
+    "BruteForce": "cold-start sensitivity because source is benign-only",
+    "Infiltration": "short-warmup sensitivity because a 20k warm-up crosses the capture-session gap"
+  },
+  "update_rules": {
+    "naive_replay": {
+      "replay_enabled": true
+    },
+    "source_anchored": {
+      "anchor_max_alpha": 0.05,
+      "anchor_reliability_tau": 25,
+      "minimum_target_samples_per_class": 5
+    }
+  }
+}

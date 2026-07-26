@@ -1,0 +1,20 @@
+base_experiment: configs/experiments/pilot_cross_environment.yaml
+axes:
+  seeds:
+    - {seed: 11}
+    - {seed: 22}
+    - {seed: 33}
+    - {seed: 44}
+    - {seed: 55}
+  budgets:
+    - method: {name: adaptive_prototype_0pct}
+      adaptation: {enabled: false, label_budget_fraction: 0.0}
+    - method: {name: adaptive_prototype_0_5pct}
+      adaptation: {enabled: true, label_budget_fraction: 0.005}
+    - method: {name: adaptive_prototype_1pct}
+      adaptation: {enabled: true, label_budget_fraction: 0.01}
+    - method: {name: adaptive_prototype_5pct}
+      adaptation: {enabled: true, label_budget_fraction: 0.05}
+    - method: {name: adaptive_prototype_oracle_exposure}
+      adaptation: {enabled: true, label_budget_fraction: 1.0, trigger_mode: always, max_queries_per_event: 1000000}
+

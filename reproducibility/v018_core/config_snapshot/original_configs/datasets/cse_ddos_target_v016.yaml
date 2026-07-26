@@ -1,0 +1,11 @@
+name: NF-CICIDS2018-v3-DDoS-Emergence-Pilot
+path: data/processed/cse_events_v016/NF-CICIDS2018-v3-ddos-emergence-target.csv
+label_column: Attack_Family
+extra_label_columns:
+- Label
+- Attack
+time_column: FLOW_START_MILLISECONDS
+drop_columns:
+- FLOW_END_MILLISECONDS
+- FTP_COMMAND_RET_CODE
+auto_drop_identifiers: true

@@ -1,0 +1,26 @@
+{
+  "categorical_features": 0,
+  "caveat": "Counts describe the configured sample when sampling.max_rows is set.",
+  "class_counts": {
+    "Benign": 424520,
+    "BruteForce": 49297,
+    "DoS": 26183
+  },
+  "columns_with_infinity": {},
+  "columns_with_missing": {},
+  "configured_path": "data/processed/cse_events_v016/NF-CICIDS2018-v3-ddos-historical-source.csv",
+  "constant_features": [
+    "FTP_COMMAND_RET_CODE"
+  ],
+  "dataset": "NF-CICIDS2018-v3-DDoS-Historical-Pilot",
+  "duplicate_feature_rows": 61602,
+  "exact_duplicate_rows": 5682,
+  "label_column": "Attack_Family",
+  "near_unique_features": [],
+  "numeric_features": 48,
+  "raw_columns": 56,
+  "rows_audited": 500000,
+  "suspicious_retained_features": [],
+  "time_column_available": true,
+  "usable_features": 48
+}

@@ -1,0 +1,159 @@
+protocol_id: RAIDS-NIDS-v0.21-source-anchored-score-amendment
+frozen_on: 2026-07-24
+status: frozen_after_v020_seed11_score_diagnostic_before_v021_outcomes
+
+relationship_to_prior_evidence:
+  v018_evidence_unchanged: true
+  v019_suite_manifest_retained: true
+  v019_outcome: 0_constructed_3_failed
+  v020_event_suite_retained: true
+  v020_event_outcome: 2_constructed_1_failed
+  v020_constructed_families: [Exploits, Reconnaissance]
+  v020_failed_family: DoS
+  v020_event_artifacts_reused_without_change: true
+  v020_seed11_guard_role: diagnostic_only
+  v020_seed11_excluded_from_inference: true
+  amendment_role: post_diagnostic_shift_score_correction
+  external_claim: exploratory_post_amendment_validation
+
+v020_seed11_evidence_seen_before_freeze:
+  model_features_seen: true
+  score_traces_seen: true
+  guard_results_seen: true
+  target_labels_used_to_choose_formula: false
+  episodes:
+    Exploits:
+      detector_delays_windows:
+        mad: 8
+        adwin: 91
+        page_hinkley: 0
+      low_reference_std_dimensions_at_1e_4: 1
+      dominant_windows:
+        - window: 23
+          phase: pre_change_calibration
+          score: 310.640901
+          dominant_feature: DNS_TTL_ANSWER
+          contribution_percent: 99.9996
+        - window: 48
+          phase: post_change
+          score: 163.047716
+          dominant_feature: DNS_QUERY_TYPE
+          contribution_percent: 99.9787
+        - window: 131
+          phase: post_change
+          score: 6.763530
+          dns_combined_contribution_percent: 99.9076
+        - window: 186
+          phase: post_change
+          score: 57949.566038
+          dominant_feature: DNS_TTL_ANSWER
+          contribution_percent: 100.0
+    Reconnaissance:
+      detector_delays_windows:
+        mad: 7
+        adwin: 90
+        page_hinkley: 7
+      low_reference_std_dimensions_at_1e_4: 2
+      dominant_windows:
+        - window: 22
+          phase: pre_change_calibration
+          score: 304.346821
+          dominant_feature: DNS_TTL_ANSWER
+          contribution_percent: 99.9996
+        - window: 47
+          phase: post_change
+          score: 162.479501
+          dominant_feature: DNS_QUERY_TYPE
+          contribution_percent: 99.9795
+        - window: 130
+          phase: post_change
+          score: 6.712907
+          dns_combined_contribution_percent: 99.9040
+        - window: 185
+          phase: post_change
+          score: 56775.790045
+          dominant_feature: DNS_TTL_ANSWER
+          contribution_percent: 100.0
+
+score_correction:
+  contract_version: 1.0-v021-source-anchored-max-scale
+  problem: >
+    Target-reference-only standardization allowed dimensions with very small
+    variance in the first 5,000 target flows to dominate the RMS displacement
+    score.
+  reference_mean_source: target_reference_windows_0_to_9
+  reference_std_source: target_reference_windows_0_to_9
+  anchor_std_source: source_training_embedding_only
+  effective_scale_formula: max(target_reference_std_j, source_training_std_j, epsilon)
+  score_formula: rms((target_window_mean_j - target_reference_mean_j) / effective_scale_j)
+  epsilon: 0.000001
+  pca_components: 0
+  target_post_change_rows_used_for_scale: false
+  target_labels_used_for_scale: false
+  elementwise_clipping_added: false
+  guard_normalization_clip: 8
+
+events:
+  source_protocol_id: RAIDS-NIDS-v0.20-external-guard-amendment
+  suite_manifest: data/derived/v020_unsw_events/NF-UNSW-NB15-v3-v020-suite-manifest.json
+  eligible_families: [Exploits, Reconnaissance]
+  failed_families_retained: [DoS]
+  reconstruction_or_reselection_prohibited: true
+
+model:
+  type: prototype
+  rejection_quantile: 0.95
+  memory_per_class: 500
+  pca_components: 0
+  preprocessing_fit_on_source_only: true
+
+stream:
+  detection_window_size: 500
+  true_change_window: 40
+  reference_windows: [0, 10]
+  calibration_windows: [10, 30]
+  guard_windows: [30, 40]
+  monitoring_start_window: 40
+  target_labels_used_by_guards: false
+
+guards:
+  changed_from_v020: false
+  common:
+    one_shot: true
+    candidate_selection: most_sensitive_prespecified_candidate_with_zero_guard_triggers
+    failure_handling: fail_closed
+  mad:
+    multipliers: [3, 4, 5, 6]
+    consecutive_windows: 2
+  adwin:
+    implementation: river-0.25.0
+    delta_candidates: [0.1, 0.05, 0.01, 0.005, 0.002]
+    clock: 1
+    max_buckets: 5
+    min_window_length: 5
+    grace_period: 10
+  page_hinkley:
+    implementation: river-0.25.0
+    threshold_candidates: [5, 10, 20, 50]
+    min_instances: 10
+    delta: 0.005
+    alpha: 0.9999
+    mode: up
+
+replication:
+  development_seed: 11
+  development_seed_excluded_from_primary_aggregate: true
+  primary_evaluation_seeds: [22, 33, 44, 55, 66, 77, 88, 99, 110, 121]
+  primary_seed_count: 10
+  seeds_are_computational_replicates_not_independent_datasets: true
+  corrected_seed11_audit_required_before_primary_matrix: true
+
+integrity:
+  v019_and_v020_outputs_must_not_be_overwritten: true
+  v021_development_result_directory: results/v021_source_anchored_guard/development
+  v021_evaluation_result_directory: results/v021_source_anchored_guard/evaluation
+  one_score_trace_shared_by_all_guards: true
+  source_scale_saved_in_summary: true
+  exact_score_trace_hash_required: true
+  derived_event_hashes_required: true
+  failed_guards_retained: true

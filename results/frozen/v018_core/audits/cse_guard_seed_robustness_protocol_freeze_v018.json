@@ -1,0 +1,94 @@
+{
+  "freeze_timestamp_utc": "2026-07-20T04:54:44.086188+00:00",
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "protocol": {
+    "analysis_name": "CSE guard seed robustness",
+    "analysis_role": "secondary_algorithmic_sensitivity_analysis",
+    "package_version": "0.1.8",
+    "primary_seed_outcomes_remain_authoritative": true,
+    "primary_seed": 11,
+    "seeds": [
+      11,
+      23,
+      37,
+      53,
+      71,
+      83,
+      97,
+      109,
+      127,
+      149
+    ],
+    "new_run_seeds": [
+      23,
+      37,
+      53,
+      71,
+      83,
+      97,
+      109,
+      127,
+      149
+    ],
+    "episodes": [
+      "DoS",
+      "Web Attacks",
+      "Bot"
+    ],
+    "base_configurations": {
+      "DoS": {
+        "path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E12_CSE_DoS_prospective_static_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_prototype_static_open_guard_safe__seed11\\resolved_config.yaml",
+        "sha256": "08221c97853da2e84d235cd106f82c831c3f5aa94dea1ac1431a3e4dfb3be49b",
+        "primary_seed_outcome": "guard_passed",
+        "post_change_novel_percent": 26.368
+      },
+      "Web Attacks": {
+        "path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_web_guard_safe_static_v018.yaml",
+        "sha256": "e13af2de2b891161d332e9736b0c0231fdd3e3a126e0d921078cc1d11105113b",
+        "primary_seed_outcome": "guard_calibration_failed",
+        "post_change_novel_percent": 0.102
+      },
+      "Bot": {
+        "path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_bot_guard_safe_static_v018.yaml",
+        "sha256": "25655b321255115e179b4aa4a7e90ef495ce47112d6ce5b62b505a350f6e63fa",
+        "primary_seed_outcome": "guard_calibration_failed",
+        "post_change_novel_percent": 3.536
+      }
+    },
+    "episode_exclusions": {
+      "DDoS": "protocol-development episode",
+      "Infiltration": "event construction failed the frozen 24-hour temporal-continuity constraint"
+    },
+    "frozen_execution_contract": {
+      "only_seed_and_run_identifiers_may_change": true,
+      "dataset_configuration_may_change": false,
+      "feature_contract_may_change": false,
+      "model_hyperparameters_may_change": false,
+      "guard_candidates_may_change": false,
+      "guard_candidates": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "thresholds_may_be_modified_after_failure": false,
+      "target_labels_used_for_guard_selection": false,
+      "adaptive_runs_authorized_in_this_stage": false
+    },
+    "outcome_contract": {
+      "guard_pass": "retain the completed static summary",
+      "guard_failure": "save candidate audit and mark all performance metrics undefined",
+      "failed_runs_receive_zero_score": false,
+      "passing_seed_may_replace_primary_seed": false,
+      "conditional_static_performance_reported_separately": true
+    },
+    "planned_outputs": {
+      "per_seed_status_matrix": true,
+      "episode_guard_pass_frequency": true,
+      "selected_MAD_distribution": true,
+      "guard_failure_candidate_audits": true,
+      "conditional_performance_for_passing_seeds": true
+    },
+    "interpretation_limit": "Seeds measure algorithmic sensitivity and are not independent real-world datasets"
+  }
+}

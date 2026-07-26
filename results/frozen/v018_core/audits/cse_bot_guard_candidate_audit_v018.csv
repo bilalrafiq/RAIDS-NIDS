@@ -1,0 +1,5 @@
+mad_multiplier,mean_shift_threshold,guard_mean_shift_windows_above,guard_unknown_rate_windows_above,guard_flagged_windows,guard_persistent_trigger_count,guard_trigger_windows,guard_safe
+3.0,0.23817640361297865,5,0,5,1,[32],False
+4.0,0.2775895923927277,5,0,5,1,[32],False
+5.0,0.3170027811724767,4,0,4,1,[32],False
+6.0,0.35641596995222574,2,0,2,1,[33],False

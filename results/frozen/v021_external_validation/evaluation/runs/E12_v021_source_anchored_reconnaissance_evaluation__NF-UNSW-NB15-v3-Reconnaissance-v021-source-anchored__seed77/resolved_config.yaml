@@ -1,0 +1,64 @@
+name: E12_v021_source_anchored_reconnaissance_evaluation
+seed: 77
+analysis_role: heldout_computational_evaluation
+source_dataset: configs/datasets/nf_unsw_nb15_v3_reconnaissance_v020_source.yaml
+target_dataset: configs/datasets/nf_unsw_nb15_v3_reconnaissance_v020_target.yaml
+event_manifest: data/derived/v020_unsw_events/NF-UNSW-NB15-v3-reconnaissance-manifest.json
+expected_event_protocol_id: RAIDS-NIDS-v0.20-external-guard-amendment
+expected_emerging_family: Reconnaissance
+output_root: results/v021_source_anchored_guard/evaluation/runs
+scenario:
+  name: NF-UNSW-NB15-v3-Reconnaissance-v021-source-anchored
+  holdout_labels: []
+stream:
+  mode: chronological
+  window_size: 500
+  true_change_window: 40
+method:
+  name: prototype_guard_score_trace
+  type: prototype
+  pca_components: 0
+  rejection_quantile: 0.95
+  memory_per_class: 500
+guard_comparison:
+  contract_version: 1.2-v021-source-anchored-paired-score-trace
+  reference_start_window: 0
+  reference_end_window: 10
+  calibration_start_window: 10
+  calibration_end_window: 30
+  guard_start_window: 30
+  guard_end_window: 40
+  monitoring_start_window: 40
+  normalization_clip: 8
+  score_scaling:
+    contract_version: 1.0-v021-source-anchored-max-scale
+    mode: source_anchored_max
+    epsilon: 1.0e-06
+  mad:
+    multipliers:
+    - 3
+    - 4
+    - 5
+    - 6
+    consecutive_windows: 2
+  adwin:
+    delta_candidates:
+    - 0.1
+    - 0.05
+    - 0.01
+    - 0.005
+    - 0.002
+    clock: 1
+    max_buckets: 5
+    min_window_length: 5
+    grace_period: 10
+  page_hinkley:
+    threshold_candidates:
+    - 5
+    - 10
+    - 20
+    - 50
+    min_instances: 10
+    delta: 0.005
+    alpha: 0.9999
+    mode: up

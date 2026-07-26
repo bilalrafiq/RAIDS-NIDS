@@ -1,0 +1,93 @@
+{
+  "protocol_sha256": "58eeca75e71f64004f7e7f6a8a7f84f86603871590ac7a5fa14a96df023c5258",
+  "primary_seed_outcomes_unchanged": true,
+  "failed_runs_have_null_metrics": true,
+  "guard_frequency": [
+    {
+      "episode": "Bot",
+      "seeds": 10,
+      "guard_passes": 0,
+      "median_safe_candidates": 0.0,
+      "median_calibration": 0.120331827,
+      "median_scaled_MAD": 0.0383207422,
+      "median_guard_max": 0.4076980767,
+      "guard_failures": 10,
+      "descriptive_pass_percent": 0.0
+    },
+    {
+      "episode": "DoS",
+      "seeds": 10,
+      "guard_passes": 10,
+      "median_safe_candidates": 4.0,
+      "median_calibration": 0.1189636435,
+      "median_scaled_MAD": 0.0317140172,
+      "median_guard_max": 0.3414034541,
+      "guard_failures": 0,
+      "descriptive_pass_percent": 100.0
+    },
+    {
+      "episode": "Web Attacks",
+      "seeds": 10,
+      "guard_passes": 8,
+      "median_safe_candidates": 1.0,
+      "median_calibration": 0.1115029969,
+      "median_scaled_MAD": 0.031206876,
+      "median_guard_max": 0.3705845915,
+      "guard_failures": 2,
+      "descriptive_pass_percent": 80.0
+    }
+  ],
+  "selected_mad_distribution": [
+    {
+      "episode": "DoS",
+      "selected_MAD_multiplier": 3.0,
+      "seed_count": 9
+    },
+    {
+      "episode": "DoS",
+      "selected_MAD_multiplier": 4.0,
+      "seed_count": 1
+    },
+    {
+      "episode": "Web Attacks",
+      "selected_MAD_multiplier": 5.0,
+      "seed_count": 3
+    },
+    {
+      "episode": "Web Attacks",
+      "selected_MAD_multiplier": 6.0,
+      "seed_count": 5
+    }
+  ],
+  "conditional_performance": [
+    {
+      "episode": "DoS",
+      "passing_seeds": 10,
+      "acquisition_mean": 0.3983534318,
+      "acquisition_std": 0.0033463112,
+      "acquisition_min": 0.394420513,
+      "acquisition_max": 0.4033696076,
+      "recovery_area_mean": 0.380738616,
+      "recovery_area_std": 0.0121389765,
+      "novel_exact_recall_mean": 0.0,
+      "harmful_acceptance_mean": 0.9611347087
+    },
+    {
+      "episode": "Web Attacks",
+      "passing_seeds": 8,
+      "acquisition_mean": 0.3494506766,
+      "acquisition_std": 0.0063805461,
+      "acquisition_min": 0.3395327576,
+      "acquisition_max": 0.3578244479,
+      "recovery_area_mean": 0.442960757,
+      "recovery_area_std": 0.0048766575,
+      "novel_exact_recall_mean": 0.0,
+      "harmful_acceptance_mean": 0.4828431373
+    }
+  ],
+  "descriptive_conclusions": {
+    "DoS": "stable guard feasibility across all seeds",
+    "Web Attacks": "seed-sensitive guard feasibility with high-threshold candidates required",
+    "Bot": "stable guard infeasibility across all seeds"
+  }
+}

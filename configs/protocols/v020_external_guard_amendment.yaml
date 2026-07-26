@@ -1,0 +1,139 @@
+protocol_id: RAIDS-NIDS-v0.20-external-guard-amendment
+frozen_on: 2026-07-24
+status: frozen_after_construction_diagnostic_before_v020_guard_outcomes
+
+relationship_to_prior_evidence:
+  v018_evidence_unchanged: true
+  v019_suite_manifest_retained: true
+  v019_outcome: 0_constructed_3_failed
+  v019_failure_reason: >
+    No DoS, Exploits, or Reconnaissance occurrence had an all-Benign
+    20,000-flow warm-up under the frozen v0.19 rules.
+  amendment_role: transparent_construction_rule_amendment
+  external_replication_claim: confirmatory_not_untouched
+  guard_comparison_status: prospective_conditional_on_amended_construction
+
+construction_diagnostic_seen_before_freeze:
+  data_used: timestamps_and_attack_family_labels_only
+  model_features_seen: false
+  score_traces_seen: false
+  guard_triggers_seen: false
+  adaptive_results_seen: false
+  longest_all_benign_run_flows: 945383
+  longest_all_benign_run_start: 2015-01-22 13:47:28.920000
+  longest_all_benign_run_end: 2015-01-23 00:25:23.759000
+  diagnostic_eligibility:
+    DoS:
+      supported_candidate: true
+      first_500_family_rows: 3
+      first_5000_family_rows: 16
+      sustained_1pct: false
+    Exploits:
+      supported_candidate: true
+      first_500_family_rows: 6
+      first_5000_family_rows: 139
+      sustained_1pct: true
+    Reconnaissance:
+      supported_candidate: true
+      first_500_family_rows: 6
+      first_5000_family_rows: 55
+      sustained_1pct: true
+
+dataset:
+  name: NF-UNSW-NB15-v3
+  expected_rows: 2365424
+  expected_features: 53
+  label_column: Attack
+  binary_label_column: Label
+  time_column: FLOW_START_MILLISECONDS
+  end_time_column: FLOW_END_MILLISECONDS
+  local_raw_path: data/raw/NF-UNSW-NB15-v3.csv
+  raw_sha256: 4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5
+  temporal_cache_path: data/derived/v019_unsw_temporal.npz
+  temporal_cache_sha256: 215b2ea90aa5183c3cd99a20ba5d24c25d1dbe35ebe0f1775ab2889b245f240a
+
+episodes:
+  prespecified_order:
+    - DoS
+    - Exploits
+    - Reconnaissance
+  replacement_after_outcome: prohibited
+  failed_family_retention: required
+  selection_rule: earliest_occurrence_meeting_all_amended_rules
+  source_max_rows: 500000
+  source_minimum_per_class: 500
+  warmup_rows: 20000
+  post_change_rows: 100000
+  maximum_warmup_and_onset_gap_hours: 24
+  require_all_warmup_rows_benign: false
+  require_emerging_family_absent_from_warmup: true
+  require_every_warmup_class_source_known: true
+  minimum_history_per_warmup_class: 500
+  onset_prevalence_windows: [500, 5000]
+  minimum_emerging_family_prevalence: 0.01
+  source_strictly_precedes_target: true
+  source_excludes_emerging_family: true
+  prior_family_occurrences_allowed_but_reported: true
+  other_novel_target_families_reported: true
+  failure_handling: retain_in_prespecified_denominator
+
+model:
+  type: prototype
+  rejection_quantile: 0.95
+  memory_per_class: 500
+  pca_components: 0
+  preprocessing_fit_on_source_only: true
+
+stream:
+  detection_window_size: 500
+  evaluation_window_size: 5000
+  true_change_window: 40
+  reference_windows: [0, 10]
+  calibration_windows: [10, 30]
+  guard_windows: [30, 40]
+  monitoring_start_window: 40
+  shift_score: standardized_rms_embedding_mean_displacement
+  robust_normalization_clip: 8
+  target_labels_used_by_guards: false
+
+guards:
+  changed_from_v019: false
+  common:
+    one_shot: true
+    unknown_rate_threshold: 1.1
+    candidate_selection: most_sensitive_prespecified_candidate_with_zero_guard_triggers
+    failure_handling: fail_closed
+  mad:
+    multipliers: [3, 4, 5, 6]
+    consecutive_windows: 2
+  adwin:
+    implementation: river-0.25.0
+    delta_candidates: [0.1, 0.05, 0.01, 0.005, 0.002]
+    clock: 1
+    max_buckets: 5
+    min_window_length: 5
+    grace_period: 10
+  page_hinkley:
+    implementation: river-0.25.0
+    threshold_candidates: [5, 10, 20, 50]
+    min_instances: 10
+    delta: 0.005
+    alpha: 0.9999
+    mode: up
+
+replication:
+  model_seeds: [11, 22, 33, 44, 55, 66, 77, 88, 99, 110]
+  paired_score_trace_across_guards: true
+  model_seeds_are_computational_replicates: true
+  seed11_audit_required_before_full_matrix: true
+
+integrity:
+  v019_outputs_must_not_be_overwritten: true
+  v020_event_directory: data/derived/v020_unsw_events
+  v020_result_directory: results/v020_external_guard_amendment
+  predictions_before_updates: true
+  post_change_labels_not_used_for_guard_selection: true
+  exact_score_trace_hash_required: true
+  raw_dataset_hash_required: true
+  derived_event_hashes_required: true
+  failed_events_and_guards_retained: true

@@ -1,0 +1,11 @@
+fingerprint,exact_vector_match_verified,source_rows,target_rows,source_family_counts,target_family_counts,source_attack_counts,target_attack_counts,target_Web_Attacks_rows,target_Benign_rows,target_first_position,target_last_position,target_first_time,target_last_time,all_target_rows_post_change
+10feb4104ba04a1d,True,4,12,"{""Benign"": 4}","{""Web Attacks"": 12}","{""Benign"": 4}","{""Brute_Force_-Web"": 6, ""Brute_Force_-XSS"": 6}",12,0,58563,107129,2018-02-22 12:33:52.391000,2018-02-22 12:47:37.707000,True
+c2c8f104b016e2d3,True,10,8,"{""Benign"": 10}","{""Web Attacks"": 8}","{""Benign"": 10}","{""Brute_Force_-Web"": 4, ""Brute_Force_-XSS"": 4}",8,0,60955,109559,2018-02-22 12:34:40.920000,2018-02-22 12:48:26.236000,True
+b86c61c236726894,True,36,4,"{""Benign"": 36}","{""Web Attacks"": 4}","{""Benign"": 36}","{""Brute_Force_-Web"": 4}",4,0,35378,111514,2018-02-22 12:28:05.794000,2018-02-22 12:49:09.492000,True
+6abe3d73bb82a6dc,True,10,3,"{""Benign"": 10}","{""Web Attacks"": 3}","{""Benign"": 10}","{""Brute_Force_-Web"": 3}",3,0,33150,85918,2018-02-22 12:27:44.740000,2018-02-22 12:41:30.054000,True
+65eff1d7c07584ec,True,2,3,"{""Benign"": 2}","{""Web Attacks"": 3}","{""Benign"": 2}","{""Brute_Force_-Web"": 3}",3,0,77211,114931,2018-02-22 12:38:44.990000,2018-02-22 12:49:45.246000,True
+aea58aee390ed67e,True,12,4,"{""Benign"": 12}","{""Benign"": 2, ""Web Attacks"": 2}","{""Benign"": 12}","{""Benign"": 2, ""Brute_Force_-XSS"": 2}",2,2,104844,112186,2018-02-22 12:47:00.648000,2018-02-22 12:49:22.796000,True
+b24211532158dea9,True,1,2,"{""Benign"": 1}","{""Web Attacks"": 2}","{""Benign"": 1}","{""Brute_Force_-Web"": 1, ""Brute_Force_-XSS"": 1}",2,0,51255,51256,2018-02-22 12:31:55.859000,2018-02-22 12:31:55.859000,True
+b685fbd660f15a74,True,1,2,"{""Benign"": 1}","{""Web Attacks"": 2}","{""Benign"": 1}","{""Brute_Force_-Web"": 1, ""Brute_Force_-XSS"": 1}",2,0,20661,20662,2018-02-22 12:25:10.148000,2018-02-22 12:25:10.148000,True
+348e74cfbfc767d6,True,3,1,"{""Benign"": 3}","{""Web Attacks"": 1}","{""Benign"": 3}","{""Brute_Force_-Web"": 1}",1,0,71828,71828,2018-02-22 12:37:22.335000,2018-02-22 12:37:22.335000,True
+d7b43cd9f023d6fd,True,2,1,"{""Benign"": 2}","{""Web Attacks"": 1}","{""Benign"": 2}","{""Brute_Force_-Web"": 1}",1,0,22238,22238,2018-02-22 12:25:34.213000,2018-02-22 12:25:34.213000,True

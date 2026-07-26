@@ -1,0 +1,11 @@
+name: NF-CICIDS2018-v3-Web-Attacks-Historical-Pilot
+path: data/processed/cse_events_v018/NF-CICIDS2018-v3-web_attacks-historical-source.csv
+label_column: Attack_Family
+extra_label_columns:
+- Label
+- Attack
+time_column: FLOW_START_MILLISECONDS
+drop_columns:
+- FLOW_END_MILLISECONDS
+- FTP_COMMAND_RET_CODE
+auto_drop_identifiers: true

@@ -1,0 +1,18 @@
+{
+  "calibration_end_window": 30,
+  "calibration_median": 0.06731565452095323,
+  "calibration_raw_mad": 0.012660621354012927,
+  "calibration_scaled_mad": 0.018770637219459565,
+  "calibration_start_window": 10,
+  "calibration_window_count": 20,
+  "consecutive_windows": 2,
+  "mad_multiplier": 3.0,
+  "mean_shift_threshold": 0.12362756617933192,
+  "monitoring_start_window": 30,
+  "one_shot": true,
+  "reference_end_window": 10,
+  "reference_mode": "target_warmup",
+  "reference_start_window": 0,
+  "target_labels_used": false,
+  "threshold_method": "median_plus_scaled_mad"
+}

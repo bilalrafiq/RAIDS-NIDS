@@ -1,0 +1,23 @@
+{
+  "categorical_features": 0,
+  "caveat": "Counts describe the configured sample when sampling.max_rows is set.",
+  "class_counts": {
+    "Benign": 119898,
+    "Web Attacks": 102
+  },
+  "columns_with_infinity": {},
+  "columns_with_missing": {},
+  "configured_path": "C:\\Users\\ASUS\\raids-nids\\data\\processed\\cse_events_v018\\NF-CICIDS2018-v3-web_attacks-emergence-target.csv",
+  "constant_features": [],
+  "dataset": "NF-CICIDS2018-v3-Web-Attacks-Emergence-Pilot",
+  "duplicate_feature_rows": 8573,
+  "exact_duplicate_rows": 2194,
+  "label_column": "Attack_Family",
+  "near_unique_features": [],
+  "numeric_features": 47,
+  "raw_columns": 56,
+  "rows_audited": 120000,
+  "suspicious_retained_features": [],
+  "time_column_available": true,
+  "usable_features": 47
+}

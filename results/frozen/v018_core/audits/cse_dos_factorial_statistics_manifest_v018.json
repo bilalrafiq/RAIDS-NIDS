@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "input_panel": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_adaptive_static_paired_panel_all10_v018.csv",
+  "input_panel_sha256": "e579dcc9aa841d373e321c4a4e6e5eb371d6be4fa4cd1d7bd9c3fc6399251223",
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "seed_count": 10,
+  "adaptive_design": {
+    "selection_strategies": [
+      "random_nested",
+      "uncertainty_diversity"
+    ],
+    "budgets": [
+      50,
+      200
+    ],
+    "update_rules": [
+      "naive_replay",
+      "source_anchored"
+    ]
+  },
+  "bootstrap_repetitions": 100000,
+  "permutation_test": "exact paired two-sided sign-flip test over all 2^10 assignments",
+  "multiplicity": [
+    "Holm within metric and analysis family",
+    "Holm across all contrasts within metric",
+    "Holm sensitivity correction across all tests"
+  ],
+  "interpretation_scope": "Algorithmic seed-robustness analysis. Seeds are paired computational replicates, not independent datasets or deployments.",
+  "statistics_sha256": "dba693b0dd3f3d316c023270ddae33b628be72187aedcdce410616340aa39489"
+}

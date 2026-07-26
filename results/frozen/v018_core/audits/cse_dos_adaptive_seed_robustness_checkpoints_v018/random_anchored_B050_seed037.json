@@ -1,0 +1,60 @@
+{
+  "condition": "random_anchored_B050",
+  "condition_code": "RA50",
+  "seed": 37,
+  "run_name": "R19_DoS_s037_RA50",
+  "method": "cse_dos_random_source_anchored_B050",
+  "selection_strategy": "random_nested",
+  "update_rule": "source_anchored",
+  "budget": 50,
+  "protocol_sha256": "b5a3239fc1be785d663100e282c97ef720aed4d8a0582a41cc1f9aa2241b23ed",
+  "config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed037_v018.yaml",
+  "config_sha256": "7cffc4cdf3e9edaa3e25e69c591eba08c32fbd82e57ac87c34eb4b9cc4617ce7",
+  "summary_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\R19_DoS_s037_RA50__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed37\\summary.json",
+  "summary_sha256": "f038e6125b5cfaffb95bff3bdf581acba19caf7cc91aa5344fb7b41c7cdecd89",
+  "run_source": "new_execution",
+  "labels_queried": 50,
+  "queried_label_totals": {
+    "DoS": 49,
+    "Benign": 1
+  },
+  "query_hash": "fe930d3703039853db50269fbcef425d4131520eec7ebf6365294cbed00f034f",
+  "query_hash_candidates": {
+    "query_selection_sha256": "fe930d3703039853db50269fbcef425d4131520eec7ebf6365294cbed00f034f"
+  },
+  "selected_mad_multiplier": 3.0,
+  "drift_trigger_windows": [
+    41
+  ],
+  "trigger_delay_windows": 1,
+  "update_windows": [
+    41
+  ],
+  "global_known_macro_f1": 0.8285969861694076,
+  "global_novel_auprc": 0.13964687057606073,
+  "global_novel_auroc": 0.13542629799101957,
+  "global_novel_exact_recall": 0.8429535800970874,
+  "global_novel_rejection_rate": 0.03739381067961165,
+  "global_novel_harmful_acceptance_rate": 0.11965260922330097,
+  "global_acquisition_macro_f1": 0.786226332125229,
+  "evaluation_mean_acquisition_macro_f1": 0.7983807212693715,
+  "primary_normalized_recovery_area": 0.8723406279360432,
+  "safety_normalized_recovery_area": 0.9029080769730381,
+  "recovery_time_evaluation_blocks": 1,
+  "mean_source_forgetting": 0.018189817157580404,
+  "fit_seconds": 2.137700900027994,
+  "prediction_seconds": 1.2173502999939956,
+  "update_seconds": 0.0032939999946393073,
+  "integrity_checks": {
+    "initial_model_saw_novel_target_class_names": false,
+    "label_budget_respected": true,
+    "query_row_count_matches_labels_queried": true,
+    "queried_target_rows_are_unique": true,
+    "predictions_scored_before_updates": true,
+    "preprocessing_fit_on_source_only": true,
+    "evaluation_uses_pre_update_predictions": true,
+    "drift_calibration_excludes_target_labels": true,
+    "drift_guard_selection_excludes_target_labels": true,
+    "change_boundary_aligned_to_evaluation_blocks": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "cross_overlap_summary": [
+    {
+      "cross_label_conflicting_vectors": 0,
+      "shared_unique_feature_vectors": 2019,
+      "source_rows_in_cross_conflicts": 0,
+      "source_rows_with_target_match": 6584,
+      "target_cross_conflict_percent": 0.0,
+      "target_match_percent": 2.685,
+      "target_rows_in_cross_conflicts": 0,
+      "target_rows_with_source_match": 3222
+    }
+  ],
+  "duplicate_summary": [
+    {
+      "conflicting_feature_groups": 0,
+      "dataset": "source",
+      "duplicate_excess_percent": 17.4482,
+      "duplicate_excess_rows": 87241,
+      "rows": 500000,
+      "rows_in_conflicting_groups": 0,
+      "unique_feature_vectors": 412759
+    },
+    {
+      "conflicting_feature_groups": 0,
+      "dataset": "target",
+      "duplicate_excess_percent": 13.449166666666667,
+      "duplicate_excess_rows": 16139,
+      "rows": 120000,
+      "rows_in_conflicting_groups": 0,
+      "unique_feature_vectors": 103861
+    }
+  ],
+  "event": "DoS",
+  "package_version": "0.1.8",
+  "target_cross_conflict_rows_by_class": {},
+  "target_matched_rows_by_class": {
+    "Benign": 3222
+  }
+}

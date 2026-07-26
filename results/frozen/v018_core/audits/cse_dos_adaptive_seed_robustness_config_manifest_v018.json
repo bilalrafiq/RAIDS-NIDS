@@ -1,0 +1,944 @@
+{
+  "protocol_freeze_path": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_dos_adaptive_seed_robustness_protocol_freeze_v018.json",
+  "protocol_sha256": "b5a3239fc1be785d663100e282c97ef720aed4d8a0582a41cc1f9aa2241b23ed",
+  "configuration_count": 72,
+  "only_seed_and_name_changed": true,
+  "configurations": [
+    {
+      "condition": "random_naive_B050",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed023_v018.yaml",
+      "generated_config_sha256": "873b6acd0667c8d556799c0a35610763376852fbda8b75e893394a363b95f7f1",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed037_v018.yaml",
+      "generated_config_sha256": "9c884e53aa2e24f48182f5d900002a26d10f1262d67b8db1dbf4a9989b1757e8",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed053_v018.yaml",
+      "generated_config_sha256": "b3efbe9f42e9ec2b5a73eb1101045fb1953184f9900f2a6e95e48cf06cc7d9f4",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed071_v018.yaml",
+      "generated_config_sha256": "6c5d12596f87654ce68c72f55e42cde744d39bd16bdb102e54a40f24470fab54",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed083_v018.yaml",
+      "generated_config_sha256": "01cd5ab083ab4b37e8c2186c7e84c36fa3be0f3fa97e26da7c26b22090ce1c80",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed097_v018.yaml",
+      "generated_config_sha256": "1f28484486e54331f28e61da2969af87d2d881b6a6ddb093c9594882d8e7adc8",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed109_v018.yaml",
+      "generated_config_sha256": "437dd36a7a400ff6490e78734037fc84c820587c3ef4e6dbbeb4f02e70ac82d9",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed127_v018.yaml",
+      "generated_config_sha256": "568cef0c050be45de81269b36b9280770a28a39b501bd4847e36d2bb12e00cf4",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B050",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_RN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "2e157909309965409979564075333566cbf2ea4f5de206c8d9273201bae37665",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn50_seed149_v018.yaml",
+      "generated_config_sha256": "8a8c0e218337cb1432673fa59ce729a16a953b0bc15ab5e9e23ebdc8305e3a89",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed023_v018.yaml",
+      "generated_config_sha256": "3c18a95067d57e147e85d16da842d74337885f3bf31fa9558c071a5b4b9ea2ef",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed037_v018.yaml",
+      "generated_config_sha256": "7cffc4cdf3e9edaa3e25e69c591eba08c32fbd82e57ac87c34eb4b9cc4617ce7",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed053_v018.yaml",
+      "generated_config_sha256": "547c6d62d85286c53e98a2dae2a7531daa78fb134a959994f3fea0794cbf688f",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed071_v018.yaml",
+      "generated_config_sha256": "63175b2422598b09a250314542213e3d629b73c742f2ba2103a4687b49fc25a8",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed083_v018.yaml",
+      "generated_config_sha256": "1820e00b75a0a0f3da0270034aa5c8c852073213ca18c51f232831c6b9293aed",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed097_v018.yaml",
+      "generated_config_sha256": "ecc12c6de83d98e9910ac0208220457a8bbad86fde0cf8afd205f681c8d729c8",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed109_v018.yaml",
+      "generated_config_sha256": "45abd582bebe50d9482f9d3a4d996178c2b64a1d3d403520caa5d10e61770ee1",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed127_v018.yaml",
+      "generated_config_sha256": "699b14fdb82dc0d0e6bbf70049b35224facd292d334f021dd53755f28d1ce847",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B050",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_RA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "4388f3f142ca60679cdd145611a5f21a5ff50ab7eb5d5d2287fa9b314faf424f",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra50_seed149_v018.yaml",
+      "generated_config_sha256": "d4d4400708b0273005ae24945c7214b49b76256c401a36f99127de397f343e62",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed023_v018.yaml",
+      "generated_config_sha256": "2674011dbc6b413fbb4a1cf586527bb9da2bffe9dec4ce8c2d477aaf849ef8b5",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed037_v018.yaml",
+      "generated_config_sha256": "5f9357d5e04c8a25de670a32b5ec5828063384e9379525e9ec37b694adf1ad6d",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed053_v018.yaml",
+      "generated_config_sha256": "0af73925f74c97fc8a6f5dd70a6982675e688222f5ea1c0189f10e75c09e0f4e",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed071_v018.yaml",
+      "generated_config_sha256": "ced210dc1269b03fdf0cd2d30f00ac8ed16a5044b57525b37d994a9bf96dee66",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed083_v018.yaml",
+      "generated_config_sha256": "13b740edb026cf9dd56b6b6a9cd28a2e9c2a080ce11a46c9ada0bb124a9e577b",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed097_v018.yaml",
+      "generated_config_sha256": "69e2cd2434953d9b3e1b19c6d9a5fe1bcf8fd39293735168e02271ca5c4d04ae",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed109_v018.yaml",
+      "generated_config_sha256": "d095614216e563ecb0a0ba275df9a5e2554c62b03260739ef397d5f3759d00ab",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed127_v018.yaml",
+      "generated_config_sha256": "6e4b60f2971d0af1dd7cb6f069891bd3aaebb46d9e47fbe28cc8456556127dbd",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B050",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_UN50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "1dc98c92716aa056504d2b053dd731a06480abc1853f736afb48f35b1af46e6d",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un50_seed149_v018.yaml",
+      "generated_config_sha256": "016a8d9c3fced3e3a02b8ea35f55c75526f2b6a018aafae24c302b29b4575e02",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed023_v018.yaml",
+      "generated_config_sha256": "5a3b79d7ef3975833daae82067d245b2b282411e7968159c546f998d7b31713f",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed037_v018.yaml",
+      "generated_config_sha256": "f5b4211f69a97752ab23a774d8c659499b54bf3595d2d9615822afe5e70721d7",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed053_v018.yaml",
+      "generated_config_sha256": "bcf110797501207bdb3b7d32078af5c5fc2c0825cd96a24b7591ffa0f3ca3b2d",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed071_v018.yaml",
+      "generated_config_sha256": "dd687f5520180a76fd5257b68af89199fab07564d553934b98a6d84ae51f3c3a",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed083_v018.yaml",
+      "generated_config_sha256": "fcbde92fc192068e59e94d9ea879593c954eb3394f4f104a0d1f69db300c12b6",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed097_v018.yaml",
+      "generated_config_sha256": "c87c7932070a2d9406682bfb75da1ca34543c608ea121b79f9106d8f2ad4b9f7",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed109_v018.yaml",
+      "generated_config_sha256": "ba52968d93b49e7b10076c76885af3c6b0ec808be1aa2926e100b288409f5d76",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed127_v018.yaml",
+      "generated_config_sha256": "fd7a0e68e44562583ca2bc0b9175cc32a6ba209d9b413d7adabad1cb6623e921",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B050",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_UA50",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B050_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B050__seed11\\resolved_config.yaml",
+      "base_config_sha256": "46664b9657add046ec70049307c5779390ff0056854cab6a26e703d677a50b9b",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua50_seed149_v018.yaml",
+      "generated_config_sha256": "a1e80db06017ab9e90517455d844484b7973ae8867bc38074cb50a50827782aa",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed023_v018.yaml",
+      "generated_config_sha256": "0a965f95cac975d9622c19295799fad6112f6861852bb78533c1c28262198767",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed037_v018.yaml",
+      "generated_config_sha256": "b4920247759b1214c8d376eb0ea049239d6cd02f2429e1eebd0b5231ab1e6ff3",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed053_v018.yaml",
+      "generated_config_sha256": "d74987a178229d5411f582be9f96ca22463924b2a44c9c5a1a319134b2e09f9b",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed071_v018.yaml",
+      "generated_config_sha256": "5cb98efc073280d649204138d6fe1cced30586cbc63741d78abb4c1da13dbecd",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed083_v018.yaml",
+      "generated_config_sha256": "b92395f41aa317f457db0c814f4f5175ec79f35b32e08ab5be385695dd0111ac",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed097_v018.yaml",
+      "generated_config_sha256": "60af1379387a9342170579b0deb9fbae9e5e921e032d959b42c2a77bed565680",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed109_v018.yaml",
+      "generated_config_sha256": "e9a9b82f80f62c25abc1fb980d751c97899cbc202ce58a2f719b6551d1e35640",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed127_v018.yaml",
+      "generated_config_sha256": "b8af771ae156d4002b5095b2caf84413b51f2fd4efe7022143b65ef1b7407c43",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_naive_B200",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_RN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "de6e511aad59b29a4ee133d95d1fde158af39adcab8e25d2ce8da2e7735c8ef5",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_rn200_seed149_v018.yaml",
+      "generated_config_sha256": "e6c24c8072d30c67932aa82868bdae5c5a3b8b0fda7254f3b62992a729abde78",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed023_v018.yaml",
+      "generated_config_sha256": "50670f24033e15e1d4ca6f359996f561f1dd3198ed8534d9f97d11a0a9901ce6",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed037_v018.yaml",
+      "generated_config_sha256": "932ca2c1b54c7fbbbc36bb226addf2ff12dc7f7b2d1795376446537efe5babe3",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed053_v018.yaml",
+      "generated_config_sha256": "a812729139d1bba7ebf0a075420cf9341a0005e67ce562c305e8f1ed3b2ae3ec",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed071_v018.yaml",
+      "generated_config_sha256": "b8062f6c5996d22b60a8cc89bc77d347045cac8424d51798d0ceb4993c013872",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed083_v018.yaml",
+      "generated_config_sha256": "04a03e0b7e0efcda3470d55c87f62bf0905d21760494ea40377efac43ecb96f8",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed097_v018.yaml",
+      "generated_config_sha256": "7c38d0a740bc7a1f9680e336ce0336288fa63409ac3f308a2e81480ee5061f89",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed109_v018.yaml",
+      "generated_config_sha256": "cacd8b47a215fe923f4a688f73b55301ec78ba074b87b48dedf84cbab9ba8a71",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed127_v018.yaml",
+      "generated_config_sha256": "cf83c3683a75111abb8e1912ac4510ea7c1b8470dbcfd705613cf184baf58d85",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "random_anchored_B200",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_RA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_random_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_random_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "6e305d590241ec3ee3284841062840eef8a7b6db964776446cc9ed0adb0ec92e",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ra200_seed149_v018.yaml",
+      "generated_config_sha256": "23202bfc7cfb8149db127ece3f3dfa3945556bff271b0bb9bee70e83d1aa3982",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed023_v018.yaml",
+      "generated_config_sha256": "2a1eb784c95e357702c321639466ddba26d780f3fe7daf9be11f3d910998c37f",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed037_v018.yaml",
+      "generated_config_sha256": "4e53ef725cb34ccea7416dfe835774e27d3d581e938b5a52c105b7eeeca76a13",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed053_v018.yaml",
+      "generated_config_sha256": "d1b91a78716938f4c50d53a27f3a323fb35f17e22cfc6ce647b5e45b3628f5ef",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed071_v018.yaml",
+      "generated_config_sha256": "1800782398bd3dcc5d8eab32e3a70700f71f897319dba9ff1f500df0dbaad3e3",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed083_v018.yaml",
+      "generated_config_sha256": "5a24a95026966c5114457cb65bbece4b2293e1fa46cff938dad5e6202a055baa",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed097_v018.yaml",
+      "generated_config_sha256": "e72280b7b08fedc3110194784493acb7217bd04e3cdcb966baff200aab4defbe",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed109_v018.yaml",
+      "generated_config_sha256": "93262da2b4d5d1701557e12cf5ca10455247db2260425cede7d74faf3c950a3d",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed127_v018.yaml",
+      "generated_config_sha256": "cf38e2c8724616a18c8e07f9ce0ceb4f44641367e8af8b6ce7f10e0850592fa6",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_naive_B200",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_UN200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_naive_replay_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_naive_replay_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "7e5f9b54a46fe3d81aecd66a9e79a5cfacee29a59facb613d7150df989516538",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_un200_seed149_v018.yaml",
+      "generated_config_sha256": "318f14d11b024a2252b8a6dae3581fd879d4bf94c12fae6e22d343914291149e",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 23,
+      "run_name": "R19_DoS_s023_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed023_v018.yaml",
+      "generated_config_sha256": "1d47e1134962f9e7ca6153f70a51624c30c7ed55f978c32c8fed332c62050a99",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 37,
+      "run_name": "R19_DoS_s037_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed037_v018.yaml",
+      "generated_config_sha256": "5e0db55c663548ac170b665611f4ce5c94eaec3a3ecb748bfb8b7281b33e391c",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 53,
+      "run_name": "R19_DoS_s053_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed053_v018.yaml",
+      "generated_config_sha256": "0088dbbda200f713b93cef80f0858089fbe7cd0d50b41a33a586458d64a0089c",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 71,
+      "run_name": "R19_DoS_s071_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed071_v018.yaml",
+      "generated_config_sha256": "693df9c0afd7fb5374fec82ba931be96e9de9a2a1d495969f03eb3820dad813a",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 83,
+      "run_name": "R19_DoS_s083_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed083_v018.yaml",
+      "generated_config_sha256": "e8040f8172f9a80bd5df32190827610ec0024f93f960efac5dd23f31e836216c",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 97,
+      "run_name": "R19_DoS_s097_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed097_v018.yaml",
+      "generated_config_sha256": "15c4e5ac63833e7ef4ef45a3d49f5b1626d2c40da385ce90867a16e546148d62",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 109,
+      "run_name": "R19_DoS_s109_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed109_v018.yaml",
+      "generated_config_sha256": "33f2269d0ef2e413e99f5a42945c4cabeb87381441063c7d7fb137f329afb415",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 127,
+      "run_name": "R19_DoS_s127_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed127_v018.yaml",
+      "generated_config_sha256": "9a0215013598c742594694bd321b56254d909ba81796270cb2d09e581d15c333",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    },
+    {
+      "condition": "ud_anchored_B200",
+      "seed": 149,
+      "run_name": "R19_DoS_s149_UA200",
+      "base_config_path": "C:\\Users\\ASUS\\raids-nids\\results\\runs\\E13_CSE_DoS_prospective_ud_source_anchored_B200_v018__NF-CICIDS2018-v3-DoS-Historical-Pilot-to-NF-CICIDS2018-v3-DoS-Emergence-Pilot__dos_goldeneye_first_family_emergence__cse_dos_ud_source_anchored_B200__seed11\\resolved_config.yaml",
+      "base_config_sha256": "985aa04ad8acb553441cd8d683671b3e878e3d2875db19f99ddf40b0d2dc5219",
+      "generated_config_path": "C:\\Users\\ASUS\\raids-nids\\configs\\experiments\\cse_dos_adaptive_seed_robustness_v018\\dos_ua200_seed149_v018.yaml",
+      "generated_config_sha256": "e25149a26f224ef7fa3ab97e6a7c9735c3561dbfb4e094c845d6766026abc7d6",
+      "changed_fields": [
+        "seed",
+        "name"
+      ]
+    }
+  ]
+}

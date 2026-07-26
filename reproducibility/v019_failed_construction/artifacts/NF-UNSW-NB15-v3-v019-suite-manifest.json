@@ -1,0 +1,33 @@
+{
+  "constructed_count": 0,
+  "dataset": "NF-UNSW-NB15-v3",
+  "failed_count": 3,
+  "outcomes": [
+    {
+      "error_type": "ValueError",
+      "family": "DoS",
+      "reason": "No eligible DoS occurrence satisfied the frozen warm-up and continuity rules; rejected={'insufficient_preceding_rows': 57, 'non_benign_warmup': 5668, 'insufficient_post_rows': 255, 'warmup_gap_limit': 0}",
+      "status": "failed_event_construction"
+    },
+    {
+      "error_type": "ValueError",
+      "family": "Exploits",
+      "reason": "No eligible Exploits occurrence satisfied the frozen warm-up and continuity rules; rejected={'insufficient_preceding_rows': 553, 'non_benign_warmup': 39417, 'insufficient_post_rows': 2778, 'warmup_gap_limit': 0}",
+      "status": "failed_event_construction"
+    },
+    {
+      "error_type": "ValueError",
+      "family": "Reconnaissance",
+      "reason": "No eligible Reconnaissance occurrence satisfied the frozen warm-up and continuity rules; rejected={'insufficient_preceding_rows': 181, 'non_benign_warmup': 15531, 'insufficient_post_rows': 1362, 'warmup_gap_limit': 0}",
+      "status": "failed_event_construction"
+    }
+  ],
+  "prespecified_families": [
+    "DoS",
+    "Exploits",
+    "Reconnaissance"
+  ],
+  "protocol_id": "RAIDS-NIDS-v0.19-external-guard-comparison",
+  "raw_dataset_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "replacement_after_outcome": "prohibited"
+}

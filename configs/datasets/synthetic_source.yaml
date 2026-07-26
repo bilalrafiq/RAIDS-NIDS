@@ -1,0 +1,8 @@
+name: Synthetic-Source-Smoke
+path: data/synthetic/source.csv
+label_column: label
+time_column: time_index
+auto_drop_identifiers: true
+sampling:
+  max_rows: null
+

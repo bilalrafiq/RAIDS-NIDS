@@ -1,0 +1,3 @@
+dataset,version_or_release,source_url_or_doi,license,sha256,rows_raw,label_column,label_mapping,time_column,time_reliability,identifier_columns_removed,duplicate_policy,unknown_groups,common_feature_set,decision_date,decision_owner,notes
+REPLACE_ME,,,,,,,,,,,,,,,,
+

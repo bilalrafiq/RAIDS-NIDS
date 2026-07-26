@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "model_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "query_records": 40,
+  "query_set_groups": 4,
+  "results": [
+    {
+      "selection_strategy": "random_nested",
+      "budget": 50,
+      "seeds": 10,
+      "distinct_runner_hashes": 1,
+      "distinct_ordered_vectors": 1,
+      "distinct_unordered_sets": 1,
+      "all_query_sets_identical": true,
+      "pairwise_overlap_mean": 50.0,
+      "pairwise_overlap_min": 50,
+      "pairwise_overlap_max": 50,
+      "pairwise_Jaccard_mean": 1.0,
+      "pairwise_Jaccard_min": 1.0,
+      "pairwise_Jaccard_max": 1.0,
+      "DoS_count_distinct_values": 1,
+      "interpretation": "fixed_query_set_across_model_seeds"
+    },
+    {
+      "selection_strategy": "random_nested",
+      "budget": 200,
+      "seeds": 10,
+      "distinct_runner_hashes": 1,
+      "distinct_ordered_vectors": 1,
+      "distinct_unordered_sets": 1,
+      "all_query_sets_identical": true,
+      "pairwise_overlap_mean": 200.0,
+      "pairwise_overlap_min": 200,
+      "pairwise_overlap_max": 200,
+      "pairwise_Jaccard_mean": 1.0,
+      "pairwise_Jaccard_min": 1.0,
+      "pairwise_Jaccard_max": 1.0,
+      "DoS_count_distinct_values": 1,
+      "interpretation": "fixed_query_set_across_model_seeds"
+    },
+    {
+      "selection_strategy": "uncertainty_diversity",
+      "budget": 50,
+      "seeds": 10,
+      "distinct_runner_hashes": 10,
+      "distinct_ordered_vectors": 10,
+      "distinct_unordered_sets": 10,
+      "all_query_sets_identical": false,
+      "pairwise_overlap_mean": 40.644444444444446,
+      "pairwise_overlap_min": 35,
+      "pairwise_overlap_max": 49,
+      "pairwise_Jaccard_mean": 0.6902635362188787,
+      "pairwise_Jaccard_min": 0.5384615384615384,
+      "pairwise_Jaccard_max": 0.9607843137254902,
+      "DoS_count_distinct_values": 1,
+      "interpretation": "query_set_varied_for_every_seed"
+    },
+    {
+      "selection_strategy": "uncertainty_diversity",
+      "budget": 200,
+      "seeds": 10,
+      "distinct_runner_hashes": 10,
+      "distinct_ordered_vectors": 10,
+      "distinct_unordered_sets": 10,
+      "all_query_sets_identical": false,
+      "pairwise_overlap_mean": 126.37777777777778,
+      "pairwise_overlap_min": 94,
+      "pairwise_overlap_max": 171,
+      "pairwise_Jaccard_mean": 0.4699924378737646,
+      "pairwise_Jaccard_min": 0.30718954248366015,
+      "pairwise_Jaccard_max": 0.7467248908296943,
+      "DoS_count_distinct_values": 1,
+      "interpretation": "query_set_varied_for_every_seed"
+    }
+  ],
+  "interpretation_rule": {
+    "fixed": "The experiment varies model seed while holding the selected query rows fixed.",
+    "varying": "Both model seed and selected query rows vary across seed conditions."
+  }
+}

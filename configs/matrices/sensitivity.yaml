@@ -1,0 +1,23 @@
+base_experiment: configs/experiments/pilot_cross_environment.yaml
+axes:
+  seeds:
+    - {seed: 11}
+    - {seed: 22}
+    - {seed: 33}
+    - {seed: 44}
+    - {seed: 55}
+  cases:
+    - method: {name: sensitivity_q90, rejection_quantile: 0.90}
+    - method: {name: sensitivity_q95, rejection_quantile: 0.95}
+    - method: {name: sensitivity_q975, rejection_quantile: 0.975}
+    - method: {name: sensitivity_window250}
+      stream: {window_size: 250}
+    - method: {name: sensitivity_window500}
+      stream: {window_size: 500}
+    - method: {name: sensitivity_window1000}
+      stream: {window_size: 1000}
+    - method: {name: sensitivity_drift100}
+      adaptation: {drift: {mean_shift_threshold: 1.0}}
+    - method: {name: sensitivity_drift150}
+      adaptation: {drift: {mean_shift_threshold: 1.5}}
+

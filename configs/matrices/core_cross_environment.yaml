@@ -1,0 +1,55 @@
+# Runs after E01 audit and label harmonization. Current transitions use the two supplied adapters.
+base_experiment: configs/experiments/pilot_cross_environment.yaml
+axes:
+  seeds:
+    - {seed: 11}
+    - {seed: 22}
+    - {seed: 33}
+    - {seed: 44}
+    - {seed: 55}
+  transitions:
+    - source_dataset: configs/datasets/nf_unsw_nb15_v2.yaml
+      target_dataset: configs/datasets/nf_cse_cic_ids2018_v2.yaml
+    - source_dataset: configs/datasets/nf_cse_cic_ids2018_v2.yaml
+      target_dataset: configs/datasets/nf_unsw_nb15_v2.yaml
+    - source_dataset: configs/datasets/nf_unsw_nb15_v2.yaml
+      target_dataset: configs/datasets/nf_ton_iot_v2.yaml
+    - source_dataset: configs/datasets/nf_ton_iot_v2.yaml
+      target_dataset: configs/datasets/nf_unsw_nb15_v2.yaml
+    - source_dataset: configs/datasets/nf_cse_cic_ids2018_v2.yaml
+      target_dataset: configs/datasets/nf_ton_iot_v2.yaml
+    - source_dataset: configs/datasets/nf_ton_iot_v2.yaml
+      target_dataset: configs/datasets/nf_cse_cic_ids2018_v2.yaml
+  methods:
+    - method:
+        {name: logistic_open_set, type: logistic, open_set: true, rejection_quantile: 0.95}
+      adaptation: {enabled: false, label_budget_fraction: 0.0}
+    - method:
+        name: random_forest_open_set
+        type: random_forest
+        open_set: true
+        rejection_quantile: 0.95
+        parameters: {n_estimators: 300, min_samples_leaf: 2, n_jobs: -1}
+      adaptation: {enabled: false, label_budget_fraction: 0.0}
+    - method:
+        name: compact_mlp_open_set
+        type: mlp
+        open_set: true
+        rejection_quantile: 0.95
+        parameters: {hidden_layer_sizes: [64, 32], max_iter: 200}
+      adaptation: {enabled: false, label_budget_fraction: 0.0}
+    - method:
+        {name: prototype_static, type: prototype, pca_components: 32, rejection_quantile: 0.95, memory_per_class: 1000}
+      adaptation: {enabled: false, label_budget_fraction: 0.0}
+    - method:
+        {name: adaptive_prototype_random_1pct, type: prototype, pca_components: 32, rejection_quantile: 0.95, memory_per_class: 1000}
+      adaptation:
+        {enabled: true, label_budget_fraction: 0.01, selection: random, trigger_mode: drift, max_queries_per_event: 50}
+    - method:
+        {name: adaptive_prototype_ud_1pct, type: prototype, pca_components: 32, rejection_quantile: 0.95, memory_per_class: 1000}
+      adaptation:
+        {enabled: true, label_budget_fraction: 0.01, selection: uncertainty_diversity, trigger_mode: drift, max_queries_per_event: 50}
+    - method:
+        {name: adaptive_prototype_periodic_1pct, type: prototype, pca_components: 32, rejection_quantile: 0.95, memory_per_class: 1000}
+      adaptation:
+        {enabled: true, label_budget_fraction: 0.01, selection: uncertainty_diversity, trigger_mode: periodic, periodic_interval_windows: 3, max_queries_per_event: 50}

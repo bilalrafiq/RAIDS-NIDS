@@ -1,0 +1,3 @@
+budget,query_seeds,distinct_query_hashes,pairwise_overlap_mean,pairwise_overlap_min,pairwise_overlap_max,pairwise_Jaccard_mean,pairwise_Jaccard_min,pairwise_Jaccard_max
+50,10,10,5.155555555555556,1,10,0.05487689867680428,0.010101010101010102,0.1111111111111111
+200,10,10,81.35555555555555,69,92,0.2556726627883096,0.2084592145015106,0.2987012987012987

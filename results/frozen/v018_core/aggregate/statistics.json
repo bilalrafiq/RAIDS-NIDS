@@ -1,0 +1,21 @@
+{
+  "complete_blocks": 1,
+  "friedman": null,
+  "methods": [
+    "adaptive_prototype_1pct",
+    "logistic_open_set"
+  ],
+  "pairwise_wilcoxon": [
+    {
+      "holm_adjusted_p": 1.0,
+      "method_a": "adaptive_prototype_1pct",
+      "method_b": "logistic_open_set",
+      "n_blocks": 1,
+      "p_value": 1.0,
+      "paired_sign_effect": -1.0,
+      "statistic": 0.0
+    }
+  ],
+  "primary_metric": "primary_normalized_recovery_area",
+  "warning": "Rows/scenarios, not packets, are the inferential units."
+}

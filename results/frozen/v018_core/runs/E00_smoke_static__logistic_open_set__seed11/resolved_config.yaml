@@ -1,0 +1,30 @@
+name: E00_smoke_static
+seed: 11
+source_dataset: configs/datasets/synthetic_source.yaml
+target_dataset: configs/datasets/synthetic_target.yaml
+output_root: results/runs
+scenario:
+  name: synthetic_novel_classes
+  holdout_labels: []
+stream:
+  mode: controlled_novelty
+  window_size: 250
+  known_prefix_fraction: 0.3
+method:
+  name: logistic_open_set
+  type: logistic
+  open_set: true
+  rejection_quantile: 0.95
+  parameters:
+    max_iter: 500
+    C: 1.0
+adaptation:
+  enabled: false
+  label_budget_fraction: 0.0
+  drift:
+    mean_shift_threshold: 1.25
+    unknown_rate_threshold: 0.2
+    min_windows_between: 2
+metrics:
+  recovery_fraction: 0.95
+  recovery_patience_windows: 2

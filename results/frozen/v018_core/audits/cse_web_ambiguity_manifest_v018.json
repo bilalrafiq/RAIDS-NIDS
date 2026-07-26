@@ -1,0 +1,70 @@
+{
+  "ambiguous_novel_rows": 38,
+  "audit_performed_before_static_model_run": true,
+  "ceiling_interpretation": "Conditional ceiling if feature vectors associated with known Benign rows must remain classified as Benign; not an unconditional mathematical recall ceiling.",
+  "combined_novel_ambiguity_fraction": 0.38235294117647056,
+  "combined_unambiguous_novel_rows": 63,
+  "combined_unique_ambiguous_novel_rows": 39,
+  "conditional_feature_consistent_recall_ceiling_including_target_internal_conflicts": 0.6176470588235294,
+  "conditional_recall_ceiling_if_conflicting_vectors_remain_benign": 0.6274509803921569,
+  "cross_conflicting_feature_vectors": 10,
+  "event": "Web Attacks",
+  "exact_vector_matches_verified": true,
+  "feature_count": 47,
+  "novel_ambiguity_fraction": 0.37254901960784315,
+  "planned_post_model_diagnostic": "Report exact recognition separately for ambiguous and unambiguous novel rows.",
+  "primary_stream_retains_conflicting_rows": true,
+  "protocol_changed_due_to_ambiguity": false,
+  "subtype_ambiguity": [
+    {
+      "Attack": "Brute_Force_-Web",
+      "ambiguity_percent": 29.62962962962963,
+      "ambiguous_rows": 24,
+      "total_rows": 81,
+      "unambiguous_rows": 57
+    },
+    {
+      "Attack": "Brute_Force_-XSS",
+      "ambiguity_percent": 66.66666666666667,
+      "ambiguous_rows": 14,
+      "total_rows": 21,
+      "unambiguous_rows": 7
+    }
+  ],
+  "supporting_files": {
+    "conflict_groups": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_exact_conflict_groups_v018.csv",
+    "feature_vectors": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_conflict_feature_vectors_v018.csv",
+    "source_rows": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_source_conflict_rows_v018.csv",
+    "target_rows": "C:\\Users\\ASUS\\raids-nids\\results\\audits\\cse_web_target_conflict_rows_v018.csv"
+  },
+  "target_cross_conflicting_rows": 40,
+  "target_internal_ambiguous_novel_rows": 3,
+  "target_internal_conflicts": [
+    {
+      "attack_counts": "{\"Benign\": 4, \"Brute_Force_-Web\": 1}",
+      "family_counts": "{\"Benign\": 4, \"Web Attacks\": 1}",
+      "fingerprint": "624356fe189ddd69",
+      "positions": [
+        14683,
+        33154,
+        63034,
+        66610,
+        68762
+      ],
+      "rows": 5
+    },
+    {
+      "attack_counts": "{\"Benign\": 2, \"Brute_Force_-XSS\": 2}",
+      "family_counts": "{\"Benign\": 2, \"Web Attacks\": 2}",
+      "fingerprint": "aea58aee390ed67e",
+      "positions": [
+        104844,
+        104845,
+        112185,
+        112186
+      ],
+      "rows": 4
+    }
+  ],
+  "unambiguous_novel_rows": 64
+}
