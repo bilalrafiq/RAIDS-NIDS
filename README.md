@@ -1,13 +1,14 @@
 # RAIDS-NIDS
 
-RAIDS-NIDS is the software and frozen evidence package for:
+RAIDS-NIDS is the software and frozen evidence package associated with the article:
 
-> **Beyond Static Accuracy: A Prospective Fail-Closed Evaluation of Guarded Open-World Network Intrusion Detection**
+> **A Leakage-Controlled Fail-Closed Protocol for Prospective Evaluation of Adaptive Network Intrusion Detection**
 
-The repository evaluates network intrusion detection under chronological
+The repository evaluates adaptive network intrusion detection under chronological
 distribution shift, novel-family emergence, fixed target-label budgets, and
 fail-closed guard selection. Software version `0.1.11` is the authoritative
-codebase for the complete v0.18 through v0.21 record.
+codebase for the frozen v0.18 through v0.21 experimental record. Later manuscript
+revisions did not alter the frozen measurements.
 
 ## Evidence boundary
 

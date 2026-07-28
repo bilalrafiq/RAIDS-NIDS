@@ -16,6 +16,6 @@ keywords:
   - cybersecurity
   - reproducible research
 abstract: >-
-  Reproducible software, frozen configurations, audits, results, and paper
-  assets for prospective fail-closed evaluation of guarded open-world network
-  intrusion detection.
+  Reproducible software, frozen configurations, audits, results, and manuscript
+  assets supporting leakage-controlled, fail-closed prospective evaluation of
+  adaptive network intrusion detection.
