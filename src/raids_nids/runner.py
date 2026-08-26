@@ -340,9 +340,24 @@ def _build_drift_gate(
     reference_embedding = model.embed(
         target_x.iloc[reference_start * window_size : reference_end * window_size]
     )
+    score_scaling_cfg = drift_cfg.get("score_scaling", {})
+    if not isinstance(score_scaling_cfg, dict):
+        raise ValueError("adaptation.drift.score_scaling must be a mapping")
+    score_scaling_mode = str(
+        score_scaling_cfg.get("mode", "reference_only")
+    ).lower()
+    source_embedding_std = (
+        getattr(model, "source_embedding_std", None)
+        if score_scaling_mode == "source_anchored_max"
+        else None
+    )
+    score_scale_epsilon = float(score_scaling_cfg.get("epsilon", 1e-6))
     scoring_gate = WarmupCalibratedShiftGate(
         reference_embedding,
         mean_shift_threshold=float("inf"),
+        scale_mode=score_scaling_mode,
+        source_embedding_std=source_embedding_std,
+        scale_epsilon=score_scale_epsilon,
     )
     calibration_scores = []
     for window_index in range(calibration_start, calibration_end):
@@ -402,7 +417,21 @@ def _build_drift_gate(
         consecutive_windows=consecutive_windows,
         min_windows_between=min_windows_between,
         one_shot=one_shot,
+        scale_mode=score_scaling_mode,
+        source_embedding_std=source_embedding_std,
+        scale_epsilon=score_scale_epsilon,
     )
+    score_scaling_summary = {
+        "contract_version": str(
+            score_scaling_cfg.get(
+                "contract_version",
+                "legacy-reference-only-v0.18",
+            )
+        ),
+        **gate.scaling_summary(),
+        "source_training_labels_used": False,
+        "target_post_change_rows_used": False,
+    }
     calibration_report: dict[str, Any] = {
         "contract_version": calibration_contract,
         "reference_mode": "target_warmup",
@@ -421,6 +450,7 @@ def _build_drift_gate(
         "one_shot": gate.one_shot,
         "target_labels_used": False,
         "calibration_window_count": len(calibration_values),
+        "score_scaling": score_scaling_summary,
     }
     if guard_selection_enabled:
         calibration_report.update(
@@ -1005,6 +1035,26 @@ def run_experiment(config_or_path: dict[str, Any] | str | Path) -> dict[str, Any
             ),
             "drift_guard_selection_excludes_target_labels": not bool(
                 drift_calibration.get("guard_target_labels_used", False)
+            ),
+            "score_scale_excludes_target_post_change_rows": not bool(
+                drift_calibration.get("score_scaling", {}).get(
+                    "target_post_change_rows_used", False
+                )
+            ),
+            "source_anchored_score_scale_uses_source_training_only": (
+                drift_calibration.get("score_scaling", {}).get("mode")
+                != "source_anchored_max"
+                or (
+                    drift_calibration.get("score_scaling", {}).get(
+                        "source_std_min"
+                    )
+                    is not None
+                    and not bool(
+                        drift_calibration.get("score_scaling", {}).get(
+                            "source_training_labels_used", False
+                        )
+                    )
+                )
             ),
             "change_boundary_aligned_to_evaluation_blocks": (
                 change_row % evaluation_window_size == 0

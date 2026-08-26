@@ -188,6 +188,70 @@ def test_guard_safe_calibration_is_auditable_and_label_free(tmp_path: Path):
     ]
 
 
+def test_adaptive_runner_supports_source_anchored_score_scaling(
+    tmp_path: Path,
+):
+    data_dir = tmp_path / "data"
+    source_path, target_path = generate_synthetic(
+        data_dir, seed=29, n_source=600, n_target=800
+    )
+    config = load_yaml("configs/experiments/smoke_static.yaml")
+    config = deep_merge(
+        config,
+        {
+            "name": "pytest_source_anchored_score_scaling",
+            "source_dataset": {
+                "name": "test-source",
+                "path": str(source_path),
+                "label_column": "label",
+                "time_column": "time_index",
+            },
+            "target_dataset": {
+                "name": "test-target",
+                "path": str(target_path),
+                "label_column": "label",
+                "time_column": "time_index",
+            },
+            "output_root": str(tmp_path / "results"),
+            "stream": {"window_size": 100, "true_change_window": 4},
+            "adaptation": {
+                "drift": {
+                    "reference_mode": "target_warmup",
+                    "reference_start_window": 0,
+                    "reference_end_window": 1,
+                    "calibration_start_window": 1,
+                    "calibration_end_window": 3,
+                    "guard_start_window": 3,
+                    "guard_end_window": 4,
+                    "monitoring_start_window": 4,
+                    "mad_multiplier_candidates": [3, 4, 5, 6],
+                    "consecutive_windows": 2,
+                    "one_shot": True,
+                    "unknown_rate_threshold": 1.1,
+                    "score_scaling": {
+                        "contract_version": (
+                            "1.0-v021-source-anchored-max-scale"
+                        ),
+                        "mode": "source_anchored_max",
+                        "epsilon": 1e-6,
+                    },
+                }
+            },
+            "metrics": {"evaluation_window_size": 200},
+        },
+    )
+
+    summary = run_experiment(config)
+    scaling = summary["drift_calibration"]["score_scaling"]
+    assert scaling["mode"] == "source_anchored_max"
+    assert scaling["contract_version"] == (
+        "1.0-v021-source-anchored-max-scale"
+    )
+    assert scaling["source_anchored_dimensions"] >= 0
+    assert not scaling["source_training_labels_used"]
+    assert not scaling["target_post_change_rows_used"]
+
+
 def test_absolute_label_budget_is_enforced(tmp_path: Path):
     data_dir = tmp_path / "data"
     source_path, target_path = generate_synthetic(data_dir, seed=13, n_source=600, n_target=800)
