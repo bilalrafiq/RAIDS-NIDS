@@ -91,7 +91,7 @@ python scripts/verify_v022_publication_evidence.py \
   --root results/frozen/v022_unsw_exploits_gate4 \
   --expected-archive-sha256 77c87be900e732fb64c505ac01b33b6dd8243f96845e7500317a200e4145c6ab \
   --expected-archive-size 114039766
-pytest -q
+python -m pytest -q -p no:cacheprovider
 ```
 
 For a frozen release package, also verify every included file:

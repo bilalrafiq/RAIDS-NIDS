@@ -26,4 +26,4 @@ jobs:
           --expected-archive-sha256 77c87be900e732fb64c505ac01b33b6dd8243f96845e7500317a200e4145c6ab
           --expected-archive-size 114039766
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q -p no:cacheprovider
