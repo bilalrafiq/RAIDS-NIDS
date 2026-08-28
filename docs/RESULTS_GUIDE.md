@@ -82,6 +82,25 @@ Primary seed set:
 Each family has ten model runs and thirty detector rows. Seed 11 is absent
 from the aggregate.
 
+## v0.22 NF-UNSW Exploits Gate 4 extension
+
+Compact public evidence:
+
+```text
+results/frozen/v022_unsw_exploits_gate4/
+```
+
+The final records report passed Gates 1, 2, and 3 and 90 defined Gate 4 runs.
+The query-provenance audit passed all 90 run-level checks. Use
+`RUN_DIRECTORY_MAP.csv` to resolve the short public run identifiers and
+`SOURCE_FILE_MAP.csv` to recover each original evidence path. The compact copy
+omits 100 `model.joblib` files and six logs. Their original paths, archive
+member paths, sizes, and SHA-256 values are in `OMITTED_FILES.csv`.
+
+The full evidence archive is separate from Git because it is 114,039,766
+bytes. Its SHA-256 is
+`77c87be900e732fb64c505ac01b33b6dd8243f96845e7500317a200e4145c6ab`.
+
 ## Reporting rules
 
 1. Treat failures as results.
@@ -91,3 +110,5 @@ from the aggregate.
 5. Do not report v0.20 detector outcomes as corrected results.
 6. Do not replace the failed DoS construction.
 7. Do not describe guard triggers as attack-family classification.
+8. Keep the v0.22 Gate 4 extension distinct from the v0.21 score-only external
+   evaluation.
