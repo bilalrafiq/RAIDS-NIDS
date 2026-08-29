@@ -1,0 +1,13 @@
+base_experiment: configs/experiments/v023_unsw_reconnaissance_static.yaml
+axes:
+  model_seed:
+    - {seed: 11}
+    - {seed: 23}
+    - {seed: 37}
+    - {seed: 53}
+    - {seed: 71}
+    - {seed: 83}
+    - {seed: 97}
+    - {seed: 109}
+    - {seed: 127}
+    - {seed: 149}

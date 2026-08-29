@@ -1,0 +1,151 @@
+protocol_id: RAIDS-NIDS-v0.23-unsw-reconnaissance-gate4-replication
+prespecified_on: 2026-08-29
+status: prespecified_before_v023_outcomes
+
+evidence_boundary:
+  base_experimental_commit: 00b90bfb7a6f3aeb9eebb14af12fae228b529702
+  v018_core_evidence_unchanged: true
+  v019_failed_construction_retained: true
+  v020_event_suite_reused_without_reselection: true
+  v021_reconnaissance_detector_outcomes_seen: true
+  v022_exploits_gate4_outcomes_seen: true
+  v022_release_tag: v0.22-unsw-exploits-evidence
+  v023_gate4_outcomes_seen_before_freeze: false
+  shares_raw_trace_with_v022_exploits: true
+  independent_environment: false
+  claim: prespecified_second_episode_replication_not_untouched_validation
+
+episode:
+  dataset: NF-UNSW-NB15-v3
+  family: Reconnaissance
+  event_protocol_id: RAIDS-NIDS-v0.20-external-guard-amendment
+  event_manifest: data/derived/v020_unsw_events/NF-UNSW-NB15-v3-reconnaissance-manifest.json
+  source_dataset: configs/datasets/nf_unsw_nb15_v3_reconnaissance_v023_source.yaml
+  target_dataset: configs/datasets/nf_unsw_nb15_v3_reconnaissance_v023_target.yaml
+  expected_raw_sha256: 4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5
+  expected_event_manifest_sha256: 856f165fd8cb34a0db91dfa574bda106bd55c5d7d0820a0445cb56c1a8a9ae13
+  expected_source_sha256: 23a046f34ceb9e43b434f8b633d29d7d9f63c34944387fb6e62467f8ec3acedf
+  expected_target_sha256: d4157b6246db7cb254df1406c0f59c81f7b6e605ed62105b0ec196e09b70940e
+  expected_source_rows: 500000
+  expected_target_rows: 120000
+  expected_warmup_rows: 20000
+  expected_post_change_rows: 100000
+  expected_event_time: "2015-02-18 01:06:32.190000"
+  observed_onset_counts:
+    500: 6
+    5000: 55
+
+model_and_preprocessing:
+  type: prototype
+  pca_components: 32
+  rejection_quantile: 0.95
+  memory_per_class: 1000
+  fit_preprocessing_on_source_only: true
+  drop_columns:
+    - FLOW_END_MILLISECONDS
+    - FTP_COMMAND_RET_CODE
+
+score_contract:
+  contract_version: 1.0-v021-source-anchored-max-scale
+  mode: source_anchored_max
+  formula: max(target_reference_std_j, source_training_std_j, 1e-6)
+  epsilon: 0.000001
+  target_labels_used: false
+  target_post_change_rows_used: false
+
+stream:
+  mode: chronological
+  window_size: 500
+  evaluation_window_size: 5000
+  true_change_window: 40
+  reference_windows: [0, 10]
+  calibration_windows: [10, 30]
+  guard_windows: [30, 40]
+  monitoring_start_window: 40
+
+gate3:
+  authoritative_detector_for_gate4: mad
+  mad_multiplier_candidates: [3, 4, 5, 6]
+  consecutive_windows: 2
+  minimum_windows_between: 3
+  one_shot: true
+  unknown_rate_threshold: 1.1
+  candidate_selection: smallest_prespecified_multiplier_with_zero_persistent_guard_triggers
+  failure_handling: fail_closed_per_model_seed
+  secondary_detector_comparison:
+    adwin_delta_candidates: [0.1, 0.05, 0.01, 0.005, 0.002]
+    page_hinkley_threshold_candidates: [5, 10, 20, 50]
+
+gate4:
+  model_seeds: [11, 23, 37, 53, 71, 83, 97, 109, 127, 149]
+  query_seed: 11
+  selection_strategies: [random_nested, uncertainty_diversity]
+  label_budgets: [50, 200]
+  update_rules: [replay, source_anchored]
+  static_baseline: true
+  prediction_before_query_and_update: true
+  source_anchored_update:
+    minimum_target_samples_per_class: 5
+    anchor_reliability_tau: 25.0
+    anchor_max_alpha: 0.05
+    anchor_source_weight: 1000.0
+
+metrics:
+  primary_outcome: primary_normalized_recovery_area
+  primary_trajectory_metric: acquisition_macro_f1
+  secondary_outcomes:
+    - global_novel_exact_recall
+    - mean_source_forgetting
+  supportive_descriptive_outcomes:
+    - global_acquisition_macro_f1
+    - global_novel_auroc
+    - global_novel_auprc
+    - trigger_delay_windows
+    - label_yield
+    - runtime_and_memory
+  recovery_fraction: 0.95
+  recovery_patience_windows: 2
+  recovery_patience_evaluation_blocks: 3
+  normal_labels: [Benign]
+  minimum_evaluation_known_classes: 1
+  minimum_evaluation_rows_per_known_class: 0
+  minimum_evaluation_non_normal_rows: 1
+  global_metric_max_rows: 2000000
+
+statistics:
+  paired_unit: model_seed
+  bootstrap_seed: 2026
+  bootstrap_repetitions: 100000
+  sign_flip_test: exact_two_sided_all_assignments
+  retain_zero_differences: true
+  all_zero_p_value: 1.0
+  confirmatory_family:
+    metric: primary_normalized_recovery_area
+    multiplicity: holm_across_three_tests
+    contrasts:
+      - id: ud_vs_random
+        difference: uncertainty_diversity_minus_random_nested
+        marginalize_over: [label_budget, update_rule]
+      - id: budget_200_vs_50
+        difference: budget_200_minus_budget_50
+        marginalize_over: [selection_strategy, update_rule]
+      - id: ud_b200_vs_static
+        difference: uncertainty_diversity_budget_200_minus_static
+        marginalize_over: [update_rule]
+  secondary_analysis:
+    outcomes: [global_novel_exact_recall, mean_source_forgetting]
+    contrasts: [ud_vs_random, budget_200_vs_50, ud_b200_vs_static]
+    confirmatory: false
+  interpretation: computational_seed_robustness_within_shared_stream_not_independent_networks
+
+integrity:
+  evidence_root: evidence/v023_unsw_reconnaissance_gate4
+  do_not_overwrite:
+    - results/frozen/v018_core
+    - reproducibility/v019_failed_construction
+    - reproducibility/v020_diagnostic_excluded
+    - results/frozen/v021_external_validation
+    - results/frozen/v022_unsw_exploits_gate4
+    - evidence/v022_unsw_exploits_gate4
+  retain_failed_gates: true
+  require_clean_prespecification_commit_before_real_run: true
