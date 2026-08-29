@@ -1,0 +1,9 @@
+{
+  "Gate1": "passed",
+  "Gate2": "passed",
+  "Gate3_MAD": "passed",
+  "Gate4": "executed",
+  "admissible_model_seed_count": 10,
+  "defined_gate4_run_count": 90,
+  "failure_boundary": null
+}

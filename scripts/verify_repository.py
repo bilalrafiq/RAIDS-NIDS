@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 import re
+import subprocess
 import sys
 import tomllib
 from collections import Counter
@@ -35,6 +36,67 @@ def sha256(path: Path) -> str:
         for block in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(block)
     return digest.hexdigest()
+
+
+def public_repository_files() -> tuple[list[Path], bool]:
+    """Return public files and whether they came from the Git index.
+
+    A working checkout can contain build products, local evidence, virtual
+    environments, and Git metadata that are not part of the public repository.
+    Use the index when it is available. Fall back to a filesystem scan for a
+    source archive that has no Git metadata.
+    """
+
+    try:
+        completed = subprocess.run(
+            ["git", "ls-files", "-z"],
+            cwd=ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+        )
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        files = sorted(
+            path
+            for path in ROOT.rglob("*")
+            if path.is_file()
+            and ".git" not in path.relative_to(ROOT).parts
+        )
+        return files, False
+
+    relative_paths = [
+        relative
+        for relative in completed.stdout.decode("utf-8").split("\0")
+        if relative
+    ]
+    files = [ROOT / relative for relative in relative_paths]
+    missing = [
+        path.relative_to(ROOT).as_posix()
+        for path in files
+        if not path.is_file()
+    ]
+    require(not missing, f"Git-tracked files missing from checkout: {missing}")
+    return sorted(files), True
+
+
+def generated_directories_in_files(files: list[Path]) -> list[str]:
+    prohibited = {
+        "__pycache__",
+        ".pytest_cache",
+        ".ipynb_checkpoints",
+        ".venv",
+    }
+    found: set[str] = set()
+
+    for path in files:
+        relative = path.relative_to(ROOT)
+        parent = Path()
+        for part in relative.parts[:-1]:
+            parent /= part
+            if part in prohibited or part.endswith(".egg-info"):
+                found.add(parent.as_posix())
+
+    return sorted(found)
 
 
 class UniqueKeyLoader(yaml.SafeLoader):
@@ -81,16 +143,25 @@ def verify_required_paths() -> None:
         "environment.yml",
         "pyproject.toml",
         "src/raids_nids/__init__.py",
+        "src/raids_nids/v022_publication.py",
+        "scripts/package_v022_publication_evidence.py",
+        "scripts/verify_v022_publication_evidence.py",
         "configs/protocols/v019_external_guard_freeze.yaml",
         "configs/protocols/v020_external_guard_amendment.yaml",
         "configs/protocols/v021_source_anchored_score_amendment.yaml",
         "results/frozen/v018_core/paper_assets_v018",
         "results/frozen/v021_external_validation/evaluation/aggregate",
+        "results/frozen/v022_unsw_exploits_gate4/PUBLICATION_MANIFEST.json",
+        "results/frozen/v022_unsw_exploits_gate4/PUBLIC_CHECKSUMS.sha256",
+        "results/frozen/v022_unsw_exploits_gate4/RUN_DIRECTORY_MAP.csv",
+        "results/frozen/v022_unsw_exploits_gate4/SOURCE_FILE_MAP.csv",
+        "results/frozen/v022_unsw_exploits_gate4/OMITTED_FILES.csv",
         "reproducibility/v019_failed_construction",
         "reproducibility/v020_diagnostic_excluded",
         "docs/DATA_ACQUISITION.md",
         "docs/EXPERIMENT_PROVENANCE.md",
         "docs/REPOSITORY_AUDIT.md",
+        "docs/V022_PUBLIC_EVIDENCE_PACKAGING.md",
     ]
     missing = [item for item in required if not (ROOT / item).exists()]
     require(not missing, f"Missing required paths: {missing}")
@@ -543,7 +614,7 @@ def verify_run_directory_maps() -> int:
 
 
 def verify_public_repository_hygiene() -> tuple[int, int, int]:
-    files = [path for path in ROOT.rglob("*") if path.is_file()]
+    files, used_git_index = public_repository_files()
     too_large = [
         (path.relative_to(ROOT).as_posix(), path.stat().st_size)
         for path in files
@@ -572,18 +643,25 @@ def verify_public_repository_hygiene() -> tuple[int, int, int]:
     ]
     require(not bad_names, f"Sensitive filenames present: {bad_names}")
 
-    prohibited_dirs = {
-        "__pycache__",
-        ".pytest_cache",
-        ".ipynb_checkpoints",
-        ".venv",
-    }
-    bad_dirs = [
-        path.relative_to(ROOT).as_posix()
-        for path in ROOT.rglob("*")
-        if path.is_dir()
-        and (path.name in prohibited_dirs or path.name.endswith(".egg-info"))
-    ]
+    if used_git_index:
+        bad_dirs = generated_directories_in_files(files)
+    else:
+        prohibited_dirs = {
+            "__pycache__",
+            ".pytest_cache",
+            ".ipynb_checkpoints",
+            ".venv",
+        }
+        bad_dirs = sorted(
+            path.relative_to(ROOT).as_posix()
+            for path in ROOT.rglob("*")
+            if path.is_dir()
+            and ".git" not in path.relative_to(ROOT).parts
+            and (
+                path.name in prohibited_dirs
+                or path.name.endswith(".egg-info")
+            )
+        )
     require(not bad_dirs, f"Generated directories present: {bad_dirs}")
 
     token_patterns = {
@@ -630,10 +708,11 @@ def verify_repository_manifest() -> int:
         require(relative not in entries, f"Duplicate manifest path: {relative}")
         entries[relative] = digest
 
+    files, _ = public_repository_files()
     actual = {
         path.relative_to(ROOT).as_posix(): path
-        for path in ROOT.rglob("*")
-        if path.is_file() and path != manifest_path
+        for path in files
+        if path != manifest_path
     }
     require(set(entries) == set(actual), "MANIFEST.sha256 path set does not match files")
     for relative, path in actual.items():

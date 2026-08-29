@@ -92,3 +92,35 @@ After creating the public GitHub repository:
 3. Let the GitHub Actions test workflow finish successfully.
 4. Create an immutable release, then archive it and add its DOI if available.
 5. Cite that immutable release in the manuscript's availability statement.
+
+## v0.22 publication supplement
+
+Supplement date: 2026-08-28
+
+The completed NF-UNSW-NB15-v3 Exploits Gate 4 evidence was checked against the
+separate 114,039,766-byte full archive. The archive SHA-256, member set, CRC,
+and all 741 member hashes passed. The compact public directory retains 635
+source files, maps 100 run directories, and inventories 100 omitted model
+binaries and six omitted logs. It contains 642 public files and no model or log
+payloads.
+
+The repository verifier now reads the Git index in a working checkout. This
+keeps ignored local evidence, Git metadata, virtual environments, and the
+`src/raids_nids.egg-info` directory created by `pip install -e ".[dev]"` out of
+the public-file check. A tracked generated directory still fails the check.
+This corrects the earlier CI ordering failure in which the editable install
+created `egg-info` before repository verification.
+
+Current checks after staging the intended v0.22 public files:
+
+| Check | Result |
+|---|---:|
+| Repository files inspected | 2,924 |
+| YAML/CFF files parsed | 290 |
+| Notebooks parsed | 9 |
+| Notebook code cells inspected | 546 |
+| Largest tracked file | 2,359,482 bytes |
+| Maximum relative path length | 197 characters |
+| Compact v0.22 files | 642 |
+| Compact v0.22 maximum repository-relative path | 130 characters |
+| Pytest suite | 33 passed |
