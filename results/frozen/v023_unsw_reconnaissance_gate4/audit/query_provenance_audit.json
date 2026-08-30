@@ -1,0 +1,25 @@
+{
+  "audited_at": "2026-08-29T13:36:59.095245+00:00",
+  "identical_update_rule_pairs": {
+    "expected": 40,
+    "passed": 40
+  },
+  "problems": [],
+  "query_contract_checks_passed": 90,
+  "query_count_checks_passed": 90,
+  "query_hash_checks_passed": 90,
+  "query_provenance_contract_version": "1.1-exact-ordered-row-indices-and-sha256",
+  "query_seed_checks_passed": 90,
+  "random_B50_subset_B200_pairs": {
+    "expected": 20,
+    "passed": 20
+  },
+  "static_zero_query_runs": {
+    "expected": 10,
+    "passed": 10
+  },
+  "status": "passed",
+  "summary_files_found": 90,
+  "unique_query_index_checks_passed": 90,
+  "unique_seed_method_records": 90
+}

@@ -1,0 +1,110 @@
+{
+  "all_zero_p_value": 1.0,
+  "complete_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "paired_unit": "model_seed",
+  "results": [
+    {
+      "analysis_role": "confirmatory",
+      "confirmatory": true,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "exact_sign_flip_p_raw": 0.017578125,
+      "mean_difference": -0.0080571722109197,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "confirmatory",
+      "confirmatory": true,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "exact_sign_flip_p_raw": 0.005859375,
+      "mean_difference": 0.009212501133037931,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "confirmatory",
+      "confirmatory": true,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "exact_sign_flip_p_raw": 0.001953125,
+      "mean_difference": 0.026167187174942826,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "exact_sign_flip_p_raw": 0.015625,
+      "mean_difference": -0.034877232142857144,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "exact_sign_flip_p_raw": 0.00390625,
+      "mean_difference": 0.04376860119047619,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "exact_sign_flip_p_raw": 0.001953125,
+      "mean_difference": 0.12124255952380954,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "exact_sign_flip_p_raw": 0.134765625,
+      "mean_difference": -0.0012010679643271742,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "exact_sign_flip_p_raw": 0.236328125,
+      "mean_difference": 0.0009897064116718578,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "exact_sign_flip_p_raw": 0.001953125,
+      "mean_difference": 0.0032756192218034615,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    }
+  ],
+  "test": "exact paired two-sided sign-flip over all 2^n assignments",
+  "zero_differences_retained": true
+}

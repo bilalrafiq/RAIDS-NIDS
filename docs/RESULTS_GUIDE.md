@@ -101,6 +101,29 @@ The full evidence archive is separate from Git because it is 114,039,766
 bytes. Its SHA-256 is
 `77c87be900e732fb64c505ac01b33b6dd8243f96845e7500317a200e4145c6ab`.
 
+## v0.23 NF-UNSW Reconnaissance Gate 4 replication
+
+Compact public evidence:
+
+```text
+results/frozen/v023_unsw_reconnaissance_gate4/
+```
+
+The outcome-free prespecification is tagged `v0.23-unsw-recon-prespec`. The
+final records report passed Gates 1, 2, and 3 and 90 defined Gate 4 runs. The
+query-provenance audit passed all 90 run-level count, uniqueness, hash, seed,
+and contract checks. The analysis contains three confirmatory contrasts and
+six secondary analyses.
+
+Use `RUN_DIRECTORY_MAP.csv` to resolve the short public run identifiers and
+`SOURCE_FILE_MAP.csv` to recover each original evidence path. The compact copy
+omits 100 `model.joblib` files and five logs. Their original paths, archive
+member paths, sizes, and SHA-256 values are recorded in `OMITTED_FILES.csv`.
+
+The full evidence archive is separate from Git because it is 117,834,865
+bytes. Its SHA-256 is
+`41594744d24581d74c31624be24dbfec6013ed2b5fc0aaba4780934d1f37200b`.
+
 ## Reporting rules
 
 1. Treat failures as results.
@@ -112,3 +135,8 @@ bytes. Its SHA-256 is
 7. Do not describe guard triggers as attack-family classification.
 8. Keep the v0.22 Gate 4 extension distinct from the v0.21 score-only external
    evaluation.
+9. Describe v0.23 as a prespecified second-episode replication within the
+   shared NF-UNSW trace, not as untouched validation or an independent
+   deployment environment.
+10. Report the v0.23 selector reversal and the positive budget effect together;
+    do not claim universal uncertainty-diversity superiority.

@@ -1,0 +1,63 @@
+{
+  "checks": {
+    "all_manifest_integrity_checks": true,
+    "change_timestamp_matches_manifest": true,
+    "event_manifest_hash_verified": true,
+    "event_protocol": true,
+    "family": true,
+    "onset_500": true,
+    "onset_5000": true,
+    "post_change_rows": true,
+    "raw_hash_recorded": true,
+    "source_hash_recorded": true,
+    "source_hash_verified": true,
+    "source_rows": true,
+    "source_strictly_precedes_target": true,
+    "suite_protocol": true,
+    "target_hash_recorded": true,
+    "target_hash_verified": true,
+    "target_rows": true,
+    "warmup_rows": true
+  },
+  "completed_at": "2026-08-29T09:36:50.863667+00:00",
+  "event_manifest_path": "data\\derived\\v020_unsw_events\\NF-UNSW-NB15-v3-reconnaissance-manifest.json",
+  "event_manifest_sha256": "856f165fd8cb34a0db91dfa574bda106bd55c5d7d0820a0445cb56c1a8a9ae13",
+  "gate": "Gate1",
+  "manifest_row": {
+    "dataset": "NF-UNSW-NB15-v3",
+    "episode_id": "Reconnaissance",
+    "event_time": "2015-02-18 01:06:32.190000",
+    "observed_onset_500": 6,
+    "observed_onset_5000": 55,
+    "post_change_rows": 100000,
+    "source_end_timestamp": "2015-02-18 00:53:47.439000",
+    "source_rows": 500000,
+    "source_sha256": "23a046f34ceb9e43b434f8b633d29d7d9f63c34944387fb6e62467f8ec3acedf",
+    "source_start_timestamp": "2015-01-22 11:49:36.907000",
+    "target_end_timestamp": "2015-02-18 02:04:14.698000",
+    "target_rows": 120000,
+    "target_sha256": "d4157b6246db7cb254df1406c0f59c81f7b6e605ed62105b0ec196e09b70940e",
+    "target_start_timestamp": "2015-02-18 00:53:47.448000",
+    "warmup_rows": 20000
+  },
+  "source_timestamps": {
+    "end_timestamp": "2015-02-18 00:53:47.439000",
+    "maximum_timestamp_ms": 1424220827439,
+    "minimum_timestamp_ms": 1421927376907,
+    "missing_or_non_numeric_timestamp_rows": 0,
+    "rows": 500000,
+    "start_timestamp": "2015-01-22 11:49:36.907000",
+    "timestamps_nondecreasing": true
+  },
+  "status": "passed",
+  "target_timestamps": {
+    "end_timestamp": "2015-02-18 02:04:14.698000",
+    "maximum_timestamp_ms": 1424225054698,
+    "minimum_timestamp_ms": 1424220827448,
+    "missing_or_non_numeric_timestamp_rows": 0,
+    "rows": 120000,
+    "start_timestamp": "2015-02-18 00:53:47.448000",
+    "timestamps_nondecreasing": true
+  },
+  "timestamp_scope_note": "The check proves exact row geometry, finite timestamps, and chronological order in the retained event artifact. It cannot prove that the upstream flow exporter omitted no network events."
+}

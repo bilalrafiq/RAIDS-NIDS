@@ -1,0 +1,17 @@
+{
+  "evidence_directory": "v023_unsw_reconnaissance_gate4",
+  "gate2_gate3_runs": 10,
+  "gate4_runs": 90,
+  "mapped_run_directories": 100,
+  "omitted_files": 105,
+  "omitted_log_files": 5,
+  "omitted_model_files": 100,
+  "repository_prefix": "results/frozen/v023_unsw_reconnaissance_gate4",
+  "required_base_commit": "00b90bfb7a6f3aeb9eebb14af12fae228b529702",
+  "retained_source_files": 630,
+  "schema_version": "1.0",
+  "scientific_role": "prespecified_second_episode_replication_not_untouched_validation",
+  "source_checksum_entries": 734,
+  "source_evidence_files": 735,
+  "source_git_head": "ecca58e9f3ebcc3a70ab8d9ca0d1fcbc34a9b645"
+}

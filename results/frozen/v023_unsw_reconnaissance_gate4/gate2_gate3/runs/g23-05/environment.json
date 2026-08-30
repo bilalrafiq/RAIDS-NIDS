@@ -1,0 +1,9 @@
+{
+  "numpy": "2.5.1",
+  "pandas": "2.3.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+  "river": "0.25.0",
+  "scikit_learn": "1.9.0",
+  "scipy": "1.18.0"
+}

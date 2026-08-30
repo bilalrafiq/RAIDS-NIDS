@@ -1,0 +1,17 @@
+{
+  "dataset": "NF-UNSW-NB15-v3",
+  "episode_id": "Reconnaissance",
+  "event_time": "2015-02-18 01:06:32.190000",
+  "observed_onset_500": 6,
+  "observed_onset_5000": 55,
+  "post_change_rows": 100000,
+  "source_end_timestamp": "2015-02-18 00:53:47.439000",
+  "source_rows": 500000,
+  "source_sha256": "23a046f34ceb9e43b434f8b633d29d7d9f63c34944387fb6e62467f8ec3acedf",
+  "source_start_timestamp": "2015-01-22 11:49:36.907000",
+  "target_end_timestamp": "2015-02-18 02:04:14.698000",
+  "target_rows": 120000,
+  "target_sha256": "d4157b6246db7cb254df1406c0f59c81f7b6e605ed62105b0ec196e09b70940e",
+  "target_start_timestamp": "2015-02-18 00:53:47.448000",
+  "warmup_rows": 20000
+}

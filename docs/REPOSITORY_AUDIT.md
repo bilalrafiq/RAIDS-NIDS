@@ -124,3 +124,31 @@ Current checks after staging the intended v0.22 public files:
 | Compact v0.22 files | 642 |
 | Compact v0.22 maximum repository-relative path | 130 characters |
 | Pytest suite | 33 passed |
+
+## v0.23 publication supplement
+
+Supplement date: 2026-08-30
+
+The completed NF-UNSW-NB15-v3 Reconnaissance Gate 4 evidence was checked
+against the separate 117,834,865-byte full archive. The archive SHA-256,
+member set, CRC, and all 735 member hashes passed. The separate audit and
+internal checksum files were byte-identical to their archived copies.
+
+The compact public directory retains 630 source files, maps 100 run
+directories, and inventories 100 omitted model binaries and five omitted
+logs. It contains 637 public files and no model or log payloads. Its maximum
+repository-relative path is 99 characters.
+
+Current checks after staging the intended v0.23 public files:
+
+| Check | Result |
+|---|---:|
+| Repository files inspected | 3,584 |
+| YAML/CFF files parsed | 299 |
+| Notebooks parsed | 9 |
+| Notebook code cells inspected | 546 |
+| Largest tracked file | 2,359,482 bytes |
+| Maximum relative path length | 197 characters |
+| Compact v0.23 files | 637 |
+| Compact v0.23 maximum repository-relative path | 99 characters |
+| Pytest suite | 43 passed |
