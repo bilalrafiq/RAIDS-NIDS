@@ -25,5 +25,11 @@ jobs:
           --root results/frozen/v022_unsw_exploits_gate4
           --expected-archive-sha256 77c87be900e732fb64c505ac01b33b6dd8243f96845e7500317a200e4145c6ab
           --expected-archive-size 114039766
+      - name: Verify v0.23 compact evidence
+        run: >-
+          python scripts/verify_v023_publication_evidence.py
+          --root results/frozen/v023_unsw_reconnaissance_gate4
+          --expected-archive-sha256 41594744d24581d74c31624be24dbfec6013ed2b5fc0aaba4780934d1f37200b
+          --expected-archive-size 117834865
       - name: Run tests
         run: python -m pytest -q -p no:cacheprovider

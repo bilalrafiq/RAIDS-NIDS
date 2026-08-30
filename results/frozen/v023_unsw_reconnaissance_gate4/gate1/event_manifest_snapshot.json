@@ -1,0 +1,136 @@
+{
+  "construction_audit": {
+    "family": "Reconnaissance",
+    "family_occurrences": 17074,
+    "maximum_warmup_and_onset_gap_hours": 24.0,
+    "minimum_history_per_warmup_class": 500,
+    "minimum_onset_counts": {
+      "500": 5,
+      "5000": 50
+    },
+    "minimum_onset_prevalence": 0.01,
+    "onset_windows": [
+      500,
+      5000
+    ],
+    "post_change_rows": 100000,
+    "rejected_before_selection_or_all_if_failed": {
+      "emerging_family_in_warmup": 2215,
+      "insufficient_onset_prevalence_500": 0,
+      "insufficient_onset_prevalence_5000": 0,
+      "insufficient_post_rows": 0,
+      "insufficient_preceding_rows": 181,
+      "unsupported_warmup_class": 0,
+      "warmup_gap_limit": 1
+    },
+    "selection_status": "selected",
+    "warmup_rows": 20000
+  },
+  "dataset": "NF-UNSW-NB15-v3",
+  "emerging_family": "Reconnaissance",
+  "episode_type": "amended held-out-family external replication",
+  "event_selection_rule": "earliest occurrence with no held-out-family row in the preceding 20,000 flows; every warm-up class supported by at least 500 strictly earlier rows; no warm-up or onset-boundary gap above 24.0 hours; at least 1% held-out-family prevalence in onset windows [500, 5000]; and 100,000 available post-change rows",
+  "event_time": "2015-02-18 01:06:32.190000",
+  "integrity_checks": {
+    "change_row_is_emerging_family": true,
+    "source_excludes_emerging_family": true,
+    "source_precedes_target": true,
+    "sustained_onset_prevalence_met": true,
+    "target_geometry_exact": true,
+    "target_order_matches_temporal_cache": true,
+    "warmup_and_onset_respect_gap_limit": true,
+    "warmup_classes_are_source_known": true,
+    "warmup_excludes_emerging_family": true
+  },
+  "maximum_warmup_and_onset_gap_hours_allowed": 24.0,
+  "maximum_warmup_and_onset_gap_hours_observed": 0.008684722222222222,
+  "minimum_onset_counts": {
+    "500": 5,
+    "5000": 50
+  },
+  "minimum_onset_prevalence": 0.01,
+  "minimum_warmup_family_history": 857,
+  "novel_target_families": [
+    "Reconnaissance"
+  ],
+  "observed_onset_counts": {
+    "500": 6,
+    "5000": 55
+  },
+  "other_novel_target_families": [],
+  "post_change_rows": 100000,
+  "prior_family_occurrences_before_selected_event": 2397,
+  "protocol_id": "RAIDS-NIDS-v0.20-external-guard-amendment",
+  "raw_dataset_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "rejected_candidates_before_selection": {
+    "emerging_family_in_warmup": 2215,
+    "insufficient_onset_prevalence_500": 0,
+    "insufficient_onset_prevalence_5000": 0,
+    "insufficient_post_rows": 0,
+    "insufficient_preceding_rows": 181,
+    "unsupported_warmup_class": 0,
+    "warmup_gap_limit": 1
+  },
+  "seed": 11,
+  "selected_event_is_first_global_occurrence": false,
+  "source_csv": "data\\raw\\NF-UNSW-NB15-v3.csv",
+  "source_family_counts": {
+    "Analysis": 267,
+    "Backdoor": 653,
+    "Benign": 490619,
+    "DoS": 655,
+    "Exploits": 2927,
+    "Fuzzers": 3133,
+    "Generic": 1343,
+    "Shellcode": 380,
+    "Worms": 23
+  },
+  "source_latest_time": "2015-02-18 00:53:47.439000",
+  "source_minimum_per_class": 500,
+  "source_path": "data\\derived\\v020_unsw_events\\NF-UNSW-NB15-v3-reconnaissance-historical-source.csv",
+  "source_requested_quotas": {
+    "Analysis": 267,
+    "Backdoor": 653,
+    "Benign": 490619,
+    "DoS": 655,
+    "Exploits": 2927,
+    "Fuzzers": 3133,
+    "Generic": 1343,
+    "Shellcode": 380,
+    "Worms": 23
+  },
+  "source_rows": 500000,
+  "source_sampling": "class-aware deterministic priority reservoir",
+  "source_sha256": "23a046f34ceb9e43b434f8b633d29d7d9f63c34944387fb6e62467f8ec3acedf",
+  "strict_historical_source_stop_position": 1165591,
+  "target_earliest_time": "2015-02-18 00:53:47.448000",
+  "target_family_counts": {
+    "Analysis": 1,
+    "Backdoor": 2292,
+    "Benign": 108742,
+    "DoS": 340,
+    "Exploits": 2965,
+    "Fuzzers": 1852,
+    "Generic": 2086,
+    "Reconnaissance": 1344,
+    "Shellcode": 364,
+    "Worms": 14
+  },
+  "target_path": "data\\derived\\v020_unsw_events\\NF-UNSW-NB15-v3-reconnaissance-heldout-target.csv",
+  "target_rows": 120000,
+  "target_sha256": "d4157b6246db7cb254df1406c0f59c81f7b6e605ed62105b0ec196e09b70940e",
+  "temporal_cache": "data\\derived\\v019_unsw_temporal.npz",
+  "temporal_cache_sha256": "215b2ea90aa5183c3cd99a20ba5d24c25d1dbe35ebe0f1775ab2889b245f240a",
+  "true_change_row": 20000,
+  "warmup_family_counts": {
+    "Backdoor": 2270,
+    "Benign": 17724,
+    "Exploits": 6
+  },
+  "warmup_family_historical_support": {
+    "Backdoor": 857,
+    "Benign": 1145515,
+    "Exploits": 6170
+  },
+  "warmup_rows": 20000
+}

@@ -1,0 +1,22 @@
+{
+  "contract_version": "1.0-v019-guard-aggregation",
+  "detectors": [
+    "adwin",
+    "mad",
+    "page_hinkley"
+  ],
+  "files": {
+    "all_guard_results": "evidence\\v023_unsw_reconnaissance_gate4\\gate2_gate3\\aggregate\\all_guard_results.csv",
+    "guard_summary": "evidence\\v023_unsw_reconnaissance_gate4\\gate2_gate3\\aggregate\\guard_summary.csv"
+  },
+  "input_result_tables": 10,
+  "result_rows": 30,
+  "scenarios": [
+    "NF-UNSW-NB15-v3-Reconnaissance-v023-core-profile"
+  ],
+  "sha256": {
+    "all_guard_results": "bf64c994f1321fb2f84defe6ef910ddde5932ee3caa2b5a660fa4023c4d822d3",
+    "guard_summary": "5dcbff917c6b9080b8ce56a74b3a1c91bccd245a7b065ca24485a5230abe5374"
+  },
+  "warning": "Do not interpret model-seed pass percentages as deployment probabilities across independent networks."
+}

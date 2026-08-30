@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-08-29T13:37:01.667527+00:00",
+  "confirmatory_contrasts": 3,
+  "failure_boundary": null,
+  "gate4_runs": 90,
+  "guard_result_rows": 30,
+  "guard_score_runs": 10,
+  "outputs": {
+    "auc_ap": "evidence\\v023_unsw_reconnaissance_gate4\\analysis\\auc_ap.csv",
+    "bootstrap": "evidence\\v023_unsw_reconnaissance_gate4\\statistics\\bootstrap_results.json",
+    "delay": "evidence\\v023_unsw_reconnaissance_gate4\\analysis\\delay.csv",
+    "gate4_metrics": "evidence\\v023_unsw_reconnaissance_gate4\\analysis\\gate4_metrics.csv",
+    "guard_violations": "evidence\\v023_unsw_reconnaissance_gate4\\analysis\\guard_violations.csv",
+    "label_yield": "evidence\\v023_unsw_reconnaissance_gate4\\analysis\\label_yield.csv",
+    "multiplicity": "evidence\\v023_unsw_reconnaissance_gate4\\statistics\\multiplicity_corrections.csv",
+    "secondary": "evidence\\v023_unsw_reconnaissance_gate4\\statistics\\secondary_results.csv",
+    "signflip": "evidence\\v023_unsw_reconnaissance_gate4\\statistics\\signflip_results.json"
+  },
+  "secondary_analyses": 6,
+  "statistical_contrasts": 9,
+  "status": "completed"
+}

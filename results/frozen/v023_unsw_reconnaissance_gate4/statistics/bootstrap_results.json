@@ -1,0 +1,120 @@
+{
+  "bootstrap_repetitions": 100000,
+  "bootstrap_seed": 2026,
+  "complete_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    109,
+    127,
+    149
+  ],
+  "confirmatory_contrast_count": 3,
+  "paired_unit": "model_seed",
+  "results": [
+    {
+      "analysis_role": "confirmatory",
+      "bootstrap_95_high": -0.00326613063060689,
+      "bootstrap_95_low": -0.012943907910954061,
+      "confirmatory": true,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "mean_difference": -0.0080571722109197,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "confirmatory",
+      "bootstrap_95_high": 0.013949350153983913,
+      "bootstrap_95_low": 0.004407765957224636,
+      "confirmatory": true,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "mean_difference": 0.009212501133037931,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "confirmatory",
+      "bootstrap_95_high": 0.03336570654069494,
+      "bootstrap_95_low": 0.018063449302953873,
+      "confirmatory": true,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "mean_difference": 0.026167187174942826,
+      "metric": "Normalized recovery area",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": -0.017187500000000005,
+      "bootstrap_95_low": -0.050576636904761905,
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "mean_difference": -0.034877232142857144,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": 0.05866815476190477,
+      "bootstrap_95_low": 0.026953125,
+      "confirmatory": false,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "mean_difference": 0.04376860119047619,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": 0.13005952380952382,
+      "bootstrap_95_low": 0.11354166666666668,
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "mean_difference": 0.12124255952380954,
+      "metric": "Novel exact recall",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": -2.4364940572297307e-05,
+      "bootstrap_95_low": -0.002505228406383818,
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity minus random",
+      "contrast_id": "ud_vs_random",
+      "mean_difference": -0.0012010679643271742,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": 0.002311289746696002,
+      "bootstrap_95_low": -6.937698325392725e-05,
+      "confirmatory": false,
+      "contrast": "Budget 200 minus budget 50",
+      "contrast_id": "budget_200_vs_50",
+      "mean_difference": 0.0009897064116718578,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    },
+    {
+      "analysis_role": "secondary",
+      "bootstrap_95_high": 0.006055288705396026,
+      "bootstrap_95_low": 0.0009335882184064808,
+      "confirmatory": false,
+      "contrast": "Uncertainty-diversity budget 200 minus static",
+      "contrast_id": "ud_b200_vs_static",
+      "mean_difference": 0.0032756192218034615,
+      "metric": "Source forgetting",
+      "n_seeds": 10
+    }
+  ],
+  "secondary_analysis_count": 6
+}
