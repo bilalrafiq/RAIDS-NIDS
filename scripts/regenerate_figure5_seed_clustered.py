@@ -4,10 +4,6 @@ import argparse
 import hashlib
 from pathlib import Path
 
-import matplotlib
-
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -88,7 +84,22 @@ def seed_level_summary(csv_path: Path) -> pd.DataFrame:
     )
 
 
+def import_plotting():
+    try:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+    except ImportError as error:
+        raise RuntimeError(
+            "Plotting requires: python -m pip install -r "
+            "requirements-v022-analysis.txt"
+        ) from error
+    return plt
+
+
 def render_panel(summary: pd.DataFrame, output_path: Path) -> None:
+    plt = import_plotting()
     figure, axis = plt.subplots(figsize=(7.2, 4.8))
     for selection, label, color, marker in SELECTIONS:
         subset = summary.loc[
