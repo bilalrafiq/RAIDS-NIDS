@@ -1,0 +1,9 @@
+episode,selection,budget,mean,sem,seed_count
+Exploits,random_nested,50,0.309247506762,0.006658830158,10
+Exploits,random_nested,200,0.325854511803,0.006774320611,10
+Exploits,uncertainty_diversity,50,0.324724177976,0.007205249754,10
+Exploits,uncertainty_diversity,200,0.363457802406,0.008556505139,10
+Reconnaissance,random_nested,50,0.331941691131,0.011019545591,10
+Reconnaissance,random_nested,200,0.331781385316,0.011032528676,10
+Reconnaissance,uncertainty_diversity,50,0.314511711972,0.009331259344,10
+Reconnaissance,uncertainty_diversity,200,0.333097020053,0.011181635255,10

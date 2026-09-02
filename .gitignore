@@ -20,6 +20,8 @@ data/synthetic/
 results/*
 !results/frozen/
 !results/frozen/**
+!results/corrections/
+!results/corrections/**
 
 *.joblib
 !results/frozen/**/*.joblib

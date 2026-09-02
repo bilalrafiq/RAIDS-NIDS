@@ -1237,6 +1237,27 @@ def placeholder_plot(path: Path, title: str, detail: str) -> None:
     plt.close(figure)
 
 
+def seed_clustered_budget_statistics(
+    subset: pd.DataFrame, metric: str
+) -> tuple[pd.Series, pd.Series]:
+    """Return budget means and SEMs after marginalizing update rules per seed."""
+
+    seed_marginal = (
+        subset.groupby(["seed", "budget"], as_index=False)[metric].mean()
+    )
+    means = (
+        seed_marginal.groupby("budget")[metric]
+        .mean()
+        .reindex([50, 200])
+    )
+    sem = (
+        seed_marginal.groupby("budget")[metric]
+        .sem()
+        .reindex([50, 200])
+    )
+    return means, sem
+
+
 def make_plots(
     evidence_root: Path,
     guard_summaries: list[tuple[Path, dict[str, Any]]],
@@ -1329,8 +1350,7 @@ def make_plots(
         ("uncertainty_diversity", "Uncertainty-diversity", "#d62728", "s"),
     ]:
         subset = adaptive.loc[adaptive["selection"] == selection]
-        means = subset.groupby("budget")[metric].mean().reindex([50, 200])
-        sem = subset.groupby("budget")[metric].sem().reindex([50, 200])
+        means, sem = seed_clustered_budget_statistics(subset, metric)
         axis.errorbar(
             [50, 200],
             means,

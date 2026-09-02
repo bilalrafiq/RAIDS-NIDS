@@ -203,6 +203,13 @@ Windows paths; these are provenance fields, not required current locations.
 Use the repository-level `MANIFEST.sha256` and the version-specific manifests
 to verify bytes.
 
+The annotated tag `v0.23-figure5-seed-clustered-correction` records a narrow
+plotting correction. Figure 5 uncertainty bars now average the paired update
+rules within each seed before calculating the standard error over ten seeds.
+The corrected plots, numerical summary, and correction manifest are stored in
+`results/corrections/figure5_seed_clustered_sem`. The frozen evidence tags and
+their release archives remain unchanged.
+
 Several earlier frozen directories include `model.joblib`. Joblib uses
 pickle-based serialization, so only load model files obtained from a trusted
 release after checking their SHA-256 values. The compact v0.22 and v0.23
